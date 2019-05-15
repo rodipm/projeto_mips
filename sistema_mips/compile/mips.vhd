@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd
--- Generated   : Wed May 15 00:34:26 2019
+-- Generated   : Wed May 15 01:00:24 2019
 -- From        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -28,6 +28,7 @@ entity mips is
   port(
        Clk : in STD_LOGIC;
        PCSrc : in STD_LOGIC;
+       Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        Instruction : out STD_LOGIC_VECTOR(31 downto 0)
   );
@@ -41,6 +42,7 @@ component instruction_fetch
   port (
        Clk : in STD_LOGIC;
        PCSrc : in STD_LOGIC;
+       Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        Instruction : out STD_LOGIC_VECTOR(31 downto 0)
   );
@@ -55,6 +57,7 @@ instruction_fetch_01 : instruction_fetch
        Clk => Clk,
        Instruction => Instruction,
        PCSrc => PCSrc,
+       Reset => Reset,
        branch_instruction_address => branch_instruction_address
   );
 

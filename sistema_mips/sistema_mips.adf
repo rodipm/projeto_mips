@@ -68,13 +68,16 @@ Selected=
 .\src\sistema_mips.bde=Block Diagram
 .\src\untitled.asdb=Accelerated Waveform File
 .\src\untitled.awc=Accelerated Waveform Configuration
+.\compile\instruction_fetch.vhd=VHDL Source Code
+.\compile\mips.vhd=VHDL Source Code
+.\compile\sistema_mips.vhd=VHDL Source Code
+
+
+
 
 [file_out:/instruction_fetch.bde]
 /..\compile\instruction_fetch.vhd=-1
-
 [file_out:/mips.bde]
 /..\compile\mips.vhd=-1
-
 [file_out:/sistema_mips.bde]
 /..\compile\sistema_mips.vhd=-1
-

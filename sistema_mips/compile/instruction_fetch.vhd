@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd
--- Generated   : Wed May 15 00:32:13 2019
+-- Generated   : Wed May 15 01:00:46 2019
 -- From        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -27,6 +27,7 @@ entity instruction_fetch is
   port(
        Clk : in STD_LOGIC;
        PCSrc : in STD_LOGIC;
+       Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        Instruction : out STD_LOGIC_VECTOR(31 downto 0)
   );
@@ -61,6 +62,7 @@ end component;
 component PC
   port (
        Clk : in STD_LOGIC;
+       Reset : in STD_LOGIC;
        mux_pc_bus : in STD_LOGIC_VECTOR(31 downto 0);
        address_bus : out STD_LOGIC_VECTOR(31 downto 0)
   );
@@ -88,6 +90,7 @@ U1 : Mux
 U2 : PC
   port map(
        Clk => Clk,
+       Reset => Reset,
        address_bus => address_bus,
        mux_pc_bus => mux_pc_bus
   );

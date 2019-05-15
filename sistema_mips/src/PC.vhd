@@ -29,6 +29,7 @@ entity PC is
 	 port(
 		 mux_pc_bus : in STD_LOGIC_VECTOR(31 downto 0);
 		 Clk : in STD_LOGIC;
+		 Reset : in STD_LOGIC;
 		 address_bus : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
 end PC;
@@ -40,8 +41,10 @@ begin
 
 	-- enter your statements here --  
 	process (Clk)
-	begin
-		if Clk'event and Clk='1' then
+	begin	  
+		if Reset='1' then
+			address_bus <= "00000000000000000000000000000000";
+		elsif Clk'event and Clk='1' then
 			address_bus <= mux_pc_bus;
 		end if;
 	end process;

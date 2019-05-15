@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd
--- Generated   : Tue May 14 23:05:45 2019
+-- Generated   : Wed May 15 01:00:46 2019
 -- From        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -35,6 +35,7 @@ component mips
   port (
        Clk : in STD_LOGIC;
        PCSrc : in STD_LOGIC;
+       Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
@@ -42,6 +43,7 @@ component testbench_mips
   port (
        Clk : out STD_LOGIC;
        PCSrc : out STD_LOGIC;
+       Reset : out STD_LOGIC;
        branch_instruction_address : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
@@ -50,6 +52,7 @@ end component;
 
 signal Clk : STD_LOGIC;
 signal PCSrc : STD_LOGIC;
+signal Reset : STD_LOGIC;
 signal branch_instruction_address : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
@@ -60,6 +63,7 @@ mips_01 : mips
   port map(
        Clk => Clk,
        PCSrc => PCSrc,
+       Reset => Reset,
        branch_instruction_address => branch_instruction_address
   );
 
@@ -67,6 +71,7 @@ testbench_mips_01 : testbench_mips
   port map(
        Clk => Clk,
        PCSrc => PCSrc,
+       Reset => Reset,
        branch_instruction_address => branch_instruction_address
   );
 

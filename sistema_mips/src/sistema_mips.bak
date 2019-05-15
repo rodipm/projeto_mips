@@ -2,12 +2,13 @@ SCHM0106
 
 HEADER
 {
- FREEID 130
+ FREEID 162
  VARIABLES
  {
   #ARCHITECTURE="sistema_mips"
   #BLOCKTABLE_FILE="#table.bde"
   #BLOCKTABLE_INCLUDED="1"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"branch_instruction_address\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #ENTITY="sistema_mips"
   #LANGUAGE="VHDL"
   AUTHOR="Rodrigo"
@@ -37,7 +38,7 @@ HEADER
    PAGEHEADER
    {
     RECT (0,0,260,280)
-    FREEID 6
+    FREEID 10
    }
    
    BODY
@@ -58,6 +59,22 @@ HEADER
      MARGINS (1,1)
      PARENT 2
     }
+    TEXT  7, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (14,88,72,112)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 6
+    }
+    TEXT  9, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (14,148,299,172)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 8
+    }
     PIN  2, 0, 0
     {
      COORD (0,40)
@@ -66,6 +83,34 @@ HEADER
       #DIRECTION="IN"
       #FAMILY="Fub"
       #NAME="Clk"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (1,-10), (1,10), (11,0) )
+     }
+    }
+    PIN  6, 0, 0
+    {
+     COORD (0,100)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #FAMILY="Fub"
+      #NAME="PCSrc"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (1,-10), (1,10), (11,0) )
+     }
+    }
+    PIN  8, 0, 0
+    {
+     COORD (0,160)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #FAMILY="Fub"
+      #NAME="branch_instruction_address(31:0)"
      }
      LINE  1, 0, 0
      {
@@ -96,7 +141,7 @@ HEADER
    PAGEHEADER
    {
     RECT (0,0,260,280)
-    FREEID 6
+    FREEID 10
    }
    
    BODY
@@ -117,6 +162,22 @@ HEADER
      MARGINS (1,1)
      PARENT 2
     }
+    TEXT  7, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (188,88,246,112)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 6
+    }
+    TEXT  9, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (-39,148,246,172)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 8
+    }
     PIN  2, 0, 0
     {
      COORD (260,40)
@@ -125,6 +186,34 @@ HEADER
       #DIRECTION="OUT"
       #FAMILY="Fub"
       #NAME="Clk"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (-10,-10), (-10,10), (0,0) )
+     }
+    }
+    PIN  6, 0, 0
+    {
+     COORD (260,100)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #FAMILY="Fub"
+      #NAME="PCSrc"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (-10,-10), (-10,10), (0,0) )
+     }
+    }
+    PIN  8, 0, 0
+    {
+     COORD (260,160)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #FAMILY="Fub"
+      #NAME="branch_instruction_address(31:0)"
      }
      LINE  1, 0, 0
      {
@@ -160,7 +249,7 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="4fc0debb-2f31-467e-9cfc-465cc52e5611"
    }
    COORD (680,520)
-   VERTEXES ( (2,76) )
+   VERTEXES ( (2,76), (6,132), (8,138) )
   }
   TEXT  20, 0, 0
   {
@@ -190,7 +279,7 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="8147ce7d-218c-4974-abb5-36362a7a664b"
    }
    COORD (1160,520)
-   VERTEXES ( (2,77) )
+   VERTEXES ( (2,77), (6,133), (8,139) )
   }
   TEXT  23, 0, 0
   {
@@ -234,6 +323,60 @@ PAGE ""
    ALIGN 9
    PARENT 79
   }
+  VTX  132, 0, 0
+  {
+   COORD (940,620)
+  }
+  VTX  133, 0, 0
+  {
+   COORD (1160,620)
+  }
+  WIRE  135, 0, 0
+  {
+   NET 136
+   VTX 132, 133
+  }
+  NET WIRE  136, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="PCSrc"
+   }
+  }
+  TEXT  137, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1016,592,1085,619)
+   ALIGN 9
+   PARENT 135
+  }
+  VTX  138, 0, 0
+  {
+   COORD (940,680)
+  }
+  VTX  139, 0, 0
+  {
+   COORD (1160,680)
+  }
+  BUS  141, 0, 0
+  {
+   NET 144
+   VTX 138, 139
+  }
+  TEXT  143, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (870,652,1230,679)
+   ALIGN 9
+   PARENT 141
+  }
+  NET BUS  144, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="branch_instruction_address(31:0)"
+   }
+  }
  }
  
 }
@@ -259,7 +402,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  113, 0, 0
+  TEXT  145, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -270,7 +413,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  114, 0, 0
+  TEXT  146, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -281,7 +424,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  115, 0, 0
+  TEXT  147, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -291,7 +434,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  116, 0, 0
+  TEXT  148, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -303,7 +446,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  117, 0, 0
+  TEXT  149, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -316,7 +459,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  118, 0, 0
+  TEXT  150, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -326,7 +469,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  119, 0, 0
+  TEXT  151, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -338,7 +481,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  120, 0, 0
+  TEXT  152, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -348,7 +491,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  121, 0, 0
+  TEXT  153, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -359,7 +502,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  122, 0, 0
+  GROUP  154, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -371,7 +514,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  123, 0, 0
+  GROUP  155, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -383,7 +526,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  124, 0, 0
+  GROUP  156, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -395,7 +538,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  125, 0, 0
+  GROUP  157, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -407,7 +550,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  126, 0, 0
+  GROUP  158, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -419,7 +562,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  127, 0, 0
+  GROUP  159, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -430,7 +573,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  128, 0, 0
+  GROUP  160, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -441,7 +584,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  129, 0, 0
+  BMPPICT  161, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

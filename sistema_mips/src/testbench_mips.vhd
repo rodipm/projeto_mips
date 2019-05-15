@@ -29,7 +29,8 @@ entity testbench_mips is
 	 port(
 		 Clk : out STD_LOGIC;
 		 PCSrc : out STD_LOGIC;
-		 branch_instruction_address : out STD_LOGIC_VECTOR(31 downto 0)
+		 branch_instruction_address : out STD_LOGIC_VECTOR(31 downto 0);
+		 Reset : out STD_LOGIC
 	     );
 end testbench_mips;
 
@@ -48,11 +49,16 @@ begin
 	end process;
 	
 	process
-		begin
-			Clk <= '0';		
+		begin 
+			Reset <= '1';
 			wait for 10 ns;
-			Clk <= '1';	  
-			wait for 10 ns;
+			Reset <= '0';
+			while true loop
+				Clk <= '0';		
+				wait for 10 ns;
+				Clk <= '1';	  
+				wait for 10 ns;
+			end loop;
 	end process;
 		
 end testbench_mips;
