@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd
--- Generated   : Wed May 15 17:53:14 2019
+-- Generated   : Wed May 15 18:00:36 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -40,7 +40,6 @@ architecture instruction_fetch of instruction_fetch is
 
 component Adder
   port (
-       Clk : in STD_LOGIC;
        address_bus : in STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address_bus : out STD_LOGIC_VECTOR(31 downto 0)
   );
@@ -91,7 +90,6 @@ begin
 
 ADDER_IF : Adder
   port map(
-       Clk => Clk,
        address_bus => address_bus,
        next_instruction_address_bus => next_instruction_address_bus
   );

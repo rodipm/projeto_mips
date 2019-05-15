@@ -1,6 +1,6 @@
-1003
+1031
 ~E 1 "./../src/Adder.vhd" 7 Adder
-~A 1 "./../src/Adder.vhd" 17 Adder
+~A 1 "./../src/Adder.vhd" 16 Adder
 ~E 1 "./../src/IF_ID_REG.vhd" 31 IF_ID_REG
 ~A 1 "./../src/IF_ID_REG.vhd" 44 IF_ID_REG
 ~E 1 "./../compile/instruction_fetch.vhd" 26 instruction_fetch

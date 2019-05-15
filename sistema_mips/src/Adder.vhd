@@ -7,7 +7,6 @@ use IEEE.std_logic_unsigned.all;
 entity Adder is
 	 port(
 		 address_bus : in STD_LOGIC_VECTOR(31 downto 0);
-		 Clk : in STD_LOGIC;
 		 next_instruction_address_bus : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
 end Adder;
@@ -18,10 +17,5 @@ architecture Adder of Adder is
 begin
 
 	-- enter your statements here --  	 
-	process (Clk, address_bus)
-	begin		
-		if Clk'event and Clk='1' then	
-			next_instruction_address_bus <= address_bus + std_logic_vector(to_unsigned(4, 32));	
-		end if;
-	end process;
+	next_instruction_address_bus <= address_bus + std_logic_vector(to_unsigned(4, 32));	
 end Adder;
