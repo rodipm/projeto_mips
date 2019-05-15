@@ -37,23 +37,23 @@ end testbench_mips;
 --}} End of automatically maintained section
 
 architecture testbench_mips of testbench_mips is
-begin
-	-- enter your statements here --	
+begin  
+	-- enter your statements here --
+	branch_instruction_address <= "00000000000000000000000000000000";	
+	PCSrc <= '0'; 
 	process
-		begin  
-			PCSrc <= '0';  
-			wait for 10 ns;
-			branch_instruction_address <= "00000000000000000000000000000000";
+	begin 	 
 			Reset <= '1';
+			wait for 20 ns;
+			Reset <= '0'; 
 			wait for 10 ns;
-			Reset <= '0';
-			wait for 10 ns;
-			while true loop
-				Clk <= '0';		
+			while true loop	
+				Clk <= '1';
 				wait for 10 ns;
-				Clk <= '1';	  
+				Clk <= '0';	  
 				wait for 10 ns;
 			end loop;
-	end process;
+	end process; 
+
 		
 end testbench_mips;

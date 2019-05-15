@@ -18,8 +18,10 @@ architecture Adder of Adder is
 begin
 
 	-- enter your statements here --  	 
-	process (Clk)
-	begin
-		next_instruction_address_bus <= address_bus + std_logic_vector(to_unsigned(4, 32));
+	process (Clk, address_bus)
+	begin		
+		if Clk'event and Clk='1' then	
+			next_instruction_address_bus <= address_bus + std_logic_vector(to_unsigned(4, 32));	
+		end if;
 	end process;
 end Adder;

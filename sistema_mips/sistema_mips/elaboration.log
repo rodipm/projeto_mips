@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-05-15 01:14:36
+Active-HDL 10.5.217.6767 2019-05-15 17:53:17
 
 Elaboration top modules:
 Architecture                  sistema_mips(sistema_mips)
@@ -11,10 +11,11 @@ sistema_mips       | sistema_mips       | sistema_mips |      | 10.5.217.6767 (W
 mips               | mips               | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 testbench_mips     | testbench_mips     | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 instruction_fetch  | instruction_fetch  | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+Adder              | Adder              | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+IF_ID_REG          | IF_ID_REG          | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+instruction_memory | instruction_memory | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 Mux                | Mux                | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 PC                 | PC                 | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
-instruction_memory | instruction_memory | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
-Adder              | Adder              | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 --------------------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------------------

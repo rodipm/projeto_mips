@@ -6,3 +6,4 @@ i<>.\src\PC.vhd
 i<>.\src\instruction_memory.vhd
 i<>.\src\testbench_mips.vhd
 i<>.\src\Adder.vhd
+i<>.\src\IF_ID_REG.vhd

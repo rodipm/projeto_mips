@@ -30,7 +30,6 @@ entity Mux is
 		 PCSrc : in STD_LOGIC;
 		 next_instruction_address_bus : in STD_LOGIC_VECTOR(31 downto 0);
 		 branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
-		 Clk : in STD_LOGIC;
 		 mux_pc_bus : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
 end Mux;
@@ -40,7 +39,12 @@ end Mux;
 architecture Mux of Mux is
 begin
 
-	 -- enter your statements here --
-mux_pc_bus <= branch_instruction_address when PCSrc = '1' else
-		next_instruction_address_bus;
+	process (PCSrc, next_instruction_address_bus, branch_instruction_address)		
+	begin	
+		if PCSrc = '1' then
+			mux_pc_bus <= branch_instruction_address;
+		elsif  PCSrc = '0' then
+			mux_pc_bus <= next_instruction_address_bus;
+		end if;		 
+	end process;
 end Mux;

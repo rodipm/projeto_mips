@@ -41,7 +41,7 @@ Active_lib=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=sistema_mips|sistema_mips|0 
+HierarchyInformation=sistema_mips|sistema_mips|0
 ShowHide=ShowTopLevel
 Selected=
 
@@ -51,6 +51,7 @@ Selected=
 /testbench_mips.vhd=-1
 /Mux.vhd=-1
 /Adder.vhd=-1
+/IF_ID_REG.vhd=-1
 /instruction_fetch.bde=-1
 /mips.bde=-1
 /sistema_mips.bde=-1
@@ -63,18 +64,22 @@ Selected=
 .\src\testbench_mips.vhd=VHDL Source Code
 .\src\Mux.vhd=VHDL Source Code
 .\src\Adder.vhd=VHDL Source Code
+.\src\IF_ID_REG.vhd=VHDL Source Code
 .\src\instruction_fetch.bde=Block Diagram
 .\src\mips.bde=Block Diagram
 .\src\sistema_mips.bde=Block Diagram
 .\src\untitled.asdb=Accelerated Waveform File
 .\src\untitled.awc=Accelerated Waveform Configuration
+.\compile\instruction_fetch.vhd=VHDL Source Code
+.\compile\mips.vhd=VHDL Source Code
+.\compile\sistema_mips.vhd=VHDL Source Code
+
+
+
 
 [file_out:/instruction_fetch.bde]
 /..\compile\instruction_fetch.vhd=-1
-
 [file_out:/mips.bde]
 /..\compile\mips.vhd=-1
-
 [file_out:/sistema_mips.bde]
 /..\compile\sistema_mips.vhd=-1
-

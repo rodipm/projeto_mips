@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd
--- Generated   : Wed May 15 01:04:15 2019
--- From        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde
+-- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd
+-- Generated   : Wed May 15 17:17:25 2019
+-- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -30,7 +30,8 @@ entity mips is
        PCSrc : in STD_LOGIC;
        Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
-       Instruction : out STD_LOGIC_VECTOR(31 downto 0)
+       Instruction : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end mips;
 
@@ -44,7 +45,8 @@ component instruction_fetch
        PCSrc : in STD_LOGIC;
        Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
-       Instruction : out STD_LOGIC_VECTOR(31 downto 0)
+       Instruction : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
 
@@ -58,7 +60,8 @@ instruction_fetch_01 : instruction_fetch
        Instruction => Instruction,
        PCSrc => PCSrc,
        Reset => Reset,
-       branch_instruction_address => branch_instruction_address
+       branch_instruction_address => branch_instruction_address,
+       next_instruction_address => next_instruction_address
   );
 
 

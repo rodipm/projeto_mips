@@ -1,14 +1,16 @@
-674
+1003
 ~E 1 "./../src/Adder.vhd" 7 Adder
 ~A 1 "./../src/Adder.vhd" 17 Adder
+~E 1 "./../src/IF_ID_REG.vhd" 31 IF_ID_REG
+~A 1 "./../src/IF_ID_REG.vhd" 44 IF_ID_REG
 ~E 1 "./../compile/instruction_fetch.vhd" 26 instruction_fetch
-~A 1 "./../compile/instruction_fetch.vhd" 36 instruction_fetch
+~A 1 "./../compile/instruction_fetch.vhd" 37 instruction_fetch
 ~E 1 "./../src/instruction_memory.vhd" 28 instruction_memory
 ~A 1 "./../src/instruction_memory.vhd" 37 instruction_memory
 ~E 1 "./../compile/mips.vhd" 27 mips
-~A 1 "./../compile/mips.vhd" 37 mips
+~A 1 "./../compile/mips.vhd" 38 mips
 ~E 1 "./../src/Mux.vhd" 28 Mux
-~A 1 "./../src/Mux.vhd" 40 Mux
+~A 1 "./../src/Mux.vhd" 39 Mux
 ~E 1 "./../src/PC.vhd" 28 PC
 ~A 1 "./../src/PC.vhd" 39 PC
 ~E 1 "./../compile/sistema_mips.vhd" 27 sistema_mips

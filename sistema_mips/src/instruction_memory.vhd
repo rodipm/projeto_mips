@@ -28,7 +28,7 @@ use IEEE.std_logic_1164.all;
 entity instruction_memory is
 	 port(
 		 address_bus : in STD_LOGIC_VECTOR(31 downto 0);
-		 Instruction : out STD_LOGIC_VECTOR(31 downto 0)
+		 instruction_bus : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
 end instruction_memory;
 
@@ -42,17 +42,17 @@ begin
 	begin
 		case address_bus is
 			when "00000000000000000000000000000000" =>
-				Instruction <= "00000000000000000000000000000001";
+				instruction_bus <= "00000000000000000000000000000001";
 			when "00000000000000000000000000000100" =>
-				Instruction <= "00000000000000000000000000000010";
+				instruction_bus <= "00000000000000000000000000000010";
 			when "00000000000000000000000000001000" =>
-				Instruction <= "00000000000000000000000000000011";
+				instruction_bus <= "00000000000000000000000000000011";
 			when "00000000000000000000000000001100" =>
-				Instruction <= "00000000000000000000000000000100";
+				instruction_bus <= "00000000000000000000000000000100";
 			when "00000000000000000000000000010000" =>
-				Instruction <= "00000000000000000000000000000101";
+				instruction_bus <= "00000000000000000000000000000101";
 			when others =>
-				Instruction <= "11111111111111111111111111111111"  ;
+				instruction_bus <= "11111111111111111111111111111111"  ;
 		end case;
 	end process;
 

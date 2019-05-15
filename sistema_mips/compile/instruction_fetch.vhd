@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd
--- Generated   : Wed May 15 01:04:14 2019
--- From        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde
+-- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd
+-- Generated   : Wed May 15 17:53:14 2019
+-- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -29,7 +29,8 @@ entity instruction_fetch is
        PCSrc : in STD_LOGIC;
        Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
-       Instruction : out STD_LOGIC_VECTOR(31 downto 0)
+       Instruction : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end instruction_fetch;
 
@@ -44,15 +45,24 @@ component Adder
        next_instruction_address_bus : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
+component IF_ID_REG
+  port (
+       Clk : in STD_LOGIC;
+       Reset : in STD_LOGIC;
+       instruction_bus : in STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address_bus : in STD_LOGIC_VECTOR(31 downto 0);
+       Instruction : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 component instruction_memory
   port (
        address_bus : in STD_LOGIC_VECTOR(31 downto 0);
-       Instruction : out STD_LOGIC_VECTOR(31 downto 0)
+       instruction_bus : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
 component Mux
   port (
-       Clk : in STD_LOGIC;
        PCSrc : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address_bus : in STD_LOGIC_VECTOR(31 downto 0);
@@ -71,6 +81,7 @@ end component;
 ---- Signal declarations used on the diagram ----
 
 signal address_bus : STD_LOGIC_VECTOR(31 downto 0);
+signal instruction_bus : STD_LOGIC_VECTOR(31 downto 0);
 signal mux_pc_bus : STD_LOGIC_VECTOR(31 downto 0);
 signal next_instruction_address_bus : STD_LOGIC_VECTOR(31 downto 0);
 
@@ -78,34 +89,43 @@ begin
 
 ----  Component instantiations  ----
 
-U1 : Mux
+ADDER_IF : Adder
   port map(
        Clk => Clk,
+       address_bus => address_bus,
+       next_instruction_address_bus => next_instruction_address_bus
+  );
+
+IF_ID_REG_01 : IF_ID_REG
+  port map(
+       Clk => Clk,
+       Instruction => Instruction,
+       Reset => Reset,
+       instruction_bus => instruction_bus,
+       next_instruction_address => next_instruction_address,
+       next_instruction_address_bus => next_instruction_address_bus
+  );
+
+INSTRUCTION_MEMORY_IF : instruction_memory
+  port map(
+       address_bus => address_bus,
+       instruction_bus => instruction_bus
+  );
+
+MUX_IF : Mux
+  port map(
        PCSrc => PCSrc,
        branch_instruction_address => branch_instruction_address,
        mux_pc_bus => mux_pc_bus,
        next_instruction_address_bus => next_instruction_address_bus
   );
 
-U2 : PC
+PC_IF : PC
   port map(
        Clk => Clk,
        Reset => Reset,
        address_bus => address_bus,
        mux_pc_bus => mux_pc_bus
-  );
-
-U3 : instruction_memory
-  port map(
-       Instruction => Instruction,
-       address_bus => address_bus
-  );
-
-U4 : Adder
-  port map(
-       Clk => Clk,
-       address_bus => address_bus,
-       next_instruction_address_bus => next_instruction_address_bus
   );
 
 
