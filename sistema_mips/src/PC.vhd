@@ -40,10 +40,10 @@ architecture PC of PC is
 begin
 
 	-- enter your statements here --  
-	process (Clk)
+	process (Clk, Reset)
 	begin	  
 		if Reset='1' then
-			address_bus <= "00000000000000000000000000000000";
+			address_bus <= "00000000000000000000000000000100";
 		elsif Clk'event and Clk='1' then
 			address_bus <= mux_pc_bus;
 		end if;

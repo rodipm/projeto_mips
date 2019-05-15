@@ -1,4 +1,4 @@
-630
+674
 ~E 1 "./../src/Adder.vhd" 7 Adder
 ~A 1 "./../src/Adder.vhd" 17 Adder
 ~E 1 "./../compile/instruction_fetch.vhd" 26 instruction_fetch

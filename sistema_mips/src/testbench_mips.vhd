@@ -38,21 +38,16 @@ end testbench_mips;
 
 architecture testbench_mips of testbench_mips is
 begin
-	-- enter your statements here --
+	-- enter your statements here --	
 	process
-	begin
-		PCSrc <= '1';
-		branch_instruction_address <= "00000000000000000000000000000000";
-		wait for 40 ns;
-		PCSrc <= '0'; 
-		wait;
-	end process;
-	
-	process
-		begin 
+		begin  
+			PCSrc <= '0';  
+			wait for 10 ns;
+			branch_instruction_address <= "00000000000000000000000000000000";
 			Reset <= '1';
 			wait for 10 ns;
 			Reset <= '0';
+			wait for 10 ns;
 			while true loop
 				Clk <= '0';		
 				wait for 10 ns;
