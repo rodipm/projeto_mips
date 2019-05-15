@@ -1,0 +1,8 @@
+.\src\instruction_memory.vhd
+.\src\PC.vhd
+.\src\testbench_mips.vhd
+.\src\Mux.vhd
+.\src\Adder.vhd
+.\src\instruction_fetch.bde
+.\src\mips.bde
+.\src\sistema_mips.bde

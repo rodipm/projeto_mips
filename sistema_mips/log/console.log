@@ -1,0 +1,2260 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: instruction_fetch.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde ...
+# Generation successful
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde'.
+# DRC: Warning: sistema_mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# Waveform file 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/untitled.asdb'.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/untitled.asdb'.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  23:06, terça-feira, 14 de maio de 2019
+#  Simulation has been initialized
+# 8 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+endsim
+# KERNEL: stopped at time: 5244360 ns
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  23:12, terça-feira, 14 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+endsim
+# KERNEL: stopped at time: 3849600 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/testbench_mips.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/PC.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/testbench_mips.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  23:20, terça-feira, 14 de maio de 2019
+#  Simulation has been initialized
+# 8 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+endsim
+# KERNEL: stopped at time: 8863720 ns
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  23:23, terça-feira, 14 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# 5 signal(s) traced.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+endsim
+# KERNEL: stopped at time: 6033740 ns
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  23:24, terça-feira, 14 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__45.
+endsim
+# KERNEL: stopped at time: 2964710 ns
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => Mux
+# Entity => PC
+# Entity => Adder
+# Entity => instruction_memory
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => Mux
+# Entity => PC
+# Entity => Adder
+# Entity => instruction_memory
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => Mux
+# Entity => PC
+# Entity => Adder
+# Entity => instruction_memory
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => Mux
+# Entity => PC
+# Entity => Adder
+# Entity => instruction_memory
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => Mux
+# Entity => PC
+# Entity => Adder
+# Entity => instruction_memory
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => Mux
+# Entity => PC
+# Entity => Adder
+# Entity => instruction_memory
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (42, 62): Unknown identifier "to_unsigned".
+# Error: COMP96_0133: Adder.vhd : (42, 62): Cannot find object declaration.
+# Error: COMP96_0289: Adder.vhd : (42, 62): Prefix of index must be an array.
+# Error: COMP96_0149: Adder.vhd : (42, 62): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0753: Adder.vhd : (42, 45): Cannot find the "+" operator with operands denoted with the "[STD_LOGIC_VECTOR, STD_LOGIC_VECTOR]" signature.
+# Error: COMP96_0077: Adder.vhd : (42, 31): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (45, 62): Unknown identifier "to_unsigned".
+# Error: COMP96_0133: Adder.vhd : (45, 62): Cannot find object declaration.
+# Error: COMP96_0289: Adder.vhd : (45, 62): Prefix of index must be an array.
+# Error: COMP96_0149: Adder.vhd : (45, 62): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0756: Adder.vhd : (45, 31): Subprogram call is ambiguous. At least two matching subprograms "ieee.STD_LOGIC_SIGNED."+"(L : STD_LOGIC_VECTOR; R : STD_LOGIC_VECTOR) return STD_LOGIC_VECTOR" and "ieee.STD_LOGIC_UNSIGNED."+"(L : STD_LOGIC_VECTOR; R : STD_LOGIC_VECTOR) return STD_LOGIC_VECTOR" were detected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (45, 62): Unknown identifier "to_unsigned".
+# Error: COMP96_0133: Adder.vhd : (45, 62): Cannot find object declaration.
+# Error: COMP96_0289: Adder.vhd : (45, 62): Prefix of index must be an array.
+# Error: COMP96_0149: Adder.vhd : (45, 62): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0756: Adder.vhd : (45, 31): Subprogram call is ambiguous. At least two matching subprograms "ieee.STD_LOGIC_SIGNED."+"(L : STD_LOGIC_VECTOR; R : STD_LOGIC_VECTOR) return STD_LOGIC_VECTOR" and "ieee.STD_LOGIC_UNSIGNED."+"(L : STD_LOGIC_VECTOR; R : STD_LOGIC_VECTOR) return STD_LOGIC_VECTOR" were detected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (45, 62): Unknown identifier "to_unsigned".
+# Error: COMP96_0133: Adder.vhd : (45, 62): Cannot find object declaration.
+# Error: COMP96_0289: Adder.vhd : (45, 62): Prefix of index must be an array.
+# Error: COMP96_0149: Adder.vhd : (45, 62): Explicit type conversions are allowed between closely related types only.
+# Error: COMP96_0756: Adder.vhd : (45, 31): Subprogram call is ambiguous. At least two matching subprograms "ieee.STD_LOGIC_SIGNED."+"(L : STD_LOGIC_VECTOR; R : STD_LOGIC_VECTOR) return STD_LOGIC_VECTOR" and "ieee.STD_LOGIC_UNSIGNED."+"(L : STD_LOGIC_VECTOR; R : STD_LOGIC_VECTOR) return STD_LOGIC_VECTOR" were detected.
+# Compile failure 5 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/Adder.vhd
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Top-level unit(s) detected:
+# Entity => instruction_memory
+# Entity => PC
+# Entity => Mux
+# Entity => sistema_mips
+# Entity => Adder
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/Adder.vhd $dsn/src/Mux.vhd
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Top-level unit(s) detected:
+# Entity => instruction_memory
+# Entity => PC
+# Entity => Mux
+# Entity => sistema_mips
+# Entity => Adder
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+# Design: Error: Missing or invalid file name.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/Mux.vhd $dsn/src/Adder.vhd
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# DRC: Checking file 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/Mux.vhd $dsn/src/Adder.vhd
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Top-level unit(s) detected:
+# Entity => instruction_memory
+# Entity => PC
+# Entity => Mux
+# Entity => sistema_mips
+# Entity => Adder
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/Mux.vhd $dsn/src/Adder.vhd
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Error: instruction_fetch.bde - 1 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Warning: instruction_fetch.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (80, 0): There is no default binding for component "Mux". (Port "next_instruction_address_bus" is not on the entity).
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_memory.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/Mux.vhd $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (80, 0): There is no default binding for component "Mux". (Port "next_instruction_address_bus" is not on the entity).
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.2 [s]
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0019: Mux.vhd : (41, 2): Keyword 'begin' expected.
+# Error: COMP96_0016: Mux.vhd : (41, 13): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0078: Mux.vhd : (44, 1): Unknown identifier "next_instruction_address".
+# Error: COMP96_0133: Mux.vhd : (44, 1): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Error: COMP96_0143: Mux.vhd : (44, 1): Object "next_instruction_address_bus" cannot be written
+# Error: COMP96_0393: Mux.vhd : (45, 3): Cannot read output : "mux_pc_bus".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]
+# Error: Could not find file: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/Mux.vhd $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 instruction_fetch.vhd (102): Component /sistema_mips/mips_01/instruction_fetch_01/U4 : Adder not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7198 kB (elbread=1280 elab2=5780 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:08, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/PCSrc' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Instruction' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/address_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus' has already been traced.
+# 0 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run
+endsim
+# KERNEL: stopped at time: 4111330 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 instruction_fetch.vhd (102): Component /sistema_mips/mips_01/instruction_fetch_01/U4 : Adder not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7198 kB (elbread=1280 elab2=5780 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:19, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/PCSrc' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Instruction' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/address_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus' has already been traced.
+run
+endsim
+# KERNEL: stopped at time: 2849850 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Mux.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# Compile success 0 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 instruction_fetch.vhd (102): Component /sistema_mips/mips_01/instruction_fetch_01/U4 : Adder not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7198 kB (elbread=1280 elab2=5780 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:21, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/PCSrc' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Instruction' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/address_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus' has already been traced.
+run
+endsim
+# KERNEL: stopped at time: 4435690 ns
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+testbench_mips testbench_mips testbench_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6172 kB (elbread=1280 elab2=4754 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:22, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/Clk not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/PCSrc not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/Instruction not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/next_instruction_address not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/address_bus not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/Clk not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/PCSrc not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/Instruction not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/next_instruction_address not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/address_bus not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# 3 signal(s) traced.
+run
+endsim
+# KERNEL: stopped at time: 4046810 ns
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +access +r +m+instruction_fetch instruction_fetch instruction_fetch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 instruction_fetch.vhd (102): Component /instruction_fetch/U4 : Adder not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7197 kB (elbread=1280 elab2=5779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:22, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /testbench_mips/Clk not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench_mips/PCSrc not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /testbench_mips/branch_instruction_address not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# 8 signal(s) traced.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+instruction_fetch instruction_fetch instruction_fetch
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 instruction_fetch.vhd (102): Component /instruction_fetch/U4 : Adder not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7197 kB (elbread=1280 elab2=5779 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:23, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELBREAD: Warning: ELBREAD_0037 instruction_fetch.vhd (102): Component /sistema_mips/mips_01/instruction_fetch_01/U4 : Adder not bound.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7198 kB (elbread=1280 elab2=5780 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:30, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# 8 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (102, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+run
+endsim
+# KERNEL: stopped at time: 5986690 ns
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_fetch.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: Warning: instruction_fetch.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (101, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (101, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Warning: ELAB1_0026: mips.bde(mips.vhd) : (53, 0): There is no default binding for component "instruction_fetch". (Port "next_instruction_address" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (101, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Warning: ELAB1_0026: mips.bde(mips.vhd) : (53, 0): There is no default binding for component "instruction_fetch". (Port "next_instruction_address" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (101, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Warning: ELAB1_0026: mips.bde(mips.vhd) : (53, 0): There is no default binding for component "instruction_fetch". (Port "next_instruction_address" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (101, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Warning: ELAB1_0026: mips.bde(mips.vhd) : (53, 0): There is no default binding for component "instruction_fetch". (Port "next_instruction_address" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (101, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Warning: ELAB1_0026: mips.bde(mips.vhd) : (53, 0): There is no default binding for component "instruction_fetch". (Port "next_instruction_address" is not on the entity).
+# Compile success 0 Errors 2 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_fetch.bde(instruction_fetch.vhd) : (101, 0): There is no default binding for component "Adder". (Port "next_instruction_address_bus" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (23, 3): Unknown identifier "next_instruction_address".
+# Error: COMP96_0133: Adder.vhd : (23, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (23, 3): Unknown identifier "next_instruction_address".
+# Error: COMP96_0133: Adder.vhd : (23, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (23, 3): Unknown identifier "next_instruction_address".
+# Error: COMP96_0133: Adder.vhd : (23, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (23, 3): Unknown identifier "next_instruction_address".
+# Error: COMP96_0133: Adder.vhd : (23, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (23, 3): Unknown identifier "next_instruction_address".
+# Error: COMP96_0133: Adder.vhd : (23, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# Error: COMP96_0078: Adder.vhd : (23, 3): Unknown identifier "next_instruction_address".
+# Error: COMP96_0133: Adder.vhd : (23, 3): Cannot find object declaration.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:35, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/instruction_fetch_01/next_instruction_address not found in e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/PCSrc' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Instruction' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/address_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus' has already been traced.
+# 0 signal(s) traced.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+endsim
+# KERNEL: stopped at time: 2270660 ns
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/testbench_mips.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:38, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+endsim
+# KERNEL: stopped at time: 2576380 ns
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7219 kB (elbread=1280 elab2=5801 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:39, quarta-feira, 15 de maio de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 10 ns,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U4,  Process: line__21.
+# KERNEL: stopped at time: 100 ns
+# Waveform file 'untitled.awc' connected to 'e:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/untitled.asdb'.
+# Adding file e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\untitled.asdb ... Done
+# Adding file e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\untitled.awc ... Done
