@@ -1,9 +1,10 @@
-.\src\instruction_memory.vhd
+.\src\IF_ID_REG.vhd
+.\src\Mux.vhd
 .\src\PC.vhd
 .\src\testbench_mips.vhd
-.\src\Mux.vhd
+.\src\instruction_memory.vhd
 .\src\Adder.vhd
-.\src\IF_ID_REG.vhd
+.\src\instruction_decode.bde
 .\src\instruction_fetch.bde
 .\src\mips.bde
 .\src\sistema_mips.bde

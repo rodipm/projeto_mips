@@ -2,13 +2,15 @@ SCHM0106
 
 HEADER
 {
- FREEID 390
+ FREEID 445
  VARIABLES
  {
   #ARCHITECTURE="sistema_mips"
   #BLOCKTABLE_FILE="#table.bde"
   #BLOCKTABLE_INCLUDED="1"
   #DEFAULT_RANGE0="<range<index=\"0\"><name=\"branch_instruction_address\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"write_data\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"write_register\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #ENTITY="sistema_mips"
   #LANGUAGE="VHDL"
   AUTHOR="Rodrigo"
@@ -38,7 +40,7 @@ HEADER
    PAGEHEADER
    {
     RECT (0,0,700,1160)
-    FREEID 14
+    FREEID 20
    }
    
    BODY
@@ -82,6 +84,30 @@ HEADER
      ALIGN 4
      MARGINS (1,1)
      PARENT 12
+    }
+    TEXT  15, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (14,268,97,292)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 14
+    }
+    TEXT  17, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (14,348,169,372)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 16
+    }
+    TEXT  19, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (14,428,152,452)
+     ALIGN 4
+     MARGINS (1,1)
+     PARENT 18
     }
     PIN  2, 0, 0
     {
@@ -139,6 +165,48 @@ HEADER
       POINTS ( (1,-10), (1,10), (11,0) )
      }
     }
+    PIN  14, 0, 0
+    {
+     COORD (0,280)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #FAMILY="Fub"
+      #NAME="RegWrite"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (1,-10), (1,10), (11,0) )
+     }
+    }
+    PIN  16, 0, 0
+    {
+     COORD (0,360)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #FAMILY="Fub"
+      #NAME="write_register(4:0)"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (1,-10), (1,10), (11,0) )
+     }
+    }
+    PIN  18, 0, 0
+    {
+     COORD (0,440)
+     VARIABLES
+     {
+      #DIRECTION="IN"
+      #FAMILY="Fub"
+      #NAME="write_data(31:0)"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (1,-10), (1,10), (11,0) )
+     }
+    }
    }
   }
  }
@@ -163,7 +231,7 @@ HEADER
    PAGEHEADER
    {
     RECT (0,0,720,1160)
-    FREEID 16
+    FREEID 22
    }
    
    BODY
@@ -207,6 +275,30 @@ HEADER
      ALIGN 6
      MARGINS (1,1)
      PARENT 12
+    }
+    TEXT  17, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (623,268,706,292)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 16
+    }
+    TEXT  19, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (551,348,706,372)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 18
+    }
+    TEXT  21, 0, 0
+    {
+     TEXT "$#NAME"
+     RECT (568,428,706,452)
+     ALIGN 6
+     MARGINS (1,1)
+     PARENT 20
     }
     PIN  2, 0, 0
     {
@@ -264,6 +356,48 @@ HEADER
       POINTS ( (-10,-10), (-10,10), (0,0) )
      }
     }
+    PIN  16, 0, 0
+    {
+     COORD (720,280)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #FAMILY="Fub"
+      #NAME="RegWrite"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (-10,-10), (-10,10), (0,0) )
+     }
+    }
+    PIN  18, 0, 0
+    {
+     COORD (720,360)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #FAMILY="Fub"
+      #NAME="write_register(4:0)"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (-10,-10), (-10,10), (0,0) )
+     }
+    }
+    PIN  20, 0, 0
+    {
+     COORD (720,440)
+     VARIABLES
+     {
+      #DIRECTION="OUT"
+      #FAMILY="Fub"
+      #NAME="write_data(31:0)"
+     }
+     LINE  1, 0, 0
+     {
+      POINTS ( (-10,-10), (-10,10), (0,0) )
+     }
+    }
    }
   }
  }
@@ -293,7 +427,7 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="4fc0debb-2f31-467e-9cfc-465cc52e5611"
    }
    COORD (420,520)
-   VERTEXES ( (2,296), (6,298), (8,300), (12,302) )
+   VERTEXES ( (2,296), (6,298), (8,300), (12,302), (16,393), (18,399), (20,405) )
   }
   TEXT  20, 0, 0
   {
@@ -324,7 +458,7 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="8147ce7d-218c-4974-abb5-36362a7a664b"
    }
    COORD (1900,520)
-   VERTEXES ( (2,295), (6,297), (8,299), (12,301) )
+   VERTEXES ( (2,295), (6,297), (8,299), (12,301), (14,394), (16,400), (18,406) )
   }
   TEXT  23, 0, 0
   {
@@ -450,6 +584,87 @@ PAGE ""
    NET 176
    VTX 302, 301
   }
+  VTX  393, 0, 0
+  {
+   COORD (1140,800)
+  }
+  VTX  394, 0, 0
+  {
+   COORD (1900,800)
+  }
+  WIRE  396, 0, 0
+  {
+   NET 397
+   VTX 393, 394
+  }
+  NET WIRE  397, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="RegWrite"
+   }
+  }
+  TEXT  398, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1470,772,1570,799)
+   ALIGN 9
+   PARENT 396
+  }
+  VTX  399, 0, 0
+  {
+   COORD (1140,880)
+  }
+  VTX  400, 0, 0
+  {
+   COORD (1900,880)
+  }
+  BUS  402, 0, 0
+  {
+   NET 403
+   VTX 399, 400
+  }
+  NET BUS  403, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="write_register(4:0)"
+   }
+  }
+  TEXT  404, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1424,852,1616,879)
+   ALIGN 9
+   PARENT 402
+  }
+  VTX  405, 0, 0
+  {
+   COORD (1140,960)
+  }
+  VTX  406, 0, 0
+  {
+   COORD (1900,960)
+  }
+  BUS  408, 0, 0
+  {
+   NET 409
+   VTX 405, 406
+  }
+  NET BUS  409, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="write_data(31:0)"
+   }
+  }
+  TEXT  410, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (1434,932,1606,959)
+   ALIGN 9
+   PARENT 408
+  }
  }
  
 }
@@ -475,7 +690,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  373, 0, 0
+  TEXT  428, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -486,7 +701,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  374, 0, 0
+  TEXT  429, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -497,7 +712,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  375, 0, 0
+  TEXT  430, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -507,7 +722,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  376, 0, 0
+  TEXT  431, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -519,7 +734,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  377, 0, 0
+  TEXT  432, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -532,7 +747,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  378, 0, 0
+  TEXT  433, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -542,7 +757,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  379, 0, 0
+  TEXT  434, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -554,7 +769,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  380, 0, 0
+  TEXT  435, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -564,7 +779,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  381, 0, 0
+  TEXT  436, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -575,7 +790,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  382, 0, 0
+  GROUP  437, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6034,9153,6415)
@@ -587,7 +802,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  383, 0, 0
+  GROUP  438, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6234,9153,6235)
@@ -599,7 +814,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  384, 0, 0
+  GROUP  439, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6174,9153,6175)
@@ -611,7 +826,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  385, 0, 0
+  GROUP  440, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6294,9153,6295)
@@ -623,7 +838,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  386, 0, 0
+  GROUP  441, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6354,9153,6355)
@@ -635,7 +850,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  387, 0, 0
+  GROUP  442, 0, 0
   {
    PAGEALIGN 10
    RECT (8452,6034,8453,6175)
@@ -646,7 +861,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  388, 0, 0
+  GROUP  443, 0, 0
   {
    PAGEALIGN 10
    RECT (8452,6174,8453,6415)
@@ -657,7 +872,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  389, 0, 0
+  BMPPICT  444, 0, 0
   {
    PAGEALIGN 10
    RECT (8292,6094,8431,6139)

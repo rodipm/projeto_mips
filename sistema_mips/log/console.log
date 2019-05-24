@@ -1,5 +1,462 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Architecture 'sistema_mips' of entity 'sistema_mips' not found in library 'sistema_mips'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
 # Waveform file 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/sim_IF.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Error: mips.bde - 2 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Warning: ELAB1_0026: mips.bde(mips.vhd) : (92, 0): There is no default binding for component "instruction_decode". (No entity named "instruction_decode" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/instruction_decode.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: instruction_fetch.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde'.
+# DRC: Warning: sistema_mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 32 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\mips.vhd
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Error: ELAB1_0011: sistema_mips.bde(sistema_mips.vhd) : (62, 0): Port "RegWrite" is on entity "mips" but not on the component declaration.
+# Error: ELAB1_0011: sistema_mips.bde(sistema_mips.vhd) : (62, 0): Port "write_data" is on entity "mips" but not on the component declaration.
+# Error: ELAB1_0011: sistema_mips.bde(sistema_mips.vhd) : (62, 0): Port "write_register" is on entity "mips" but not on the component declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.3 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/instruction_decode.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde'.
+# DRC: Warning: sistema_mips.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\mips.vhd
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0021: mips.bde(mips.vhd) : (98, 0): Types do not match for port "RegWrite".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0021: mips.bde(mips.vhd) : (98, 0): Types do not match for port "RegWrite".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0021: mips.bde(mips.vhd) : (98, 0): Types do not match for port "RegWrite".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0021: mips.bde(mips.vhd) : (98, 0): Types do not match for port "RegWrite".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0021: mips.bde(mips.vhd) : (92, 0): Types do not match for port "RegWrite".
+# Error: ELAB1_0028: mips.bde(mips.vhd) : (92, 0): Entity port length is 32. write_register length is 5.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/instruction_decode.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 32 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0021: mips.bde(mips.vhd) : (92, 0): Types do not match for port "RegWrite".
+# Error: ELAB1_0028: mips.bde(mips.vhd) : (92, 0): Entity port length is 32. write_register length is 5.
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (82, 0): There is no default binding for component "testbench_mips". (Port "RegWrite" is not on the entity).
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (82, 0): There is no default binding for component "testbench_mips". (Port "RegWrite" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/instruction_decode.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\mips.vhd
+# Compile Architecture "mips" of Entity "mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_decode.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 4 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (115, 0): There is no default binding for component "ID_EX_REG". (No entity named "ID_EX_REG" was found).
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (147, 0): There is no default binding for component "control_unit". (No entity named "control_unit" was found).
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (160, 0): There is no default binding for component "register_file". (No entity named "register_file" was found).
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (181, 0): There is no default binding for component "signal_extend". (No entity named "signal_extend" was found).
+# Compile success 0 Errors 4 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: instruction_fetch.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde'.
+# DRC: Warning: sistema_mips.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\mips.vhd
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0011: mips.bde(mips.vhd) : (89, 0): Port "RegWrite" is on entity "instruction_decode" but not on the component declaration.
+# Error: ELAB1_0011: mips.bde(mips.vhd) : (89, 0): Port "write_data" is on entity "instruction_decode" but not on the component declaration.
+# Error: ELAB1_0011: mips.bde(mips.vhd) : (89, 0): Port "write_register" is on entity "instruction_decode" but not on the component declaration.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/testbench_mips.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (115, 0): There is no default binding for component "ID_EX_REG". (No entity named "ID_EX_REG" was found).
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (147, 0): There is no default binding for component "control_unit". (No entity named "control_unit" was found).
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (160, 0): There is no default binding for component "register_file". (No entity named "register_file" was found).
+# Warning: ELAB1_0026: instruction_decode.bde(instruction_decode.vhd) : (181, 0): There is no default binding for component "signal_extend". (No entity named "signal_extend" was found).
+# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (82, 0): There is no default binding for component "testbench_mips". (Port "RegWrite" is not on the entity).
+# Compile success 0 Errors 5 Warnings  Analysis time :  0.1 [s]
+# Error: Could not find file: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/testbench_mips.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/Mux.vhd $dsn/src/Adder.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/testbench_mips.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# Incorrect order of units detected.

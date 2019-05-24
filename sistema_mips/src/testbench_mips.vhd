@@ -7,8 +7,8 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
--- Generated   : Sat May 11 17:02:50 2019
+-- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+-- Generated   : Fri May 24 17:56:15 2019
 -- From        : interface description file
 -- By          : Itf2Vhdl ver. 1.22
 --
@@ -30,15 +30,19 @@ entity testbench_mips is
 		 Clk : out STD_LOGIC;
 		 PCSrc : out STD_LOGIC;
 		 branch_instruction_address : out STD_LOGIC_VECTOR(31 downto 0);
-		 Reset : out STD_LOGIC
+		 Reset : out STD_LOGIC;
+		 RegWrite : out STD_LOGIC;
+		 write_register : out STD_LOGIC_VECTOR(4 downto 0);
+		 write_data : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
 end testbench_mips;
 
 --}} End of automatically maintained section
 
 architecture testbench_mips of testbench_mips is
-begin  
-	-- enter your statements here --
+begin
+
+	-- enter your statements here --  
 	branch_instruction_address <= "00000000000000000000000000000000";	
 	PCSrc <= '0'; 
 	process
@@ -53,7 +57,6 @@ begin
 				Clk <= '0';	  
 				wait for 10 ns;
 			end loop;
-	end process; 
+	end process;
 
-		
 end testbench_mips;
