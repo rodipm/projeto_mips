@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-05-25 01:33:24
+Active-HDL 10.5.217.6767 2019-05-25 03:43:11
 
 Elaboration top modules:
 Architecture                  sistema_mips(sistema_mips)
@@ -12,6 +12,10 @@ mips               | mips               | sistema_mips |      | 10.5.217.6767 (W
 testbench_mips     | testbench_mips     | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 instruction_decode | instruction_decode | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 instruction_fetch  | instruction_fetch  | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+ID_EX_REG          | ID_EX_REG          | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+control_unit       | control_unit       | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+register_file      | register_file      | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+signal_extend      | signal_extend      | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 Adder              | Adder              | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 IF_ID_REG          | IF_ID_REG          | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 instruction_memory | instruction_memory | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
@@ -38,3 +42,9 @@ ieee                                    | Standard IEEE packages library
 sistema_mips                            | None
 std                                     | Standard VHDL library
 --------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+
+
+The performance of simulation is reduced. Version Student Edition

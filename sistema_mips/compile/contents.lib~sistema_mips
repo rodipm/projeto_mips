@@ -1,20 +1,20 @@
-1262
+1389
 ~E 1 "./../src/Adder.vhd" 7 Adder
 ~A 1 "./../src/Adder.vhd" 16 Adder
 ~E 1 "./../src/control_unit.vhd" 29 control_unit
 ~A 1 "./../src/control_unit.vhd" 40 control_unit
-~E 1 "./../src/ID_EX_REG.vhd" 28 ID_EX_REG
-~A 1 "./../src/ID_EX_REG.vhd" 55 ID_EX_REG
+~E 1 "./../src/ID_EX_REG.vhd" 29 ID_EX_REG
+~A 1 "./../src/ID_EX_REG.vhd" 56 ID_EX_REG
 ~E 1 "./../src/IF_ID_REG.vhd" 31 IF_ID_REG
 ~A 1 "./../src/IF_ID_REG.vhd" 44 IF_ID_REG
 ~E 1 "./../compile/instruction_decode.vhd" 24 instruction_decode
-~A 1 "./../compile/instruction_decode.vhd" 45 instruction_decode
+~A 1 "./../compile/instruction_decode.vhd" 47 instruction_decode
 ~E 1 "./../compile/instruction_fetch.vhd" 26 instruction_fetch
 ~A 1 "./../compile/instruction_fetch.vhd" 37 instruction_fetch
 ~E 1 "./../src/instruction_memory.vhd" 28 instruction_memory
 ~A 1 "./../src/instruction_memory.vhd" 37 instruction_memory
 ~E 1 "./../compile/mips.vhd" 27 mips
-~A 1 "./../compile/mips.vhd" 48 mips
+~A 1 "./../compile/mips.vhd" 50 mips
 ~E 1 "./../src/Mux.vhd" 28 Mux
 ~A 1 "./../src/Mux.vhd" 39 Mux
 ~E 1 "./../src/PC.vhd" 28 PC
@@ -26,4 +26,4 @@
 ~E 1 "./../compile/sistema_mips.vhd" 27 sistema_mips
 ~A 1 "./../compile/sistema_mips.vhd" 30 sistema_mips
 ~E 1 "./../src/testbench_mips.vhd" 28 testbench_mips
-~A 1 "./../src/testbench_mips.vhd" 42 testbench_mips
+~A 1 "./../src/testbench_mips.vhd" 43 testbench_mips

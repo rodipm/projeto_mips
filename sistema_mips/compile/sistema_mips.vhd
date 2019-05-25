@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd
--- Generated   : Fri May 24 17:53:56 2019
+-- Generated   : Sat May 25 03:19:34 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -37,6 +37,7 @@ component mips
        PCSrc : in STD_LOGIC;
        RegWrite : in STD_LOGIC;
        Reset : in STD_LOGIC;
+       Test : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0)
@@ -48,6 +49,7 @@ component testbench_mips
        PCSrc : out STD_LOGIC;
        RegWrite : out STD_LOGIC;
        Reset : out STD_LOGIC;
+       Test : out STD_LOGIC;
        branch_instruction_address : out STD_LOGIC_VECTOR(31 downto 0);
        write_data : out STD_LOGIC_VECTOR(31 downto 0);
        write_register : out STD_LOGIC_VECTOR(4 downto 0)
@@ -60,6 +62,7 @@ signal Clk : STD_LOGIC;
 signal PCSrc : STD_LOGIC;
 signal RegWrite : STD_LOGIC;
 signal Reset : STD_LOGIC;
+signal Test : STD_LOGIC;
 signal branch_instruction_address : STD_LOGIC_VECTOR(31 downto 0);
 signal write_data : STD_LOGIC_VECTOR(31 downto 0);
 signal write_register : STD_LOGIC_VECTOR(4 downto 0);
@@ -74,6 +77,7 @@ mips_01 : mips
        PCSrc => PCSrc,
        RegWrite => RegWrite,
        Reset => Reset,
+       Test => Test,
        branch_instruction_address => branch_instruction_address,
        write_data => write_data,
        write_register => write_register
@@ -85,6 +89,7 @@ testbench_mips_01 : testbench_mips
        PCSrc => PCSrc,
        RegWrite => RegWrite,
        Reset => Reset,
+       Test => Test,
        branch_instruction_address => branch_instruction_address,
        write_data => write_data,
        write_register => write_register
