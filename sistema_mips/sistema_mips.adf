@@ -46,12 +46,16 @@ ShowHide=ShowTopLevel
 Selected=
 
 [Files]
-/IF_ID_REG.vhd=-1
-/Mux.vhd=-1
-/PC.vhd=-1
-/testbench_mips.vhd=-1
-/instruction_memory.vhd=-1
 /Adder.vhd=-1
+/Mux.vhd=-1
+/signal_extend.vhd=-1
+/testbench_mips.vhd=-1
+/PC.vhd=-1
+/register_file.vhd=-1
+/IF_ID_REG.vhd=-1
+/instruction_memory.vhd=-1
+/control_unit.vhd=-1
+/ID_EX_REG.vhd=-1
 /instruction_decode.bde=-1
 /instruction_fetch.bde=-1
 /mips.bde=-1
@@ -61,12 +65,16 @@ Selected=
 /sim_IF.awc=-1
 
 [Files.Data]
-.\src\IF_ID_REG.vhd=VHDL Source Code
-.\src\Mux.vhd=VHDL Source Code
-.\src\PC.vhd=VHDL Source Code
-.\src\testbench_mips.vhd=VHDL Source Code
-.\src\instruction_memory.vhd=VHDL Source Code
 .\src\Adder.vhd=VHDL Source Code
+.\src\Mux.vhd=VHDL Source Code
+.\src\signal_extend.vhd=VHDL Source Code
+.\src\testbench_mips.vhd=VHDL Source Code
+.\src\PC.vhd=VHDL Source Code
+.\src\register_file.vhd=VHDL Source Code
+.\src\IF_ID_REG.vhd=VHDL Source Code
+.\src\instruction_memory.vhd=VHDL Source Code
+.\src\control_unit.vhd=VHDL Source Code
+.\src\ID_EX_REG.vhd=VHDL Source Code
 .\src\instruction_decode.bde=Block Diagram
 .\src\instruction_fetch.bde=Block Diagram
 .\src\mips.bde=Block Diagram

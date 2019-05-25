@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-05-24 17:23:41
+Active-HDL 10.5.217.6767 2019-05-25 01:33:24
 
 Elaboration top modules:
 Architecture                  sistema_mips(sistema_mips)
@@ -9,6 +9,7 @@ Entity             | Architecture       | Library      | Info | Compiler Version
 --------------------------------------------------------------------------------------------------------------
 sistema_mips       | sistema_mips       | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 mips               | mips               | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
+testbench_mips     | testbench_mips     | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 instruction_decode | instruction_decode | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 instruction_fetch  | instruction_fetch  | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
 Adder              | Adder              | sistema_mips |      | 10.5.217.6767 (Windows) | -O3
