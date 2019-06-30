@@ -1,7 +1,7 @@
-1549
+1574
 ~E 1 "./../src/Adder.vhd" 7 Adder
 ~A 1 "./../src/Adder.vhd" 16 Adder
-~E 1 "./../src/control_unit.vhd" 29 control_unit
+~E 1 "./../src/control_unit.vhd" 5 control_unit
 ~A 1 "./../src/control_unit.vhd" 14 control_unit
 ~E 1 "./../src/ID_EX_REG.vhd" 4 ID_EX_REG
 ~A 1 "./../src/ID_EX_REG.vhd" 33 ID_EX_REG

@@ -4,7 +4,7 @@ use IEEE.std_logic_1164.all;
 entity ID_EX_REG is
 	 port(
 		 WB_CONTROL_BUS : in STD_LOGIC_VECTOR(1 downto 0);
-		 MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
+		 MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(5 downto 0);
 		 EX_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
 		 next_instruction_address_bus : in STD_LOGIC_VECTOR(31 downto 0);
 		 signal_extended_bus : in STD_LOGIC_VECTOR(31 downto 0);
@@ -20,7 +20,7 @@ entity ID_EX_REG is
 		 rs : out STD_LOGIC_VECTOR(31 downto 0);
 		 rt : out STD_LOGIC_VECTOR(31 downto 0);
 		 WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-		 MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
+		 MEM_CONTROL : out STD_LOGIC_VECTOR(5 downto 0);
 		 EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
 		 next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
 		 rt_address : out STD_LOGIC_VECTOR(4 downto 0);
@@ -36,7 +36,7 @@ begin
 	begin
 		if Reset = '1' then
 			WB_CONTROL <= "00";
-			MEM_CONTROL <= "0000";
+			MEM_CONTROL <= "000000";
 			EX_CONTROL <= "0000";
 			next_instruction_address_ID <= "00000000000000000000000000000000";
 			rt_address <= "00000";

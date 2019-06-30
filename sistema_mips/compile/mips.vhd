@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd
--- Generated   : Sun Jun 30 01:00:07 2019
+-- Generated   : Sun Jun 30 02:56:01 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -34,7 +34,7 @@ entity mips is
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
-       MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
+       MEM_CONTROL : out STD_LOGIC_VECTOR(5 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
@@ -61,7 +61,7 @@ component instruction_decode
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
-       MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
+       MEM_CONTROL : out STD_LOGIC_VECTOR(5 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);

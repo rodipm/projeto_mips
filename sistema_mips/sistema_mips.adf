@@ -91,11 +91,11 @@ Selected=
 
 
 
+[file_out:/instruction_decode.bde]
+/..\compile\instruction_decode.vhd=-1
 [file_out:/instruction_fetch.bde]
 /..\compile\instruction_fetch.vhd=-1
 [file_out:/mips.bde]
 /..\compile\mips.vhd=-1
 [file_out:/sistema_mips.bde]
 /..\compile\sistema_mips.vhd=-1
-[file_out:/instruction_decode.bde]
-/..\compile\instruction_decode.vhd=-1

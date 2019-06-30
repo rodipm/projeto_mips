@@ -471,4 +471,1482 @@ acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/M
 # File: .\..\compile\sistema_mips.vhd
 # Compile Entity "sistema_mips"
 # Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Error: COMP96_0367: ID_EX_REG.vhd : (47, 13): Improper array length (32). Expected length is 5.
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/ID_EX_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Error: COMP96_0015: register_file.vhd : (87, 9): ';' expected.
+# Error: COMP96_0015: register_file.vhd : (93, 1): ';' expected.
+# Error: COMP96_0016: register_file.vhd : (93, 5): Design unit declaration expected.
+# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (74, 0): There is no default binding for component "mips". (Port "Test" is not on the entity).
+# Compile failure 3 Errors 1 Warnings  Analysis time :  0.3 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Architecture "register_file" of Entity "register_file"
+# Error: COMP96_0127: register_file.vhd : (48, 34): Improper aggregate length. Expected length is 32.
+# Error: COMP96_0079: register_file.vhd : (48, 34): Invalid aggregate.
+# Error: COMP96_0077: register_file.vhd : (48, 34): Undefined type of expression. Expected type 'REGS_T'.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (74, 0): There is no default binding for component "mips". (Port "Test" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# Error: COMP96_0077: instruction_memory.vhd : (45, 24): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (74, 0): There is no default binding for component "mips". (Port "Test" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde'.
+# DRC: Warning: sistema_mips.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Error: COMP96_0018: testbench_mips.vhd : (37, 7): Identifier expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/testbench_mips.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:15, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# 20 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: stopped at time: 100 ns
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5821 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:28, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: stopped at time: 100 ns
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  00:29, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  2.0 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Error: COMP96_0367: ID_EX_REG.vhd : (39, 19): Improper array length (4). Expected length is 3.
+# Error: COMP96_0367: ID_EX_REG.vhd : (51, 19): Improper array length (4). Expected length is 3.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Error: COMP96_0259: instruction_decode.bde(instruction_decode.vhd) : (170, 38): Index value in the reference to the array object is out of the array type range.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\mips.vhd
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0028: mips.bde(mips.vhd) : (96, 0): Entity port length is 4. MEM_CONTROL length is 3.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: Warning: mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\mips.vhd
+# Compile Architecture "mips" of Entity "mips"
+# Error: ELAB1_0028: mips.bde(mips.vhd) : (96, 0): Entity port length is 4. MEM_CONTROL length is 3.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  01:00, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/next_instrucion_address_ID not found in E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb.
+run 100 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__98.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__103.
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work sistema_mips -2002  $dsn/src/signal_extend.vhd $dsn/src/register_file.vhd $dsn/src/control_unit.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  01:59, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: stopped at time: 300 ns
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  02:04, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 300 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: stopped at time: 300 ns
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  02:06, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 300 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: stopped at time: 300 ns
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  02:09, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 300 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: stopped at time: 300 ns
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/PC.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/Mux.vhd $dsn/src/instruction_memory.vhd $dsn/src/Adder.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7240 kB (elbread=1280 elab2=5822 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\wave.asdb
+#  02:10, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/wave.asdb'.
+run 300 ns
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/ADDER_IF,  Process: line__20.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__74.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_decode_01/register_file_01,  Process: line__79.
+# 

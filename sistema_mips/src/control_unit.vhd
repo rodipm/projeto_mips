@@ -6,7 +6,7 @@ entity control_unit is
 	 port(
 		 Instruction : in STD_LOGIC_VECTOR(31 downto 0);
 		 WB_CONTROL_BUS : out STD_LOGIC_VECTOR(1 downto 0);
-		 MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0);
+		 MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(5 downto 0);
 		 EX_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0)
 	     );
 end control_unit;
@@ -33,6 +33,9 @@ architecture control_unit of control_unit is
 	signal ULAop1 : STD_LOGIC;
 	signal ULAop2 : STD_LOGIC;
 	signal ULAsrc : STD_LOGIC;
+	signal BranchEqual : STD_LOGIC;
+	signal BranchNotEqual : STD_LOGIC;
+	signal JumpRegister : STD_LOGIC;
 begin
 	R_TYPE	<=	not Instruction(31) and not Instruction(30) and not Instruction(29) and	-- 000000 = 0
 		not Instruction(28) and not Instruction(27) and not Instruction(26);
@@ -69,8 +72,10 @@ begin
 	
 	RegWrite	<= R_TYPE or LW or ADDI or SLTI or JAL;		
 	MemtoReg	<= LW;		
-	Branch		<= BEQ or BNE;
-	Jump		<= J or JAL or JR;
+	Jump		<= J or JAL; 
+	JumpRegister <= JR;
+	BranchEqual	<= BEQ;
+	BranchNotEqual <= BNE;
 	MemRead		<= LW;
 	MemWrite	<= SW;
 	RegDst		<= R_TYPE;
@@ -80,10 +85,12 @@ begin
 	
 	WB_CONTROL_BUS <= (0 => RegWrite,
 					  1 => MemtoReg);
-	MEM_CONTROL_BUS <= ( 0 => Branch,
-						1 => MemRead,
-						2 => MemWrite,
-						3 => Jump);
+	MEM_CONTROL_BUS <= ( 0 => BranchEqual,
+						1 => BranchNotEqual,
+						2 => MemRead,
+						3 => MemWrite,
+						4 => Jump,
+						5 => JumpRegister);
 	EX_CONTROL_BUS <= (0 => RegDst,
 						1 => ULAop1,
 						2 => ULAop2,
