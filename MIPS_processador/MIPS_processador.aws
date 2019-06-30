@@ -1,0 +1,14 @@
+[Version]
+Version=10.5
+[Designs]
+MIPS_processador=MIPS_processador.adf
+[Settings]
+Active=MIPS_processador
+[Expand]
+mips_processador=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

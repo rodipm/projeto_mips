@@ -1,0 +1,214 @@
+# Waveform file 'd:/Code/OrgArq/MIPS/MIPS_processador/src/sim_IF.awc' connected to 'd:/Code/OrgArq/MIPS/MIPS_processador/src/wave.asdb'.
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/EX_MEM_REG.vhd $dsn/src/control_unit.vhd $dsn/src/register_file.vhd $dsn/src/testbench_mips.vhd $dsn/src/signal_extend.vhd $dsn/src/instruction_memory.vhd $dsn/src/PC.vhd $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
+# DRC: Checking file 'd:\Code\OrgArq\MIPS\MIPS_processador\src\execution.bde'.
+# DRC: Warning: execution.bde - 0 error(s), 13 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating d:\Code\OrgArq\MIPS\MIPS_processador\compile\execution.vhd from d:\Code\OrgArq\MIPS\MIPS_processador\src\execution.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\MIPS.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\execution.vhd
+# Compile Entity "execution"
+# Compile Architecture "execution" of Entity "execution"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\EX_MEM_REG.vhd
+# Compile Entity "EX_MEM_REG"
+# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: d:\Code\OrgArq\MIPS\MIPS_processador\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: .\..\compile\adder.vhd
+# Compile Entity "adder"
+# Compile Architecture "adder" of Entity "adder"
+# File: .\..\compile\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\..\compile\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: .\..\compile\shiftLeft2.vhd
+# Compile Entity "shiftLeft2"
+# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7256 kB (elbread=1280 elab2=5837 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location d:\Code\OrgArq\MIPS\MIPS_processador\src\wave.asdb
+#  20:14, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'd:/Code/OrgArq/MIPS/MIPS_processador/src/sim_IF.awc' connected to 'd:/Code/OrgArq/MIPS/MIPS_processador/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/U1/U4,  Process: line__39.
+# KERNEL: stopped at time: 100 ns
+endsim
+# VSIM: Simulation has finished.
+# Adding file d:\Code\OrgArq\MIPS\MIPS_processador\src\sim_IF.awc ... Done
+# Waveform file 'd:/Code/OrgArq/MIPS/MIPS_processador/src/sim_IF.awc' connected to 'd:/Code/OrgArq/MIPS/MIPS_processador/src/wave.asdb'.
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7256 kB (elbread=1280 elab2=5837 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location d:\Code\OrgArq\MIPS\MIPS_processador\src\wave.asdb
+#  20:16, domingo, 30 de junho de 2019
+#  Simulation has been initialized
+# Waveform file 'd:/Code/OrgArq/MIPS/MIPS_processador/src/sim_IF.awc' connected to 'd:/Code/OrgArq/MIPS/MIPS_processador/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/U1/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/U1/U4,  Process: line__39.
+# KERNEL: stopped at time: 100 ns

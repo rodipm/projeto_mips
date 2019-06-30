@@ -1,0 +1,178 @@
+SYMB0100
+HEADER
+{
+  FREEID 31
+  VARIABLES
+  {
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="b9560b96-e021-4893-af49-e98e8ecff15a"
+    #NAME="somador"
+    #DESCRIPTION=""
+    #GENERIC0="NumeroBits:integer:=8"
+    #GENERIC1="Tsoma:time:=3 ns"
+    #GENERIC2="Tinc:time:=2 ns"
+    #HDL_ENTRIES="library STD,IEEE;\nuse STD.STANDARD.all,ieee.std_logic_1164.all;"
+    #LANGUAGE="VHDL"
+    #MODIFIED="1354555842"
+  }
+}
+PAGE ""
+{
+  PAGEHEADER 
+  {
+    MARGINS (200,200,200,200)
+    RECT (0,0,120,200)
+  }
+  BODY
+  {
+    PIN 10,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="Vum"
+        #NUMBER="0"
+        #SIDE="top"
+      }
+      COORD (60,0)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,20))
+      }
+    }
+    TEXT 11,0,0
+    {
+      TEXT "$#NAME"
+      RECT (49,25,67,54)
+      ALIGN 1
+      MARGINS (1,1)
+      PARENT 10
+      FONT (6,0,0,400,0,0,0,"Arial")
+      ORIENTATION 5
+    }
+    TEXT 14,0,0
+    {
+      TEXT "A"
+      RECT (0,40,11,58)
+      MARGINS (1,1)
+      COLOR (0,4,132)
+      FONT (6,0,0,400,0,0,0,"Arial")
+    }
+    TEXT 18,0,0
+    {
+      TEXT "B"
+      RECT (0,140,11,158)
+      MARGINS (1,1)
+      COLOR (0,4,132)
+      FONT (6,0,0,400,0,0,0,"Arial")
+    }
+    PIN 2,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="A(NumeroBits - 1:0)"
+        #NUMBER="0"
+      }
+      COORD (0,40)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    TEXT 22,0,0
+    {
+      TEXT "C"
+      RECT (140,80,151,98)
+      MARGINS (1,1)
+      COLOR (0,4,132)
+      FONT (6,0,0,400,0,0,0,"Arial")
+    }
+    GROUP 26,-1,0
+    {
+      VARIABLES
+      {
+        #NAME="ALU"
+        #OUTLINE_FILLING="1"
+      }
+      RECT (20,0,99,199)
+      FREEID 1
+      LINE 24,0,0
+      {
+        OUTLINE 0,2,(132,4,0)
+        POINTS ((39,98),(0,74),(0,0),(78,48),(78,149),(0,198),(0,123),(39,98))
+        FILL (0,(255,255,156),0)
+      }
+    }
+    TEXT 27,0,0
+    {
+      TEXT "Som"
+      RECT (60,80,89,98)
+      MARGINS (1,1)
+      COLOR (0,4,132)
+      FONT (6,0,0,400,0,0,0,"Arial")
+    }
+    PIN 4,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="OUT"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="C(NumeroBits - 1:0)"
+        #NUMBER="0"
+        #SIDE="right"
+      }
+      COORD (120,100)
+      LINE 2,0,0
+      {
+        POINTS ((-20,0),(0,0))
+      }
+    }
+    PIN 6,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #DOWNTO="1"
+        #LENGTH="20"
+        #NAME="B(NumeroBits - 1:0)"
+        #NUMBER="0"
+        #SIDE="left"
+      }
+      COORD (0,160)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(20,0))
+      }
+    }
+    PIN 8,0,0
+    {
+      VARIABLES
+      {
+        #DIRECTION="IN"
+        #LENGTH="20"
+        #NAME="S"
+        #NUMBER="0"
+        #SIDE="bottom"
+      }
+      COORD (60,200)
+      LINE 2,0,0
+      {
+        POINTS ((0,0),(0,-20))
+      }
+    }
+    TEXT 9,0,0
+    {
+      TEXT "$#NAME"
+      RECT (53,144,71,155)
+      ALIGN 9
+      MARGINS (1,1)
+      PARENT 8
+      FONT (6,0,0,400,0,0,0,"Arial")
+      ORIENTATION 8
+    }
+  }
+}

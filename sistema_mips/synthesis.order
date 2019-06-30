@@ -1,9 +1,0 @@
-i<>.\src\sistema_mips.bde
-i<>.\src\mips.bde
-i<>.\src\instruction_fetch.bde
-i<>.\src\Mux.vhd
-i<>.\src\PC.vhd
-i<>.\src\instruction_memory.vhd
-i<>.\src\testbench_mips.vhd
-i<>.\src\Adder.vhd
-i<>.\src\IF_ID_REG.vhd

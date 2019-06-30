@@ -1,0 +1,54 @@
+Active-HDL 10.5.217.6767 2019-06-30 20:16:10
+
+Elaboration top modules:
+Architecture                  sistema_mips(sistema_mips)
+
+
+------------------------------------------------------------------------------------------------------------------
+Entity             | Architecture       | Library          | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------------------------
+sistema_mips       | sistema_mips       | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+mips               | mips               | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+testbench_mips     | testbench_mips     | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+execution          | execution          | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+instruction_decode | instruction_decode | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+instruction_fetch  | instruction_fetch  | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+EX_MEM_REG         | EX_MEM_REG         | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+adder              | adder              | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+shiftLeft2         | shiftLeft2         | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+multiplexador      | multiplexador      | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+ALU                | ALU                | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+ID_EX_REG          | ID_EX_REG          | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+control_unit       | control_unit       | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+register_file      | register_file      | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+signal_extend      | signal_extend      | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+IF_ID_REG          | IF_ID_REG          | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+instruction_memory | instruction_memory | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+PC                 | PC                 | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------
+VHDL Package                            | Library          | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------------------------
+standard                                | std              |      |                         | <unavailable>
+TEXTIO                                  | std              |      |                         | <unavailable>
+std_logic_1164                          | ieee             |      |                         | <unavailable>
+std_logic_arith                         | ieee             |      |                         | <unavailable>
+STD_LOGIC_SIGNED                        | ieee             |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED                      | ieee             |      |                         | <unavailable>
+NUMERIC_STD                             | ieee             |      |                         | <unavailable>
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------
+Library                                 | Comment
+------------------------------------------------------------------------------------------------------------------
+ieee                                    | Standard IEEE packages library
+mips_processador                        | None
+std                                     | Standard VHDL library
+------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+
+
+The performance of simulation is reduced. Version Student Edition
