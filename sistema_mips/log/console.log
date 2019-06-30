@@ -1,0 +1,474 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'sistema_mips' of entity 'sistema_mips' not found in library 'sistema_mips'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: instruction_decode.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde'.
+# DRC: Warning: sistema_mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: instruction_decode.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde'.
+# DRC: instruction_fetch.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_fetch.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_fetch.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde'.
+# DRC: mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde'.
+# DRC: Warning: sistema_mips.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\sistema_mips.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (74, 0): There is no default binding for component "mips". (Port "Test" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.2 [s]
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Error: Could not find file: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/ID_EX_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Architecture "control_unit" of Entity "control_unit"
+# Error: COMP96_0019: control_unit.vhd : (84, 2): Keyword 'when' expected.
+# Error: COMP96_0015: control_unit.vhd : (84, 2): ';' expected.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Error: COMP96_0367: ID_EX_REG.vhd : (47, 13): Improper array length (32). Expected length is 5.
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/ID_EX_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Architecture "control_unit" of Entity "control_unit"
+# Error: COMP96_0078: control_unit.vhd : (64, 2): Unknown identifier "ADDI".
+# Error: COMP96_0133: control_unit.vhd : (64, 2): Cannot find object declaration.
+# Error: COMP96_0078: control_unit.vhd : (67, 2): Unknown identifier "SLTI".
+# Error: COMP96_0133: control_unit.vhd : (67, 2): Cannot find object declaration.
+# Error: COMP96_0078: control_unit.vhd : (70, 2): Unknown identifier "BEQ".
+# Error: COMP96_0133: control_unit.vhd : (70, 2): Cannot find object declaration.
+# Error: COMP96_0078: control_unit.vhd : (73, 2): Unknown identifier "BNE".
+# Error: COMP96_0133: control_unit.vhd : (73, 2): Cannot find object declaration.
+# Error: COMP96_0078: control_unit.vhd : (76, 2): Unknown identifier "J".
+# Error: COMP96_0133: control_unit.vhd : (76, 2): Cannot find object declaration.
+# Error: COMP96_0078: control_unit.vhd : (79, 2): Unknown identifier "JR".
+# Error: COMP96_0133: control_unit.vhd : (79, 2): Cannot find object declaration.
+# Error: COMP96_0078: control_unit.vhd : (84, 2): Unknown identifier "JAL".
+# Error: COMP96_0133: control_unit.vhd : (84, 2): Cannot find object declaration.
+# Error: COMP96_0078: control_unit.vhd : (88, 30): Unknown identifier "ADDI".
+# Error: COMP96_0078: control_unit.vhd : (88, 38): Unknown identifier "SLTI".
+# Error: COMP96_0078: control_unit.vhd : (88, 46): Unknown identifier "JAL".
+# Error: COMP96_0133: control_unit.vhd : (88, 46): Cannot find object declaration.
+# Error: COMP96_0133: control_unit.vhd : (88, 30): Cannot find object declaration.
+# Error: COMP96_0077: control_unit.vhd : (88, 14): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0078: control_unit.vhd : (90, 13): Unknown identifier "BEQ".
+# Error: COMP96_0078: control_unit.vhd : (90, 20): Unknown identifier "BNE".
+# Error: COMP96_0078: control_unit.vhd : (90, 27): Unknown identifier "J".
+# Error: COMP96_0078: control_unit.vhd : (90, 32): Unknown identifier "JAL".
+# Error: COMP96_0078: control_unit.vhd : (90, 39): Unknown identifier "JR".
+# Error: COMP96_0133: control_unit.vhd : (90, 39): Cannot find object declaration.
+# Error: COMP96_0133: control_unit.vhd : (90, 13): Cannot find object declaration.
+# Error: COMP96_0077: control_unit.vhd : (90, 13): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0078: control_unit.vhd : (94, 25): Unknown identifier "ADDI".
+# Error: COMP96_0078: control_unit.vhd : (94, 33): Unknown identifier "SLTI".
+# Error: COMP96_0133: control_unit.vhd : (94, 33): Cannot find object declaration.
+# Error: COMP96_0133: control_unit.vhd : (94, 25): Cannot find object declaration.
+# Error: COMP96_0077: control_unit.vhd : (94, 13): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# Error: COMP96_0078: control_unit.vhd : (95, 13): Unknown identifier "BEQ".
+# Error: COMP96_0078: control_unit.vhd : (95, 20): Unknown identifier "BNE".
+# Error: COMP96_0133: control_unit.vhd : (95, 20): Cannot find object declaration.
+# Error: COMP96_0133: control_unit.vhd : (95, 13): Cannot find object declaration.
+# Error: COMP96_0077: control_unit.vhd : (95, 13): Undefined type of expression. Expected type 'STD_ULOGIC'.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Error: COMP96_0367: ID_EX_REG.vhd : (47, 13): Improper array length (32). Expected length is 5.
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Compile failure 39 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/ID_EX_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Architecture "control_unit" of Entity "control_unit"
+# Error: COMP96_0259: control_unit.vhd : (89, 67): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (89, 43): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (89, 19): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (88, 63): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (88, 43): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (88, 19): Index value in the reference to the array object is out of the array type range.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Error: COMP96_0367: ID_EX_REG.vhd : (47, 13): Improper array length (32). Expected length is 5.
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/ID_EX_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Architecture "control_unit" of Entity "control_unit"
+# Error: COMP96_0259: control_unit.vhd : (89, 65): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (89, 42): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (89, 19): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (88, 61): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (88, 42): Index value in the reference to the array object is out of the array type range.
+# Error: COMP96_0259: control_unit.vhd : (88, 19): Index value in the reference to the array object is out of the array type range.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# Error: COMP96_0367: ID_EX_REG.vhd : (47, 13): Improper array length (32). Expected length is 5.
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# Compile failure 7 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -reorder -O3 -e 100 -work sistema_mips -2002  $dsn/src/Adder.vhd $dsn/src/Mux.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/PC.vhd $dsn/src/register_file.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/instruction_decode.bde $dsn/src/instruction_fetch.bde $dsn/src/mips.bde $dsn/src/sistema_mips.bde $dsn/src/ID_EX_REG.vhd
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 2 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd
+# Compile Entity "Adder"
+# Compile Architecture "Adder" of Entity "Adder"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd
+# Compile Entity "Mux"
+# Compile Architecture "Mux" of Entity "Mux"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\mips.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto

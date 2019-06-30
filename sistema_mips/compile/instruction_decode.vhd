@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd
--- Generated   : Sat Jun 29 23:04:47 2019
+-- Generated   : Sun Jun 30 00:57:36 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -31,10 +31,10 @@ entity instruction_decode is
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
-       MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
+       MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        jump_address : out STD_LOGIC_VECTOR(31 downto 0);
-       next_instrucion_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
@@ -52,7 +52,7 @@ component control_unit
   port (
        Instruction : in STD_LOGIC_VECTOR(31 downto 0);
        EX_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0);
-       MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(2 downto 0);
+       MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0);
        WB_CONTROL_BUS : out STD_LOGIC_VECTOR(1 downto 0)
   );
 end component;
@@ -64,7 +64,7 @@ component ID_EX_REG
        Instruction_2 : in STD_LOGIC_VECTOR(25 downto 0);
        Instruction_3 : in STD_LOGIC_VECTOR(15 downto 11);
        Instruction_4 : in STD_LOGIC_VECTOR(10 downto 06);
-       MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(2 downto 0);
+       MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
        Reset : in STD_LOGIC;
        WB_CONTROL_BUS : in STD_LOGIC_VECTOR(1 downto 0);
        next_instruction_address_bus : in STD_LOGIC_VECTOR(31 downto 0);
@@ -72,10 +72,10 @@ component ID_EX_REG
        rt_bus : in STD_LOGIC_VECTOR(31 downto 0);
        signal_extended_bus : in STD_LOGIC_VECTOR(31 downto 0);
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
-       MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
+       MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        jump_address : out STD_LOGIC_VECTOR(31 downto 0);
-       next_instrucion_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
@@ -107,7 +107,7 @@ end component;
 ---- Signal declarations used on the diagram ----
 
 signal EX_CONTROL_BUS : STD_LOGIC_VECTOR(3 downto 0);
-signal MEM_CONTROL_BUS : STD_LOGIC_VECTOR(2 downto 0);
+signal MEM_CONTROL_BUS : STD_LOGIC_VECTOR(3 downto 0);
 signal next_instruction_address_bus : STD_LOGIC_VECTOR(31 downto 0);
 signal rs_bus : STD_LOGIC_VECTOR(31 downto 0);
 signal rt_bus : STD_LOGIC_VECTOR(31 downto 0);
@@ -170,7 +170,7 @@ U4 : ID_EX_REG
        WB_CONTROL => WB_CONTROL,
        WB_CONTROL_BUS => WB_CONTROL_BUS,
        jump_address => jump_address,
-       next_instrucion_address_ID => next_instrucion_address_ID,
+       next_instruction_address_ID => next_instruction_address_ID,
        next_instruction_address_bus => next_instruction_address_bus,
        rd_address => rd_address,
        rs => rs,

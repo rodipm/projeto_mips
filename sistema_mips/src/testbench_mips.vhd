@@ -33,8 +33,7 @@ entity testbench_mips is
 		 Reset : out STD_LOGIC;
 		 RegWrite : out STD_LOGIC;
 		 write_register : out STD_LOGIC_VECTOR(4 downto 0);
-		 write_data : out STD_LOGIC_VECTOR(31 downto 0);
-		 Test : out STD_LOGIC
+		 write_data : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
 end testbench_mips;
 
@@ -47,7 +46,7 @@ begin
 	branch_instruction_address <= "00000000000000000000000000000000";	
 	PCSrc <= '0'; 
 	RegWrite <= '0';
-	write_register <= "01000";
+	write_register <= "00001";
 	write_data <= X"deadbeef";
 	
 	process
@@ -58,11 +57,9 @@ begin
 			wait for 10 ns;
 			while true loop	
 				Clk <= '1';	 
-				Test <= '0';
-				wait for 10 ns;
+				wait for 5 ns;
 				Clk <= '0';	  
-				Test <= '1';
-				wait for 10 ns;	
+				wait for 5 ns;	
 			end loop;
 	end process;
 

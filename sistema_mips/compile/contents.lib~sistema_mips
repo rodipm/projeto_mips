@@ -1,8 +1,8 @@
-1447
+1549
 ~E 1 "./../src/Adder.vhd" 7 Adder
 ~A 1 "./../src/Adder.vhd" 16 Adder
 ~E 1 "./../src/control_unit.vhd" 29 control_unit
-~A 1 "./../src/control_unit.vhd" 40 control_unit
+~A 1 "./../src/control_unit.vhd" 14 control_unit
 ~E 1 "./../src/ID_EX_REG.vhd" 4 ID_EX_REG
 ~A 1 "./../src/ID_EX_REG.vhd" 33 ID_EX_REG
 ~E 1 "./../src/IF_ID_REG.vhd" 31 IF_ID_REG
@@ -14,16 +14,16 @@
 ~E 1 "./../src/instruction_memory.vhd" 28 instruction_memory
 ~A 1 "./../src/instruction_memory.vhd" 37 instruction_memory
 ~E 1 "./../compile/mips.vhd" 27 mips
-~A 1 "./../compile/mips.vhd" 48 mips
+~A 1 "./../compile/mips.vhd" 50 mips
 ~E 1 "./../src/Mux.vhd" 28 Mux
 ~A 1 "./../src/Mux.vhd" 39 Mux
 ~E 1 "./../src/PC.vhd" 28 PC
 ~A 1 "./../src/PC.vhd" 39 PC
 ~E 1 "./../src/register_file.vhd" 29 register_file
-~A 1 "./../src/register_file.vhd" 45 register_file
+~A 1 "./../src/register_file.vhd" 21 register_file
 ~E 1 "./../src/signal_extend.vhd" 28 signal_extend
-~A 1 "./../src/signal_extend.vhd" 37 signal_extend
+~A 1 "./../src/signal_extend.vhd" 11 signal_extend
 ~E 1 "./../compile/sistema_mips.vhd" 27 sistema_mips
 ~A 1 "./../compile/sistema_mips.vhd" 30 sistema_mips
 ~E 1 "./../src/testbench_mips.vhd" 28 testbench_mips
-~A 1 "./../src/testbench_mips.vhd" 43 testbench_mips
+~A 1 "./../src/testbench_mips.vhd" 42 testbench_mips

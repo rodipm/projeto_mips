@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd
--- Generated   : Sat Jun 29 20:57:14 2019
+-- Generated   : Sun Jun 30 01:00:07 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -34,13 +34,15 @@ entity mips is
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
-       MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
+       MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-       next_instrucion_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
+       jump_address : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
+       shamt : out STD_LOGIC_VECTOR(4 downto 0);
        signal_extended : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end mips;
@@ -59,13 +61,15 @@ component instruction_decode
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
-       MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
+       MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-       next_instrucion_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
+       jump_address : out STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
+       shamt : out STD_LOGIC_VECTOR(4 downto 0);
        signal_extended : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
@@ -98,12 +102,14 @@ instruction_decode_01 : instruction_decode
        RegWrite => RegWrite,
        Reset => Reset,
        WB_CONTROL => WB_CONTROL,
-       next_instrucion_address_ID => next_instrucion_address_ID,
+       jump_address => jump_address,
        next_instruction_address => next_instruction_address,
+       next_instruction_address_ID => next_instruction_address_ID,
        rd_address => rd_address,
        rs => rs,
        rt => rt,
        rt_address => rt_address,
+       shamt => shamt,
        signal_extended => signal_extended,
        write_data => write_data,
        write_register => write_register

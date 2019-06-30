@@ -1,15 +1,15 @@
-"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd" VHDL sistema_mips 1 0 0 -02
-"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd" VHDL sistema_mips 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd" VHDL sistema_mips 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd" VHDL sistema_mips 1 0 0 -02
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\signal_extend.vhd" VHDL sistema_mips 1 0 0 -02
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd" VHDL sistema_mips 1 0 0 -02
-"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\PC.vhd" VHDL sistema_mips 1 0 0 -02
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\register_file.vhd" VHDL sistema_mips 1 0 0 -02
-"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\IF_ID_REG.vhd" VHDL sistema_mips 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Mux.vhd" VHDL sistema_mips 1 0 0 -02
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd" VHDL sistema_mips 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\Adder.vhd" VHDL sistema_mips 1 0 0 -02
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd" VHDL sistema_mips 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd" VHDL sistema_mips 1 0 0 -02
 ".\..\compile\instruction_decode.vhd" VHDL sistema_mips 1 0 0 -02
 ".\..\compile\instruction_fetch.vhd" VHDL sistema_mips 1 0 0 -02
 ".\..\compile\mips.vhd" VHDL sistema_mips 1 0 0 -02
 ".\..\compile\sistema_mips.vhd" VHDL sistema_mips 1 0 0 -02
-"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\ID_EX_REG.vhd" VHDL sistema_mips 1 0 0 -02
 . . 0 0 0

@@ -4,7 +4,7 @@ use IEEE.std_logic_1164.all;
 entity ID_EX_REG is
 	 port(
 		 WB_CONTROL_BUS : in STD_LOGIC_VECTOR(1 downto 0);
-		 MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(2 downto 0);
+		 MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
 		 EX_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
 		 next_instruction_address_bus : in STD_LOGIC_VECTOR(31 downto 0);
 		 signal_extended_bus : in STD_LOGIC_VECTOR(31 downto 0);
@@ -20,9 +20,9 @@ entity ID_EX_REG is
 		 rs : out STD_LOGIC_VECTOR(31 downto 0);
 		 rt : out STD_LOGIC_VECTOR(31 downto 0);
 		 WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-		 MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
+		 MEM_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
 		 EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
-		 next_instrucion_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
+		 next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
 		 rt_address : out STD_LOGIC_VECTOR(4 downto 0);
 		 rd_address : out STD_LOGIC_VECTOR(4 downto 0);
 		 shamt : out STD_LOGIC_VECTOR(4 downto 0);
@@ -36,9 +36,9 @@ begin
 	begin
 		if Reset = '1' then
 			WB_CONTROL <= "00";
-			MEM_CONTROL <= "000";
+			MEM_CONTROL <= "0000";
 			EX_CONTROL <= "0000";
-			next_instrucion_address_ID <= "00000000000000000000000000000000";
+			next_instruction_address_ID <= "00000000000000000000000000000000";
 			rt_address <= "00000";
 			rd_address <= "00000";
 			signal_extended <= "00000000000000000000000000000000";
@@ -50,7 +50,7 @@ begin
 			WB_CONTROL <= WB_CONTROL_BUS;
 			MEM_CONTROL <= MEM_CONTROL_BUS;
 			EX_CONTROL <= EX_CONTROL_BUS;
-			next_instrucion_address_ID  <= next_instruction_address_bus;
+			next_instruction_address_ID  <= next_instruction_address_bus;
 			rt_address <= Instruction(20 downto 16);
 			rd_address <= Instruction_3(15 downto 11);
 			signal_extended <= signal_extended_bus;

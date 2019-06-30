@@ -1,27 +1,3 @@
--------------------------------------------------------------------------------
---
--- Title       : control_unit
--- Design      : sistema_mips
--- Author      : Rodrigo
--- Company     : USP
---
--------------------------------------------------------------------------------
---
--- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\control_unit.vhd
--- Generated   : Fri May 24 19:18:16 2019
--- From        : interface description file
--- By          : Itf2Vhdl ver. 1.22
---
--------------------------------------------------------------------------------
---
--- Description : 
---
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {control_unit} architecture {control_unit}}
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -30,12 +6,10 @@ entity control_unit is
 	 port(
 		 Instruction : in STD_LOGIC_VECTOR(31 downto 0);
 		 WB_CONTROL_BUS : out STD_LOGIC_VECTOR(1 downto 0);
-		 MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(2 downto 0);
+		 MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0);
 		 EX_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0)
 	     );
 end control_unit;
-
---}} End of automatically maintained section
 
 architecture control_unit of control_unit is
 	signal R_TYPE : STD_LOGIC;
@@ -52,6 +26,7 @@ architecture control_unit of control_unit is
 	signal RegWrite : STD_LOGIC;
 	signal MemtoReg : STD_LOGIC;
 	signal Branch : STD_LOGIC;
+	signal Jump : STD_LOGIC;
 	signal MemRead : STD_LOGIC;
 	signal MemWrite : STD_LOGIC;
 	signal RegDst : STD_LOGIC;
@@ -94,7 +69,8 @@ begin
 	
 	RegWrite	<= R_TYPE or LW or ADDI or SLTI or JAL;		
 	MemtoReg	<= LW;		
-	Branch		<= BEQ or BNE or J or JAL or JR;	  
+	Branch		<= BEQ or BNE;
+	Jump		<= J or JAL or JR;
 	MemRead		<= LW;
 	MemWrite	<= SW;
 	RegDst		<= R_TYPE;
@@ -106,7 +82,8 @@ begin
 					  1 => MemtoReg);
 	MEM_CONTROL_BUS <= ( 0 => Branch,
 						1 => MemRead,
-						2 => MemWrite);
+						2 => MemWrite,
+						3 => Jump);
 	EX_CONTROL_BUS <= (0 => RegDst,
 						1 => ULAop1,
 						2 => ULAop2,
