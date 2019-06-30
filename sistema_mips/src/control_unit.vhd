@@ -28,7 +28,7 @@ use ieee.numeric_std.all;
 
 entity control_unit is
 	 port(
-		 Instruction : in STD_LOGIC_VECTOR(31 downto 26);
+		 Instruction : in STD_LOGIC_VECTOR(31 downto 0);
 		 WB_CONTROL_BUS : out STD_LOGIC_VECTOR(1 downto 0);
 		 MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(2 downto 0);
 		 EX_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0)
@@ -41,7 +41,13 @@ architecture control_unit of control_unit is
 	signal R_TYPE : STD_LOGIC;
 	signal LW : STD_LOGIC;
 	signal SW : STD_LOGIC;
-	--signal BEQ : STD_LOGIC;
+	signal ADDI : STD_LOGIC;
+	signal SLTI : STD_LOGIC;
+	signal BEQ : STD_LOGIC;	   
+	signal BNE : STD_LOGIC;
+	signal J : STD_LOGIC;
+	signal JR : STD_LOGIC; 
+	signal JAL : STD_LOGIC;
 	
 	signal RegWrite : STD_LOGIC;
 	signal MemtoReg : STD_LOGIC;
@@ -53,28 +59,47 @@ architecture control_unit of control_unit is
 	signal ULAop2 : STD_LOGIC;
 	signal ULAsrc : STD_LOGIC;
 begin
-
-	-- enter your statements here -- 
-	
-	R_TYPE	<=	not Instruction(31) and not Instruction(30) and not Instruction(29) and 
+	R_TYPE	<=	not Instruction(31) and not Instruction(30) and not Instruction(29) and	-- 000000 = 0
 		not Instruction(28) and not Instruction(27) and not Instruction(26);
 		
-	LW <= Instruction(31) and not Instruction(30) and not Instruction(29) and 
+	LW <= Instruction(31) and not Instruction(30) and not Instruction(29) and  -- 100011 = 35
 		not Instruction(28) and Instruction(27) and Instruction(26);
 		
-	SW <= Instruction(31) and not Instruction(30) and Instruction(29) and 
+	SW <= Instruction(31) and not Instruction(30) and Instruction(29) and  -- 101011= 43
 		not Instruction(28) and Instruction(27) and Instruction(26);
 	
-	RegWrite	<= R_TYPE or LW;		
+	ADDI <= not Instruction(31) and not Instruction(30) and Instruction(29) and -- 001000 = 8
+		not Instruction(28) and not Instruction(27) and not Instruction(26);	 
+	
+	SLTI <= not Instruction(31) and not Instruction(30) and Instruction(29) and -- 001010 = 10
+		not Instruction(28) and Instruction(27) and not Instruction(26);
+	
+	BEQ <= not Instruction(31) and not Instruction(30) and not Instruction(29) and -- 000100 = 4
+		Instruction(28) and not Instruction(27) and not Instruction(26); 
+	
+	BNE <= not Instruction(31) and not Instruction(30) and not Instruction(29) and -- 000101 = 5
+		Instruction(28) and not Instruction(27) and Instruction(26);  
+	
+	J <= not Instruction(31) and not Instruction(30) and not Instruction(29) and   -- 000010 = 2
+		not Instruction(28) and Instruction(27) and not Instruction(26);  
+	
+	JR <= not Instruction(31) and not Instruction(30) and not Instruction(29) and  -- op = 0
+		not Instruction(28) and not Instruction(27) and not Instruction(26) and
+		not Instruction(5) and not Instruction(4) and Instruction(3) and  -- func => 001000 = 8
+		not Instruction(2) and not Instruction(1) and not Instruction(0);
+	
+	JAL <= not Instruction(31) and not Instruction(30) and not Instruction(29) and -- 000011 = 3
+		not Instruction(28) and Instruction(27) and Instruction(26);	 
+	
+	
+	RegWrite	<= R_TYPE or LW or ADDI or SLTI or JAL;		
 	MemtoReg	<= LW;		
-	--Branch		<= BEQ;	  
-	Branch		<= '0';	
+	Branch		<= BEQ or BNE or J or JAL or JR;	  
 	MemRead		<= LW;
 	MemWrite	<= SW;
 	RegDst		<= R_TYPE;
-	ULAsrc		<= LW or SW;
-	--ULAOp1		<= BEQ;	
-	ULAOp1		<= '0';
+	ULAsrc		<= LW or SW or ADDI or SLTI;
+	ULAOp1		<= BEQ or BNE;	
 	ULAOp2		<= R_TYPE;
 	
 	WB_CONTROL_BUS <= (0 => RegWrite,

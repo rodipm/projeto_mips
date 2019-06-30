@@ -1,11 +1,11 @@
-.\src\Adder.vhd
-.\src\Mux.vhd
+.\src\IF_ID_REG.vhd
+.\src\PC.vhd
 .\src\signal_extend.vhd
 .\src\testbench_mips.vhd
-.\src\PC.vhd
 .\src\register_file.vhd
-.\src\IF_ID_REG.vhd
+.\src\Mux.vhd
 .\src\instruction_memory.vhd
+.\src\Adder.vhd
 .\src\control_unit.vhd
 .\src\ID_EX_REG.vhd
 .\src\instruction_decode.bde

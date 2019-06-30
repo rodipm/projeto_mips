@@ -9,6 +9,6 @@ i<>.\src\IF_ID_REG.vhd
 i<>.\src\instruction_decode.bde
 i<>.\src\testbench_mips.vhd
 i<>.\src\control_unit.vhd
-i<>.\src\ID_EX_REG.vhd
 i<>.\src\signal_extend.vhd
 i<>.\src\register_file.vhd
+i<>.\src\ID_EX_REG.vhd

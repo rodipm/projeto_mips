@@ -8,8 +8,8 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\instruction_decode.vhd
--- Generated   : Sat May 25 03:22:22 2019
--- From        : E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/sistema_mips/src/instruction_decode.bde
+-- Generated   : Sat Jun 29 23:04:47 2019
+-- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_decode.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -26,20 +26,20 @@ entity instruction_decode is
        Clk : in STD_LOGIC;
        RegWrite : in STD_LOGIC;
        Reset : in STD_LOGIC;
-       Test : in STD_LOGIC;
        Instruction : in STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
-       Test_O : out STD_LOGIC;
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
+       jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        next_instrucion_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
+       shamt : out STD_LOGIC_VECTOR(4 downto 0);
        signal_extended : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end instruction_decode;
@@ -50,7 +50,7 @@ architecture instruction_decode of instruction_decode is
 
 component control_unit
   port (
-       Instruction : in STD_LOGIC_VECTOR(31 downto 26);
+       Instruction : in STD_LOGIC_VECTOR(31 downto 0);
        EX_CONTROL_BUS : out STD_LOGIC_VECTOR(3 downto 0);
        MEM_CONTROL_BUS : out STD_LOGIC_VECTOR(2 downto 0);
        WB_CONTROL_BUS : out STD_LOGIC_VECTOR(1 downto 0)
@@ -61,7 +61,9 @@ component ID_EX_REG
        Clk : in STD_LOGIC;
        EX_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
        Instruction : in STD_LOGIC_VECTOR(20 downto 16);
-       Instruction_2 : in STD_LOGIC_VECTOR(15 downto 11);
+       Instruction_2 : in STD_LOGIC_VECTOR(25 downto 0);
+       Instruction_3 : in STD_LOGIC_VECTOR(15 downto 11);
+       Instruction_4 : in STD_LOGIC_VECTOR(10 downto 06);
        MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(2 downto 0);
        Reset : in STD_LOGIC;
        WB_CONTROL_BUS : in STD_LOGIC_VECTOR(1 downto 0);
@@ -72,11 +74,13 @@ component ID_EX_REG
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
+       jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        next_instrucion_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
+       shamt : out STD_LOGIC_VECTOR(4 downto 0);
        signal_extended : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
@@ -124,16 +128,48 @@ U4 : ID_EX_REG
        Instruction(18) => Instruction(18),
        Instruction(19) => Instruction(19),
        Instruction(20) => Instruction(20),
+       Instruction_2(0) => Instruction(0),
+       Instruction_2(1) => Instruction(1),
+       Instruction_2(2) => Instruction(2),
+       Instruction_2(3) => Instruction(3),
+       Instruction_2(4) => Instruction(4),
+       Instruction_2(5) => Instruction(5),
+       Instruction_2(6) => Instruction(6),
+       Instruction_2(7) => Instruction(7),
+       Instruction_2(8) => Instruction(8),
+       Instruction_2(9) => Instruction(9),
+       Instruction_2(10) => Instruction(10),
        Instruction_2(11) => Instruction(11),
        Instruction_2(12) => Instruction(12),
        Instruction_2(13) => Instruction(13),
        Instruction_2(14) => Instruction(14),
        Instruction_2(15) => Instruction(15),
+       Instruction_2(16) => Instruction(16),
+       Instruction_2(17) => Instruction(17),
+       Instruction_2(18) => Instruction(18),
+       Instruction_2(19) => Instruction(19),
+       Instruction_2(20) => Instruction(20),
+       Instruction_2(21) => Instruction(21),
+       Instruction_2(22) => Instruction(22),
+       Instruction_2(23) => Instruction(23),
+       Instruction_2(24) => Instruction(24),
+       Instruction_2(25) => Instruction(25),
+       Instruction_3(11) => Instruction(11),
+       Instruction_3(12) => Instruction(12),
+       Instruction_3(13) => Instruction(13),
+       Instruction_3(14) => Instruction(14),
+       Instruction_3(15) => Instruction(15),
+       Instruction_4(6) => Instruction(6),
+       Instruction_4(7) => Instruction(7),
+       Instruction_4(8) => Instruction(8),
+       Instruction_4(9) => Instruction(9),
+       Instruction_4(10) => Instruction(10),
        MEM_CONTROL => MEM_CONTROL,
        MEM_CONTROL_BUS => MEM_CONTROL_BUS,
        Reset => Reset,
        WB_CONTROL => WB_CONTROL,
        WB_CONTROL_BUS => WB_CONTROL_BUS,
+       jump_address => jump_address,
        next_instrucion_address_ID => next_instrucion_address_ID,
        next_instruction_address_bus => next_instruction_address_bus,
        rd_address => rd_address,
@@ -142,6 +178,7 @@ U4 : ID_EX_REG
        rt => rt,
        rt_address => rt_address,
        rt_bus => rt_bus,
+       shamt => shamt,
        signal_extended => signal_extended,
        signal_extended_bus => signal_extended_bus
   );
@@ -149,12 +186,7 @@ U4 : ID_EX_REG
 control_unit_01 : control_unit
   port map(
        EX_CONTROL_BUS => EX_CONTROL_BUS,
-       Instruction(26) => Instruction(26),
-       Instruction(27) => Instruction(27),
-       Instruction(28) => Instruction(28),
-       Instruction(29) => Instruction(29),
-       Instruction(30) => Instruction(30),
-       Instruction(31) => Instruction(31),
+       Instruction => Instruction,
        MEM_CONTROL_BUS => MEM_CONTROL_BUS,
        WB_CONTROL_BUS => WB_CONTROL_BUS
   );
@@ -206,9 +238,6 @@ signal_extend_01 : signal_extend
 
     -- Inputs terminals
 	next_instruction_address_bus <= next_instruction_address;
-
-    -- Output\buffer terminals
-	Test_O <= Test;
 
 
 end instruction_decode;

@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\compile\mips.vhd
--- Generated   : Sat May 25 03:24:50 2019
+-- Generated   : Sat Jun 29 20:57:14 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -30,11 +30,9 @@ entity mips is
        PCSrc : in STD_LOGIC;
        RegWrite : in STD_LOGIC;
        Reset : in STD_LOGIC;
-       Test : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
-       test_o : out STD_LOGIC;
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        MEM_CONTROL : out STD_LOGIC_VECTOR(2 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
@@ -57,7 +55,6 @@ component instruction_decode
        Instruction : in STD_LOGIC_VECTOR(31 downto 0);
        RegWrite : in STD_LOGIC;
        Reset : in STD_LOGIC;
-       Test : in STD_LOGIC;
        next_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
        write_register : in STD_LOGIC_VECTOR(4 downto 0);
@@ -69,8 +66,7 @@ component instruction_decode
        rs : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
-       signal_extended : out STD_LOGIC_VECTOR(31 downto 0);
-       test_o : out STD_LOGIC
+       signal_extended : out STD_LOGIC_VECTOR(31 downto 0)
   );
 end component;
 component instruction_fetch
@@ -101,7 +97,6 @@ instruction_decode_01 : instruction_decode
        MEM_CONTROL => MEM_CONTROL,
        RegWrite => RegWrite,
        Reset => Reset,
-       Test => Test,
        WB_CONTROL => WB_CONTROL,
        next_instrucion_address_ID => next_instrucion_address_ID,
        next_instruction_address => next_instruction_address,
@@ -110,7 +105,6 @@ instruction_decode_01 : instruction_decode
        rt => rt,
        rt_address => rt_address,
        signal_extended => signal_extended,
-       test_o => test_o,
        write_data => write_data,
        write_register => write_register
   );
