@@ -1,27 +1,3 @@
--------------------------------------------------------------------------------
---
--- Title       : testbench_mips
--- Design      : sistema_mips
--- Author      : Rodrigo
--- Company     : USP
---
--------------------------------------------------------------------------------
---
--- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\testbench_mips.vhd
--- Generated   : Fri May 24 17:56:15 2019
--- From        : interface description file
--- By          : Itf2Vhdl ver. 1.22
---
--------------------------------------------------------------------------------
---
--- Description : 
---
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {testbench_mips} architecture {testbench_mips}}
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 
@@ -37,16 +13,11 @@ entity testbench_mips is
 	     );
 end testbench_mips;
 
---}} End of automatically maintained section
-
 architecture testbench_mips of testbench_mips is
 begin
-
-	-- enter your statements here --  
 	branch_instruction_address <= "00000000000000000000000000000000";	
 	PCSrc <= '0'; 
-	RegWrite <= '0';
-	write_register <= "00001";
+	write_register <= "00011";
 	write_data <= X"deadbeef";
 	
 	process
@@ -61,6 +32,15 @@ begin
 				Clk <= '0';	  
 				wait for 5 ns;	
 			end loop;
+	end process;
+	
+	process
+	begin
+		RegWrite <= '0';
+		wait for 40 ns;
+		RegWrite <= '0';
+		wait for 10 ns;
+		RegWrite <= '0';
 	end process;
 
 end testbench_mips;

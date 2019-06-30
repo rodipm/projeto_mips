@@ -1,4 +1,4 @@
-1574
+1726
 ~E 1 "./../src/Adder.vhd" 7 Adder
 ~A 1 "./../src/Adder.vhd" 16 Adder
 ~E 1 "./../src/control_unit.vhd" 5 control_unit
@@ -12,7 +12,7 @@
 ~E 1 "./../compile/instruction_fetch.vhd" 26 instruction_fetch
 ~A 1 "./../compile/instruction_fetch.vhd" 37 instruction_fetch
 ~E 1 "./../src/instruction_memory.vhd" 28 instruction_memory
-~A 1 "./../src/instruction_memory.vhd" 37 instruction_memory
+~A 1 "./../src/instruction_memory.vhd" 35 instruction_memory
 ~E 1 "./../compile/mips.vhd" 27 mips
 ~A 1 "./../compile/mips.vhd" 50 mips
 ~E 1 "./../src/Mux.vhd" 28 Mux
@@ -26,4 +26,4 @@
 ~E 1 "./../compile/sistema_mips.vhd" 27 sistema_mips
 ~A 1 "./../compile/sistema_mips.vhd" 30 sistema_mips
 ~E 1 "./../src/testbench_mips.vhd" 28 testbench_mips
-~A 1 "./../src/testbench_mips.vhd" 42 testbench_mips
+~A 1 "./../src/testbench_mips.vhd" 16 testbench_mips
