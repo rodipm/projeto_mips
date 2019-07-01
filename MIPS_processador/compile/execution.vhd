@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\execution.vhd
--- Generated   : Mon Jul  1 16:36:14 2019
+-- Generated   : Mon Jul  1 19:24:58 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -142,7 +142,7 @@ U1 : EX_MEM_REG
        EX_jump_address => EX_jump_address,
        EX_rs => EX_rs,
        MEM_CONTROL => MEM_CONTROL,
-       RS_in => rt,
+       RS_in => rs,
        ULA_RES => ULA_RES,
        ULA_in => next_instruction_address_IF2593,
        WB_CONTROL => WB_CONTROL,
@@ -158,12 +158,12 @@ U1 : EX_MEM_REG
 
 U2 : ALU_Control
   port map(
-       instruction(0) => signal_extended(26),
-       instruction(1) => signal_extended(27),
-       instruction(2) => signal_extended(28),
-       instruction(3) => signal_extended(29),
-       instruction(4) => signal_extended(30),
-       instruction(5) => signal_extended(31),
+       instruction(0) => signal_extended(0),
+       instruction(1) => signal_extended(1),
+       instruction(2) => signal_extended(2),
+       instruction(3) => signal_extended(3),
+       instruction(4) => signal_extended(4),
+       instruction(5) => signal_extended(5),
        ULAop1 => EX_CONTROL(1),
        ULAop2 => EX_CONTROL(2),
        ulaSelection => next_instruction_address_IF3665
