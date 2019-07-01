@@ -1,27 +1,3 @@
--------------------------------------------------------------------------------
---
--- Title       : instruction_memory
--- Design      : sistema_mips
--- Author      : Rodrigo
--- Company     : USP
---
--------------------------------------------------------------------------------
---
--- File        : e:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\sistema_mips\src\instruction_memory.vhd
--- Generated   : Sat May 11 16:33:13 2019
--- From        : interface description file
--- By          : Itf2Vhdl ver. 1.22
---
--------------------------------------------------------------------------------
---
--- Description : 
---
--------------------------------------------------------------------------------
-
---{{ Section below this comment is automatically maintained
---   and may be overwritten
---{entity {instruction_memory} architecture {instruction_memory}}
-
 library IEEE;
 use IEEE.std_logic_1164.all;
 

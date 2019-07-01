@@ -1,4 +1,4 @@
-2476
+2579
 ~E 1 "./../compile/adder.vhd" 26 adder
 ~A 1 "./../compile/adder.vhd" 34 adder
 ~E 1 "./../compile/ALU.vhd" 26 ALU
@@ -7,10 +7,14 @@
 ~A 1 "./../src/ALU_Control.vhd" 16 ALU_Control
 ~E 1 "./../src/control_unit.vhd" 5 control_unit
 ~A 1 "./../src/control_unit.vhd" 14 control_unit
+~E 1 "./../src/data_memory.vhd" 4 data_memory
+~A 1 "./../src/data_memory.vhd" 15 data_memory
 ~E 1 "./../src/EX_MEM_REG.vhd" 4 EX_MEM_REG
 ~A 1 "./../src/EX_MEM_REG.vhd" 33 EX_MEM_REG
 ~E 1 "./../compile/execution.vhd" 26 execution
 ~A 1 "./../compile/execution.vhd" 52 execution
+~E 0 "" 0 Fub1
+~A 0 "" 0 data_memory
 ~E 1 "./../src/ID_EX_REG.vhd" 4 ID_EX_REG
 ~A 1 "./../src/ID_EX_REG.vhd" 33 ID_EX_REG
 ~E 1 "./../src/IF_ID_REG.vhd" 31 IF_ID_REG
@@ -20,7 +24,7 @@
 ~E 1 "./../compile/instruction_fetch.vhd" 27 instruction_fetch
 ~A 1 "./../compile/instruction_fetch.vhd" 38 instruction_fetch
 ~E 1 "./../src/instruction_memory.vhd" 28 instruction_memory
-~A 1 "./../src/instruction_memory.vhd" 35 instruction_memory
+~A 1 "./../src/instruction_memory.vhd" 11 instruction_memory
 ~E 1 "./../src/MEM_WB_REG.vhd" 4 MEM_WB_REG
 ~A 1 "./../src/MEM_WB_REG.vhd" 18 MEM_WB_REG
 ~E 1 "./../compile/memory_access.vhd" 24 memory_access

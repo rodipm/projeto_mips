@@ -140216,3 +140216,1340 @@ PAGE ""
   }
  }
 }
+I 000035 40 380 1561990306305 fub1
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #LANGUAGE="VHDL"
+  #NAME="Fub1"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 2
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+ }
+}
+I 000042 40 387 1561990352598 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 2
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+ }
+}
+I 000043 40 1603 1561990755239 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 12
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,210,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,328,152,352)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ADDRESS_BUS(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,340)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="write_data(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+ }
+}
+I 000043 40 2763 1561990974072 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 18
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,210,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,328,152,352)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (268,14,292,104)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 12
+   ORIENTATION 5
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (228,14,252,103)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 14
+   ORIENTATION 5
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,401,232,446)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 5
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ADDRESS_BUS(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,340)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="write_data(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (280,0)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="MemRead"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+  PIN  14, 0, 0
+  {
+   COORD (240,0)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="MemWrite"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,460)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="reset"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-1), (10,-1), (0,-11) )
+   }
+  }
+ }
+}
+I 000043 40 2448 1561991390985 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 18
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  5, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,210,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 4
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,328,152,352)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 10
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (268,14,292,104)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 12
+   ORIENTATION 5
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (228,14,252,103)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 14
+   ORIENTATION 5
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,401,232,446)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 5
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ADDRESS_BUS(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  10, 0, 0
+  {
+   COORD (0,340)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="write_data(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (280,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="MemRead"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+  PIN  14, 0, 0
+  {
+   COORD (240,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="MemWrite"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,460)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="reset"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-1), (10,-1), (0,-11) )
+   }
+  }
+ }
+}
+I 000043 40 2477 1561992228254 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 22
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (268,14,292,104)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 12
+   ORIENTATION 5
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (228,14,252,103)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 14
+   ORIENTATION 5
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,401,232,446)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 5
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,268,119,292)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 18
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,154,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 20
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  12, 0, 0
+  {
+   COORD (280,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="MemRead"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+  PIN  14, 0, 0
+  {
+   COORD (240,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="MemWrite"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,460)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="reset"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-1), (10,-1), (0,-11) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (0,280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_rs(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  20, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ULA_RES(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+ }
+}
+I 000043 40 2749 1561994317155 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 26
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,401,232,446)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 5
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,268,119,292)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 18
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,154,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 20
+  }
+  TEXT  23, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (228,14,252,201)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 22
+   ORIENTATION 5
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (268,14,292,201)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 24
+   ORIENTATION 5
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,460)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="reset"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-1), (10,-1), (0,-11) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (0,280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_rs(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  20, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ULA_RES(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  22, 0, 0
+  {
+   COORD (240,0)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_MEM_CONTROL"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+  PIN  24, 0, 0
+  {
+   COORD (280,0)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_MEM_CONTROL"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+ }
+}
+I 000043 40 2371 1561994850785 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 28
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,401,232,446)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 5
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,268,119,292)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 18
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,154,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 20
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (228,14,252,262)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,460)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="reset"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-1), (10,-1), (0,-11) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (0,280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_rs(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  20, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ULA_RES(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  26, 0, 0
+  {
+   COORD (240,0)
+   VARIABLES
+   {
+    #DESCRIPTION=""
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_MEM_CONTROL_1(5:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+ }
+}
+I 000043 40 2154 1561995088129 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 28
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,401,232,446)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 5
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,268,119,292)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 18
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,154,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 20
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (228,14,252,262)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,460)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="reset"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-1), (10,-1), (0,-11) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (0,280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_rs(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  20, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ULA_RES(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  26, 0, 0
+  {
+   COORD (240,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_MEM_CONTROL_1(5:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+ }
+}
+V 000043 40 2154 1561995479979 data_memory
+SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #FUB="1"
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #NAME="data_memory"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="040c7ccf-2eaf-40e7-b04b-d9129aea6212"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,340,460)
+  FREEID 28
+ }
+ 
+ BODY
+ {
+  RECT  1, -1, 0
+  {
+   VARIABLES
+   {
+    #OUTLINE_FILLING="1"
+   }
+   AREA (0,0,340,460)
+  }
+  TEXT  3, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (172,108,326,132)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 2
+  }
+  TEXT  17, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (208,401,232,446)
+   ALIGN 9
+   MARGINS (1,1)
+   PARENT 16
+   ORIENTATION 5
+  }
+  TEXT  19, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,268,119,292)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 18
+  }
+  TEXT  21, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (14,68,154,92)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 20
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#NAME"
+   RECT (228,14,252,262)
+   ALIGN 1
+   MARGINS (1,1)
+   PARENT 26
+   ORIENTATION 5
+  }
+  PIN  2, 0, 0
+  {
+   COORD (340,120)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #FAMILY="Fub"
+    #NAME="DATA_BUS(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-10), (-10,10), (0,0) )
+   }
+  }
+  PIN  16, 0, 0
+  {
+   COORD (220,460)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="reset"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,-1), (10,-1), (0,-11) )
+   }
+  }
+  PIN  18, 0, 0
+  {
+   COORD (0,280)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_rs(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  20, 0, 0
+  {
+   COORD (0,80)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="ULA_RES(31:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (1,-10), (1,10), (11,0) )
+   }
+  }
+  PIN  26, 0, 0
+  {
+   COORD (240,0)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #FAMILY="Fub"
+    #NAME="EX_MEM_CONTROL_1(5:0)"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (-10,1), (10,1), (0,11) )
+   }
+  }
+ }
+}

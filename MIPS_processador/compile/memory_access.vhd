@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\memory_access.vhd
--- Generated   : Mon Jul  1 04:57:27 2019
--- From        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde
+-- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\memory_access.vhd
+-- Generated   : Mon Jul  1 12:38:05 2019
+-- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -46,9 +46,18 @@ architecture memory_access of memory_access is
 
 ---- Component declarations -----
 
+component data_memory
+  port (
+       EX_MEM_CONTROL_1 : in STD_LOGIC_VECTOR(5 downto 0);
+       EX_rs : in STD_LOGIC_VECTOR(31 downto 0);
+       ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
+       reset : in STD_LOGIC;
+       DATA_BUS : out STD_LOGIC_VECTOR(31 downto 0)
+  );
+end component;
 component MEM_WB_REG
   port (
-       DATA : in STD_LOGIC_VECTOR(31 downto 0);
+       DATA_BUS : in STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        clk : in STD_LOGIC;
        reset : in STD_LOGIC;
@@ -70,9 +79,6 @@ component multiplexador
   );
 end component;
 
-----     Constants     -----
-constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
-
 ---- Signal declarations used on the diagram ----
 
 signal NET356 : STD_LOGIC;
@@ -81,10 +87,8 @@ signal NET536 : STD_LOGIC;
 signal NET600 : STD_LOGIC;
 signal NET911 : STD_LOGIC;
 signal BUS1180 : STD_LOGIC_VECTOR(31 downto 0);
-signal BusOutput1 : STD_LOGIC_VECTOR(7 downto 0);
-
----- Declaration for Dangling input ----
-signal Dangling_Input_Signal : STD_LOGIC;
+signal BusOutput1 : STD_LOGIC_VECTOR(1 downto 0);
+signal DATA_BUS : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -105,38 +109,7 @@ U11 : multiplexador
 
 U12 : MEM_WB_REG
   port map(
-       DATA(0) => Dangling_Input_Signal,
-       DATA(1) => Dangling_Input_Signal,
-       DATA(2) => Dangling_Input_Signal,
-       DATA(3) => Dangling_Input_Signal,
-       DATA(4) => Dangling_Input_Signal,
-       DATA(5) => Dangling_Input_Signal,
-       DATA(6) => Dangling_Input_Signal,
-       DATA(7) => Dangling_Input_Signal,
-       DATA(8) => Dangling_Input_Signal,
-       DATA(9) => Dangling_Input_Signal,
-       DATA(10) => Dangling_Input_Signal,
-       DATA(11) => Dangling_Input_Signal,
-       DATA(12) => Dangling_Input_Signal,
-       DATA(13) => Dangling_Input_Signal,
-       DATA(14) => Dangling_Input_Signal,
-       DATA(15) => Dangling_Input_Signal,
-       DATA(16) => Dangling_Input_Signal,
-       DATA(17) => Dangling_Input_Signal,
-       DATA(18) => Dangling_Input_Signal,
-       DATA(19) => Dangling_Input_Signal,
-       DATA(20) => Dangling_Input_Signal,
-       DATA(21) => Dangling_Input_Signal,
-       DATA(22) => Dangling_Input_Signal,
-       DATA(23) => Dangling_Input_Signal,
-       DATA(24) => Dangling_Input_Signal,
-       DATA(25) => Dangling_Input_Signal,
-       DATA(26) => Dangling_Input_Signal,
-       DATA(27) => Dangling_Input_Signal,
-       DATA(28) => Dangling_Input_Signal,
-       DATA(29) => Dangling_Input_Signal,
-       DATA(30) => Dangling_Input_Signal,
-       DATA(31) => Dangling_Input_Signal,
+       DATA_BUS => DATA_BUS,
        M_DATA => M_DATA,
        M_ULA_RES => M_ULA_RES,
        ULA_RES => ULA_RES,
@@ -164,20 +137,23 @@ U9 : multiplexador
        selection => NET911
   );
 
+data_memory_01 : data_memory
+  port map(
+       DATA_BUS => DATA_BUS,
+       EX_MEM_CONTROL_1 => EX_MEM_CONTROL,
+       EX_rs => EX_rs,
+       ULA_RES => ULA_RES,
+       reset => reset
+  );
+
 
 ---- Terminal assignment ----
 
     -- Inputs terminals
-	BusOutput1(6) <= EX_WB_CONTROL(0);
-	BusOutput1(7) <= EX_WB_CONTROL(1);
+	BusOutput1 <= EX_WB_CONTROL;
 
     -- Output\buffer terminals
-	M_WB_CONTROL(0) <= BusOutput1(6);
-	M_WB_CONTROL(1) <= BusOutput1(7);
+	M_WB_CONTROL <= BusOutput1;
 
-
----- Dangling input signal assignment ----
-
-Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end memory_access;

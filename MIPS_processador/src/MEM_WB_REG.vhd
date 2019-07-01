@@ -5,7 +5,7 @@ entity MEM_WB_REG is
 	 port(
 		 val : in STD_LOGIC_VECTOR(4 downto 0);
 		 ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
-		 DATA : in STD_LOGIC_VECTOR(31 downto 0);
+		 DATA_BUS : in STD_LOGIC_VECTOR(31 downto 0);
 		 reset : in STD_LOGIC;
 		 clk : in STD_LOGIC;
 		 
@@ -25,7 +25,7 @@ begin
 			write_register <= "00000";
 			
 		elsif rising_edge(clk) then
-			M_DATA <= DATA;
+			M_DATA <= DATA_BUS;
 			M_ULA_RES <= ULA_RES;
 			write_register <= val;
 		end if;
