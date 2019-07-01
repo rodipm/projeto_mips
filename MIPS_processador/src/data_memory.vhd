@@ -15,14 +15,17 @@ end data_memory;
 architecture data_memory of data_memory is
 type MEM_T is array (1023 downto 0) of STD_LOGIC_VECTOR (31 downto 0);
 signal MEM : MEM_T;
+signal DEBUG : STD_LOGIC_VECTOR (9 downto 0);
 begin
 
 	MEM_PROC:
 		process(reset,EX_MEM_CONTROL_1(3),EX_MEM_CONTROL_1(2),EX_rs,MEM,ULA_RES)
-		begin	
+		begin
+			DEBUG <= ULA_RES(9 downto 0);
 			if (reset = '1') then -- Reset Asincrónico
 				for i in 0 to 1023 loop
 					MEM(i) <= (others => '1');
+					DATA_BUS <= MEM(to_integer(unsigned( ULA_RES(9 downto 0) )));
 				end loop;
 			elsif EX_MEM_CONTROL_1(3)='1' then --Write
 				MEM(to_integer(unsigned( ULA_RES(9 downto 0) ))) <= EX_rs;

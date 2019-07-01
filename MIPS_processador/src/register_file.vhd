@@ -75,8 +75,8 @@ begin
 	begin
 		if  Reset='1' then
 			rs_bus <= "00000000000000000000000000000000";
-		elsif rising_edge(Clk) then
-			rs_bus <= REGISTRADORES(to_integer(unsigned(Instruction))) after 10 ns; -- leitura
+		elsif falling_edge(Clk) then
+			rs_bus <= REGISTRADORES(to_integer(unsigned(Instruction))) after 0 ns; -- leitura
 		end if;
 	end	process;
 	
@@ -84,8 +84,8 @@ begin
 	begin
 		if  Reset='1' then	
 			rt_bus <= "00000000000000000000000000000000";
-		elsif rising_edge(Clk) then
-			rt_bus <= REGISTRADORES(to_integer(unsigned(Instruction_2))) after 10 ns; -- leitura
+		elsif falling_edge(Clk) then
+			rt_bus <= REGISTRADORES(to_integer(unsigned(Instruction_2))) after 0 ns; -- leitura
 		end if;
 	end process;
 

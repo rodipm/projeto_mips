@@ -1,0 +1,1483 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: Architecture 'sistema_mips' of entity 'sistema_mips' not found in library 'mips_processador'.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+acom -reorder -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/memory_access.bde $dsn/src/MEM_WB_REG.vhd $dsn/src/write_back.bde $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/data_memory.vhd $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\sistema_mips.bde'.
+# DRC: sistema_mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\sistema_mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MIPS.bde'.
+# DRC: Warning: MIPS.bde - 0 error(s), 10 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\MIPS.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MIPS.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_fetch.bde'.
+# DRC: Warning: instruction_fetch.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\instruction_fetch.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_fetch.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_decode.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde'.
+# DRC: Warning: execution.bde - 0 error(s), 11 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\execution.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde'.
+# DRC: Warning: memory_access.bde - 0 error(s), 10 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\memory_access.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\write_back.bde'.
+# DRC: Warning: write_back.bde - 0 error(s), 7 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\write_back.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\write_back.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\adder.bde'.
+# DRC: adder.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\adder.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\adder.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\multiplexador.bde'.
+# DRC: multiplexador.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\multiplexador.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\multiplexador.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\ALU.bde'.
+# DRC: ALU.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\ALU.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\ALU.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\shiftLeft2.bde'.
+# DRC: shiftLeft2.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\shiftLeft2.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\shiftLeft2.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\MIPS.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\execution.vhd
+# Compile Entity "execution"
+# Compile Architecture "execution" of Entity "execution"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ALU_Control.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
+# Compile Entity "EX_MEM_REG"
+# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# File: .\..\compile\write_back.vhd
+# Compile Entity "write_back"
+# Compile Architecture "write_back" of Entity "write_back"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# File: .\..\compile\adder.vhd
+# Compile Entity "adder"
+# Compile Architecture "adder" of Entity "adder"
+# File: .\..\compile\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\..\compile\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: .\..\compile\shiftLeft2.vhd
+# Compile Entity "shiftLeft2"
+# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (28, 19): Unknown identifier "M".
+# Error: COMP96_0133: data_memory.vhd : (28, 19): Cannot find object declaration.
+# Error: COMP96_0094: data_memory.vhd : (28, 19): Locally static expression is required in the range definition.
+# Error: COMP96_0081: data_memory.vhd : (28, 14): Enumeration or integer type expected.
+# Error: COMP96_0251: data_memory.vhd : (28, 14): Discrete range in the iteration scheme is invalid.
+# Error: COMP96_0138: data_memory.vhd : (29, 10): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0078: data_memory.vhd : (33, 9): Unknown identifier "to_integer".
+# Error: COMP96_0078: data_memory.vhd : (33, 20): Unknown identifier "unsigned".
+# Error: COMP96_0133: data_memory.vhd : (33, 20): Cannot find object declaration.
+# Error: COMP96_0133: data_memory.vhd : (33, 9): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (33, 9): Prefix of index must be an array.
+# Error: COMP96_0138: data_memory.vhd : (33, 9): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: data_memory.vhd : (33, 61): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: data_memory.vhd : (35, 25): Unknown identifier "to_integer".
+# Error: COMP96_0078: data_memory.vhd : (35, 36): Unknown identifier "unsigned".
+# Error: COMP96_0133: data_memory.vhd : (35, 36): Cannot find object declaration.
+# Error: COMP96_0133: data_memory.vhd : (35, 25): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (35, 25): Prefix of index must be an array.
+# Error: COMP96_0138: data_memory.vhd : (35, 25): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: data_memory.vhd : (35, 21): Improper array length (33). Expected length is 32.
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\execution.vhd
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\memory_access.vhd
+# Compile Architecture "memory_access" of Entity "memory_access"
+# Warning: ELAB1_0026: memory_access.bde(memory_access.vhd) : (115, 0): There is no default binding for component "MEM_WB_REG". (Port "ADDRESS_BUS" is not on the entity).
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\write_back.vhd
+# Compile Architecture "write_back" of Entity "write_back"
+# File: .\..\compile\MIPS.vhd
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Compile failure 20 Errors 1 Warnings  Analysis time :  0.8 [s]
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (32, 9): Unknown identifier "to_integer".
+# Error: COMP96_0078: data_memory.vhd : (32, 20): Unknown identifier "unsigned".
+# Error: COMP96_0133: data_memory.vhd : (32, 20): Cannot find object declaration.
+# Error: COMP96_0133: data_memory.vhd : (32, 9): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (32, 9): Prefix of index must be an array.
+# Error: COMP96_0138: data_memory.vhd : (32, 9): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: data_memory.vhd : (32, 61): Improper array length (32). Expected length is 33.
+# Error: COMP96_0078: data_memory.vhd : (34, 25): Unknown identifier "to_integer".
+# Error: COMP96_0078: data_memory.vhd : (34, 36): Unknown identifier "unsigned".
+# Error: COMP96_0133: data_memory.vhd : (34, 36): Cannot find object declaration.
+# Error: COMP96_0133: data_memory.vhd : (34, 25): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (34, 25): Prefix of index must be an array.
+# Error: COMP96_0138: data_memory.vhd : (34, 25): The index types in the reference to the array object are incompatible with its range type.
+# Error: COMP96_0367: data_memory.vhd : (34, 21): Improper array length (33). Expected length is 32.
+# Compile failure 14 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0367: data_memory.vhd : (33, 61): Improper array length (32). Expected length is 33.
+# Error: COMP96_0367: data_memory.vhd : (35, 21): Improper array length (33). Expected length is 32.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/memory_access.bde $dsn/src/MEM_WB_REG.vhd $dsn/src/write_back.bde $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/data_memory.vhd $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\MIPS.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: .\..\compile\execution.vhd
+# Compile Entity "execution"
+# Compile Architecture "execution" of Entity "execution"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ALU_Control.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
+# Compile Entity "EX_MEM_REG"
+# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# File: .\..\compile\write_back.vhd
+# Compile Entity "write_back"
+# Compile Architecture "write_back" of Entity "write_back"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# File: .\..\compile\adder.vhd
+# Compile Entity "adder"
+# Compile Architecture "adder" of Entity "adder"
+# File: .\..\compile\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\..\compile\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: .\..\compile\shiftLeft2.vhd
+# Compile Entity "shiftLeft2"
+# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\instruction_decode.vhd
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\execution.vhd
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\memory_access.vhd
+# Compile Architecture "memory_access" of Entity "memory_access"
+# Warning: ELAB1_0026: memory_access.bde(memory_access.vhd) : (115, 0): There is no default binding for component "MEM_WB_REG". (Port "ADDRESS_BUS" is not on the entity).
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\write_back.vhd
+# Compile Architecture "write_back" of Entity "write_back"
+# File: .\..\compile\MIPS.vhd
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.5 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/MEM_WB_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/memory_access.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde'.
+# DRC: Warning: memory_access.bde - 0 error(s), 9 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\memory_access.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# Warning: ELAB1_0026: memory_access.bde(memory_access.vhd) : (115, 0): There is no default binding for component "MEM_WB_REG". (Port "ADDRESS_BUS" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  32.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/MEM_WB_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+acom -reorder -O3 -e 100 -work mips_processador -2002  $dsn/src/ID_EX_REG.vhd $dsn/src/MEM_WB_REG.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/register_file.vhd $dsn/src/PC.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/data_memory.vhd $dsn/src/ALU_Control.vhd $dsn/src/instruction_decode.bde $dsn/src/execution.bde $dsn/src/memory_access.bde $dsn/src/instruction_fetch.bde $dsn/src/write_back.bde $dsn/src/MIPS.bde $dsn/src/sistema_mips.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/shiftLeft2.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/ALU.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_decode.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde'.
+# DRC: Warning: execution.bde - 0 error(s), 11 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\execution.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde'.
+# DRC: Warning: memory_access.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\memory_access.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_fetch.bde'.
+# DRC: Warning: instruction_fetch.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\instruction_fetch.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_fetch.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\write_back.bde'.
+# DRC: Warning: write_back.bde - 0 error(s), 7 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\write_back.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\write_back.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MIPS.bde'.
+# DRC: Warning: MIPS.bde - 0 error(s), 10 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\MIPS.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MIPS.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\sistema_mips.bde'.
+# DRC: sistema_mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\sistema_mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\multiplexador.bde'.
+# DRC: multiplexador.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\multiplexador.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\multiplexador.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\shiftLeft2.bde'.
+# DRC: shiftLeft2.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\shiftLeft2.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\shiftLeft2.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\adder.bde'.
+# DRC: adder.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\adder.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\adder.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\ALU.bde'.
+# DRC: ALU.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\ALU.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\ALU.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
+# Compile Entity "EX_MEM_REG"
+# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ALU_Control.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\execution.vhd
+# Compile Entity "execution"
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\write_back.vhd
+# Compile Entity "write_back"
+# Compile Architecture "write_back" of Entity "write_back"
+# File: .\..\compile\MIPS.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\..\compile\shiftLeft2.vhd
+# Compile Entity "shiftLeft2"
+# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
+# File: .\..\compile\adder.vhd
+# Compile Entity "adder"
+# Compile Architecture "adder" of Entity "adder"
+# File: .\..\compile\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\execution.vhd
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\memory_access.vhd
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: .\..\compile\write_back.vhd
+# Compile Architecture "write_back" of Entity "write_back"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7328 kB (elbread=1280 elab2=5908 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  11:44, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7328 kB (elbread=1280 elab2=5908 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  11:47, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+# 11 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb'.
+# 24 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Clk' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/PCSrc' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Reset' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/Instruction' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/A' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/address_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/instruction_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus' has already been traced.
+# 0 signal(s) traced.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/RegWrite' has already been traced.
+# 0 signal(s) traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/Instruction' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/next_instruction_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/write_data' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/write_register' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/EX_CONTROL' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/MEM_CONTROL' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/WB_CONTROL' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/jump_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/next_instruction_address_ID' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/rd_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/rs' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/rt' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/rt_address' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/shamt' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/signal_extended' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/EX_CONTROL_BUS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/MEM_CONTROL_BUS' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/next_instruction_address_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/rs_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/rt_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/signal_extended_bus' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/sistema_mips/mips_01/instruction_decode_01/WB_CONTROL_BUS' has already been traced.
+# 0 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7328 kB (elbread=1280 elab2=5908 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  12:02, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb'.
+# 26 signal(s) traced.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: stopped at time: 100 ns
+# 12 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7328 kB (elbread=1280 elab2=5908 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  12:08, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: stopped at time: 100 ns
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Error: COMP96_0015: data_memory.vhd : (10, 15): ':' expected.
+# Error: COMP96_0018: data_memory.vhd : (10, 15): Identifier expected.
+# Error: COMP96_0016: data_memory.vhd : (10, 16): Design unit declaration expected.
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (26, 17): Unknown identifier "MEM_CONTROL".
+# Error: COMP96_0078: data_memory.vhd : (26, 32): Unknown identifier "MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (26, 17): Cannot find object declaration.
+# Error: COMP96_0348: data_memory.vhd : (26, 17): Name on sensitivity list must denote a signal.
+# Error: COMP96_0133: data_memory.vhd : (26, 32): Cannot find object declaration.
+# Error: COMP96_0348: data_memory.vhd : (26, 32): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: data_memory.vhd : (32, 10): Unknown identifier "MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (32, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (32, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (32, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: data_memory.vhd : (34, 10): Unknown identifier "MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (34, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (34, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (34, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 17 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Error: COMP96_0015: data_memory.vhd : (10, 18): ':' expected.
+# Error: COMP96_0018: data_memory.vhd : (10, 18): Identifier expected.
+# Error: COMP96_0016: data_memory.vhd : (10, 19): Design unit declaration expected.
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (26, 17): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0348: data_memory.vhd : (26, 17): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: data_memory.vhd : (32, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (32, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (32, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (32, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: data_memory.vhd : (34, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (34, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (34, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (34, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 13 Errors 0 Warnings  Analysis time :  16.0 [ms]
+endsim
+# VSIM: Simulation has finished.
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Error: COMP96_0015: data_memory.vhd : (10, 18): ':' expected.
+# Error: COMP96_0018: data_memory.vhd : (10, 18): Identifier expected.
+# Error: COMP96_0016: data_memory.vhd : (10, 19): Design unit declaration expected.
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (26, 17): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0348: data_memory.vhd : (26, 17): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: data_memory.vhd : (32, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (32, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (32, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (32, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: data_memory.vhd : (34, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (34, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (34, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (34, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 13 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Error: COMP96_0015: data_memory.vhd : (10, 18): ':' expected.
+# Error: COMP96_0018: data_memory.vhd : (10, 18): Identifier expected.
+# Error: COMP96_0016: data_memory.vhd : (10, 19): Design unit declaration expected.
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (26, 17): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0348: data_memory.vhd : (26, 17): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: data_memory.vhd : (32, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (32, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (32, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (32, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: data_memory.vhd : (34, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (34, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (34, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (34, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 13 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Error: COMP96_0015: data_memory.vhd : (10, 18): ':' expected.
+# Error: COMP96_0018: data_memory.vhd : (10, 18): Identifier expected.
+# Error: COMP96_0016: data_memory.vhd : (10, 19): Design unit declaration expected.
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (26, 17): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0348: data_memory.vhd : (26, 17): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: data_memory.vhd : (32, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (32, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (32, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (32, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: data_memory.vhd : (34, 10): Unknown identifier "EX_MEM_CONTROL".
+# Error: COMP96_0133: data_memory.vhd : (34, 10): Cannot find object declaration.
+# Error: COMP96_0289: data_memory.vhd : (34, 10): Prefix of index must be an array.
+# Error: COMP96_0077: data_memory.vhd : (34, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 13 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0019: data_memory.vhd : (18, 3): Keyword 'end' expected.
+# Error: COMP96_0016: data_memory.vhd : (18, 8): Design unit declaration expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0078: data_memory.vhd : (27, 10): Unknown identifier "MemWrite".
+# Error: COMP96_0133: data_memory.vhd : (27, 10): Cannot find object declaration.
+# Error: COMP96_0077: data_memory.vhd : (27, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: data_memory.vhd : (29, 10): Unknown identifier "MemRead".
+# Error: COMP96_0133: data_memory.vhd : (29, 10): Cannot find object declaration.
+# Error: COMP96_0077: data_memory.vhd : (29, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0019: data_memory.vhd : (27, 38): Keyword 'end' expected.
+# Error: COMP96_0019: data_memory.vhd : (29, 4): Keyword 'end' expected.
+# Error: COMP96_0015: data_memory.vhd : (31, 8): ';' expected.
+# Error: COMP96_0016: data_memory.vhd : (31, 10): Design unit declaration expected.
+# Compile failure 4 Errors 0 Warnings  Analysis time :  16.0 [ms]
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0081 memory_access.vhd (143): Design unit data_memory instantiated in mips_processador.memory_access(memory_access) not found in searched libraries: mips_processador.
+# ELBREAD: Error: The contents of entity 'mips_processador.data_memory' instantiated in architecture 'memory_access:memory_access' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Error: VSIM: cannot select specified top-level
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Error: COMP96_0015: data_memory.vhd : (28, 5): ';' expected.
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -e 100 -work mips_processador -2002  $dsn/src/data_memory.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -reorder -O3 -e 100 -work mips_processador -2002  $dsn/src/IF_ID_REG.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/MEM_WB_REG.vhd $dsn/src/PC.vhd $dsn/src/instruction_memory.vhd $dsn/src/control_unit.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/ALU_Control.vhd $dsn/src/execution.bde $dsn/src/instruction_fetch.bde $dsn/src/instruction_decode.bde $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/MIPS.bde $dsn/src/sistema_mips.bde $dsn/src/data_memory.vhd $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/shiftLeft2.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/adder.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde'.
+# DRC: Warning: memory_access.bde - 0 error(s), 8 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\memory_access.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
+# Compile Entity "EX_MEM_REG"
+# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ALU_Control.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: .\..\compile\execution.vhd
+# Compile Entity "execution"
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: .\..\compile\write_back.vhd
+# Compile Entity "write_back"
+# Compile Architecture "write_back" of Entity "write_back"
+# File: .\..\compile\MIPS.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# File: .\..\compile\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\..\compile\shiftLeft2.vhd
+# Compile Entity "shiftLeft2"
+# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
+# File: .\..\compile\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: .\..\compile\adder.vhd
+# Compile Entity "adder"
+# Compile Architecture "adder" of Entity "adder"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\execution.vhd
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\write_back.vhd
+# Compile Architecture "write_back" of Entity "write_back"
+# File: .\..\compile\memory_access.vhd
+# Compile Architecture "memory_access" of Entity "memory_access"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7328 kB (elbread=1280 elab2=5908 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  12:31, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/memory_access_01/MemRead not found in E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/memory_access_01/MemWrite not found in E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: stopped at time: 100 ns
+#  Signal '/sistema_mips/mips_01/memory_access_01/BusOutput1' has been found.
+acom -reorder -O3 -e 100 -work mips_processador -2002  $dsn/src/ALU_Control.vhd $dsn/src/IF_ID_REG.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/testbench_mips.vhd $dsn/src/MEM_WB_REG.vhd $dsn/src/PC.vhd $dsn/src/instruction_memory.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/control_unit.vhd $dsn/src/data_memory.vhd $dsn/src/execution.bde $dsn/src/instruction_fetch.bde $dsn/src/instruction_decode.bde $dsn/src/write_back.bde $dsn/src/memory_access.bde $dsn/src/MIPS.bde $dsn/src/sistema_mips.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/shiftLeft2.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/adder.bde
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde'.
+# DRC: Warning: execution.bde - 0 error(s), 11 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\execution.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_fetch.bde'.
+# DRC: Warning: instruction_fetch.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\instruction_fetch.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_fetch.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_decode.bde'.
+# DRC: Warning: instruction_decode.bde - 0 error(s), 1 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\instruction_decode.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_decode.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\write_back.bde'.
+# DRC: Warning: write_back.bde - 0 error(s), 7 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\write_back.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\write_back.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde'.
+# DRC: Warning: memory_access.bde - 0 error(s), 6 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\memory_access.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MIPS.bde'.
+# DRC: Warning: MIPS.bde - 0 error(s), 10 warning(s)
+# DRC: DRC process completed in 3 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\MIPS.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MIPS.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\sistema_mips.bde'.
+# DRC: sistema_mips.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 2 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\sistema_mips.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\sistema_mips.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\multiplexador.bde'.
+# DRC: multiplexador.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\multiplexador.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\multiplexador.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\shiftLeft2.bde'.
+# DRC: shiftLeft2.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\shiftLeft2.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\shiftLeft2.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\ALU.bde'.
+# DRC: ALU.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\ALU.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\ALU.bde ...
+# Generation successful
+# DRC: Checking file 'E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\adder.bde'.
+# DRC: adder.bde - 0 error(s), 0 warning(s)
+# DRC: DRC process completed in 1 second(s).
+# DRC: The results have been written to the log file. Double click on this line to view the log.
+# Generating E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\adder.vhd from E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\adder.bde ...
+# Generation successful
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ALU_Control.vhd
+# Compile Entity "ALU_Control"
+# Compile Architecture "ALU_Control" of Entity "ALU_Control"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
+# Compile Entity "IF_ID_REG"
+# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\register_file.vhd
+# Compile Entity "register_file"
+# Compile Architecture "register_file" of Entity "register_file"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\signal_extend.vhd
+# Compile Entity "signal_extend"
+# Compile Architecture "signal_extend" of Entity "signal_extend"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\testbench_mips.vhd
+# Compile Entity "testbench_mips"
+# Compile Architecture "testbench_mips" of Entity "testbench_mips"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\PC.vhd
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_memory.vhd
+# Compile Entity "instruction_memory"
+# Compile Architecture "instruction_memory" of Entity "instruction_memory"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
+# Compile Entity "EX_MEM_REG"
+# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
+# Compile Entity "ID_EX_REG"
+# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\control_unit.vhd
+# Compile Entity "control_unit"
+# Compile Architecture "control_unit" of Entity "control_unit"
+# File: E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd
+# Compile Entity "data_memory"
+# Compile Architecture "data_memory" of Entity "data_memory"
+# File: .\..\compile\execution.vhd
+# Compile Entity "execution"
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Entity "instruction_fetch"
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\instruction_decode.vhd
+# Compile Entity "instruction_decode"
+# Compile Architecture "instruction_decode" of Entity "instruction_decode"
+# File: .\..\compile\write_back.vhd
+# Compile Entity "write_back"
+# Compile Architecture "write_back" of Entity "write_back"
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: .\..\compile\MIPS.vhd
+# Compile Entity "mips"
+# Compile Architecture "mips" of Entity "mips"
+# File: .\..\compile\sistema_mips.vhd
+# Compile Entity "sistema_mips"
+# Compile Architecture "sistema_mips" of Entity "sistema_mips"
+# File: .\..\compile\multiplexador.vhd
+# Compile Entity "multiplexador"
+# Compile Architecture "multiplexador" of Entity "multiplexador"
+# File: .\..\compile\shiftLeft2.vhd
+# Compile Entity "shiftLeft2"
+# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
+# File: .\..\compile\ALU.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: .\..\compile\adder.vhd
+# Compile Entity "adder"
+# Compile Architecture "adder" of Entity "adder"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => sistema_mips
+# File: .\..\compile\execution.vhd
+# Compile Architecture "execution" of Entity "execution"
+# File: .\..\compile\memory_access.vhd
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: .\..\compile\instruction_fetch.vhd
+# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
+# File: .\..\compile\write_back.vhd
+# Compile Architecture "write_back" of Entity "write_back"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7327 kB (elbread=1280 elab2=5907 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  12:38, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /sistema_mips/mips_01/memory_access_01/BusOutput1 not found in E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7327 kB (elbread=1280 elab2=5907 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  12:39, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: stopped at time: 100 ns
+# 7 signal(s) traced.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7327 kB (elbread=1280 elab2=5907 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\wave.asdb
+#  12:42, segunda-feira, 1 de julho de 2019
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'E:/rpm-dev/Poli/OrgArq/Projetos/projeto_mips/MIPS_processador/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/instruction_fetch_01/U6,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__61.
+# KERNEL: WARNING: There is an 'U'|'X

@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\memory_access.vhd
--- Generated   : Mon Jul  1 12:38:05 2019
+-- Generated   : Mon Jul  1 13:58:36 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\memory_access.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -58,12 +58,14 @@ end component;
 component MEM_WB_REG
   port (
        DATA_BUS : in STD_LOGIC_VECTOR(31 downto 0);
+       EX_WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        clk : in STD_LOGIC;
        reset : in STD_LOGIC;
        val : in STD_LOGIC_VECTOR(4 downto 0);
        M_DATA : out STD_LOGIC_VECTOR(31 downto 0);
        M_ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
+       M_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        write_register : out STD_LOGIC_VECTOR(4 downto 0)
   );
 end component;
@@ -87,7 +89,6 @@ signal NET536 : STD_LOGIC;
 signal NET600 : STD_LOGIC;
 signal NET911 : STD_LOGIC;
 signal BUS1180 : STD_LOGIC_VECTOR(31 downto 0);
-signal BusOutput1 : STD_LOGIC_VECTOR(1 downto 0);
 signal DATA_BUS : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
@@ -110,8 +111,10 @@ U11 : multiplexador
 U12 : MEM_WB_REG
   port map(
        DATA_BUS => DATA_BUS,
+       EX_WB_CONTROL => EX_WB_CONTROL,
        M_DATA => M_DATA,
        M_ULA_RES => M_ULA_RES,
+       M_WB_CONTROL => M_WB_CONTROL,
        ULA_RES => ULA_RES,
        clk => clk,
        reset => reset,
@@ -145,15 +148,6 @@ data_memory_01 : data_memory
        ULA_RES => ULA_RES,
        reset => reset
   );
-
-
----- Terminal assignment ----
-
-    -- Inputs terminals
-	BusOutput1 <= EX_WB_CONTROL;
-
-    -- Output\buffer terminals
-	M_WB_CONTROL <= BusOutput1;
 
 
 end memory_access;

@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\write_back.vhd
--- Generated   : Mon Jul  1 12:38:04 2019
+-- Generated   : Mon Jul  1 14:31:21 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\write_back.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -60,8 +60,8 @@ U1 : multiplexador
        NumeroBits => 32
   )
   port map(
-       input0 => M_DATA(31 downto 0),
-       input1 => M_ULA_RES(31 downto 0),
+       input0 => M_ULA_RES(31 downto 0),
+       input1 => M_DATA(31 downto 0),
        output => WB_DATA(31 downto 0),
        selection => M_WB_CONTROL(1)
   );

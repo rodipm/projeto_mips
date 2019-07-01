@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\ALU.vhd
--- Generated   : Mon Jul  1 12:38:10 2019
+-- Generated   : Mon Jul  1 14:25:14 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Componentes\ALU.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -50,7 +50,7 @@ With selection select
 		S_NB <=	(('0' &  A))			when "000",
 								(('0' &  A) + B)			when "001",
 								(('0' &  A) - B)			when "010",
-								(('0' &  A) - B)			when "011",
+								(('0' &  A) + B)			when "011",
 								('0' &  (not A))	 when "100",
 								('0' &  (A and B))			when "101",
 								('0' &  (A xor B))		when "110",

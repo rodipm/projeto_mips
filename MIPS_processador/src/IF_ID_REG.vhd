@@ -49,7 +49,7 @@ begin
 		begin
 			if Reset = '1' then
 				next_instruction_address <= "00000000000000000000000000000000";
-				Instruction	<= "00000000000000000000000000000000";
+				Instruction	<= "11111100000000000000000000111111";
 			elsif rising_edge(CLK) then
 				next_instruction_address <= next_instruction_address_bus;
 				Instruction <= instruction_bus;

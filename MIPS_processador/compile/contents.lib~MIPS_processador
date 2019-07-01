@@ -1,4 +1,4 @@
-2579
+2751
 ~E 1 "./../compile/adder.vhd" 26 adder
 ~A 1 "./../compile/adder.vhd" 34 adder
 ~E 1 "./../compile/ALU.vhd" 26 ALU
@@ -26,7 +26,7 @@
 ~E 1 "./../src/instruction_memory.vhd" 28 instruction_memory
 ~A 1 "./../src/instruction_memory.vhd" 11 instruction_memory
 ~E 1 "./../src/MEM_WB_REG.vhd" 4 MEM_WB_REG
-~A 1 "./../src/MEM_WB_REG.vhd" 18 MEM_WB_REG
+~A 1 "./../src/MEM_WB_REG.vhd" 20 MEM_WB_REG
 ~E 1 "./../compile/memory_access.vhd" 24 memory_access
 ~A 1 "./../compile/memory_access.vhd" 45 memory_access
 ~E 1 "./../compile/MIPS.vhd" 27 mips
