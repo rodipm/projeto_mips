@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : d:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\execution.vhd
--- Generated   : Mon Jul  1 00:51:33 2019
--- From        : d:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\execution.bde
+-- File        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\execution.vhd
+-- Generated   : Mon Jul  1 04:26:37 2019
+-- From        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\execution.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ entity execution is
        shamt : in STD_LOGIC_VECTOR(4 downto 0);
        signal_extended : in STD_LOGIC_VECTOR(31 downto 0);
        Zero : out STD_LOGIC;
-       EX_MEM_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
+       EX_MEM_CONTROL : out STD_LOGIC_VECTOR(5 downto 0);
        EX_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        EX_branch_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
@@ -130,24 +130,13 @@ signal BUS3665 : STD_LOGIC_VECTOR(2 downto 0);
 signal BUS4096 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS544 : std_logic_vector(31 downto 0);
 
----- Declarations for Dangling outputs ----
-signal DANGLING_U1_EX_MEM_CONTROL_3 : STD_LOGIC;
-signal DANGLING_U1_EX_MEM_CONTROL_2 : STD_LOGIC;
-signal DANGLING_U1_EX_MEM_CONTROL_1 : STD_LOGIC;
-signal DANGLING_U1_EX_MEM_CONTROL_0 : STD_LOGIC;
-
 begin
 
 ----  Component instantiations  ----
 
 U1 : EX_MEM_REG
   port map(
-       EX_MEM_CONTROL(0) => DANGLING_U1_EX_MEM_CONTROL_0,
-       EX_MEM_CONTROL(1) => DANGLING_U1_EX_MEM_CONTROL_1,
-       EX_MEM_CONTROL(2) => DANGLING_U1_EX_MEM_CONTROL_2,
-       EX_MEM_CONTROL(3) => DANGLING_U1_EX_MEM_CONTROL_3,
-       EX_MEM_CONTROL(4) => EX_MEM_CONTROL(0),
-       EX_MEM_CONTROL(5) => EX_MEM_CONTROL(1),
+       EX_MEM_CONTROL => EX_MEM_CONTROL,
        EX_WB_CONTROL => EX_WB_CONTROL,
        EX_branch_address => EX_branch_address,
        EX_jump_address => EX_jump_address,

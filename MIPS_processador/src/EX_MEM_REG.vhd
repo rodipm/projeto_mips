@@ -32,7 +32,7 @@ end EX_MEM_REG;
 
 architecture EX_MEM_REG of EX_MEM_REG is
 begin
-		process(Clk, Reset)
+	process(Clk, Reset)
 	begin
 		if Reset = '1' then
 			EX_WB_CONTROL <= "00";

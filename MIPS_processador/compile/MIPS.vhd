@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd
--- Generated   : Mon Jul  1 01:57:52 2019
+-- Generated   : Mon Jul  1 04:28:52 2019
 -- From        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -55,7 +55,7 @@ component execution
        rt_address : in STD_LOGIC_VECTOR(4 downto 0);
        shamt : in STD_LOGIC_VECTOR(4 downto 0);
        signal_extended : in STD_LOGIC_VECTOR(31 downto 0);
-       EX_MEM_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
+       EX_MEM_CONTROL : out STD_LOGIC_VECTOR(5 downto 0);
        EX_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        EX_branch_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
@@ -99,7 +99,7 @@ component instruction_fetch
 end component;
 component memory_access
   port (
-       EX_MEM_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
+       EX_MEM_CONTROL : in STD_LOGIC_VECTOR(5 downto 0);
        EX_WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
        EX_branch_address : in STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : in STD_LOGIC_VECTOR(31 downto 0);
@@ -112,6 +112,8 @@ component memory_access
        M_DATA : out STD_LOGIC_VECTOR(31 downto 0);
        M_ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
        M_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
+       PCSrc : out STD_LOGIC;
+       branch_instruction_address : out STD_LOGIC_VECTOR(31 downto 0);
        write_register : out STD_LOGIC_VECTOR(4 downto 0)
   );
 end component;
@@ -129,15 +131,13 @@ component write_back
   );
 end component;
 
-----     Constants     -----
-constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
-
 ---- Signal declarations used on the diagram ----
 
 signal NET138 : STD_LOGIC;
 signal NET410 : STD_LOGIC;
 signal NET5251 : STD_LOGIC;
 signal NET6046 : STD_LOGIC;
+signal NET6613 : STD_LOGIC;
 signal BUS2335 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS3223 : STD_LOGIC_VECTOR(1 downto 0);
 signal BUS3234 : STD_LOGIC_VECTOR(5 downto 0);
@@ -155,7 +155,7 @@ signal BUS5243 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS5247 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS5255 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS5259 : STD_LOGIC_VECTOR(31 downto 0);
-signal BUS5263 : STD_LOGIC_VECTOR(1 downto 0);
+signal BUS5263 : STD_LOGIC_VECTOR(5 downto 0);
 signal BUS5267 : STD_LOGIC_VECTOR(1 downto 0);
 signal BUS5717 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS5721 : STD_LOGIC_VECTOR(31 downto 0);
@@ -163,9 +163,8 @@ signal BUS5800 : STD_LOGIC_VECTOR(1 downto 0);
 signal BUS6149 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS6588 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS6592 : STD_LOGIC_VECTOR(31 downto 0);
-
----- Declaration for Dangling input ----
-signal Dangling_Input_Signal : STD_LOGIC;
+signal BUS6691 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS6738 : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -203,7 +202,7 @@ instruction_decode_01 : instruction_decode
        Instruction => BUS6588,
        MEM_CONTROL => BUS3234,
        RegWrite => NET6046,
-       Reset => Dangling_Input_Signal,
+       Reset => NET410,
        WB_CONTROL => BUS3223,
        jump_address => BUS3540,
        next_instruction_address => BUS6592,
@@ -222,9 +221,9 @@ instruction_fetch_01 : instruction_fetch
   port map(
        Clk => NET138,
        Instruction => BUS6588,
-       PCSrc => PCSrc,
+       PCSrc => NET6613,
        Reset => NET410,
-       branch_instruction_address => branch_instruction_address,
+       branch_instruction_address => BUS6738,
        next_instruction_address => BUS6592
   );
 
@@ -238,11 +237,14 @@ memory_access_01 : memory_access
        M_DATA => BUS5721,
        M_ULA_RES => BUS5717,
        M_WB_CONTROL => BUS5800,
+       PCSrc => NET6613,
        ULA_RES => BUS5247,
        Zero => NET5251,
+       branch_instruction_address => BUS6738,
        clk => NET138,
        reset => reset,
-       val => BUS5239
+       val => BUS5239,
+       write_register => BUS6691
   );
 
 write_back_01 : write_back
@@ -253,13 +255,9 @@ write_back_01 : write_back
        M_write_register => BUS6149,
        RegWrite => NET6046,
        WB_DATA => BUS2335,
-       write_register(0) => Dangling_Input_Signal,
-       write_register(1) => Dangling_Input_Signal,
-       write_register(2) => Dangling_Input_Signal,
-       write_register(3) => Dangling_Input_Signal,
-       write_register(4) => Dangling_Input_Signal,
        clk => NET138,
-       reset => reset
+       reset => reset,
+       write_register => BUS6691
   );
 
 
@@ -269,9 +267,5 @@ write_back_01 : write_back
 	NET138 <= Clk;
 	NET410 <= Reset;
 
-
----- Dangling input signal assignment ----
-
-Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end mips;

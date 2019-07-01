@@ -10,6 +10,7 @@
 "D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ALU_Control.vhd" VHDL MIPS_processador 1 0 0 -02
 "D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd" VHDL MIPS_processador 1 0 0 -02
 ".\..\compile\memory_access.vhd" VHDL MIPS_processador 1 0 0 -02
+"D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd" VHDL MIPS_processador 1 0 0 -02
 ".\..\compile\write_back.vhd" VHDL MIPS_processador 1 0 0 -02
 "D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd" VHDL MIPS_processador 1 0 0 -02
 "D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\register_file.vhd" VHDL MIPS_processador 1 0 0 -02

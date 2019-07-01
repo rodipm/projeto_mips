@@ -1,525 +1,30 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/MIPS.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 1 warning(s)
-# DRC: DRC process completed in 4 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
-# Generation successful
+# ELBREAD: Warning: Entity mips_processador.MEM_WB_REG has been compiled after architecture mips_processador.memory_access(memory_access) that instantiates and binds this entity at simulation initialization. Recompile the source files in the correct order to perform the binding operation during compilation and simultaneously reduce the time required to initialize the simulation.
+# ELBREAD: Warning: The contents of entity 'MEM_WB_REG' instantiated in architecture 'memory_access' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.2 [s].
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/MEM_WB_REG.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
+# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# Error: COMP96_0393: MEM_WB_REG.vhd : (29, 17): Cannot read output : "M_ULA_RES".
+# Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/MEM_WB_REG.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
 # Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
+# memory_access.bde: Updating instances of symbol 'MEM_WB_REG' from library 'MIPS_processador' (U12)
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/memory_access.bde $dsn/src/MEM_WB_REG.vhd $dsn/src/write_back.bde $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
 # DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde'.
-# DRC: Warning: memory_access.bde - 0 error(s), 14 warning(s)
-# DRC: DRC process completed in 1 second(s).
+# DRC: Warning: memory_access.bde - 0 error(s), 9 warning(s)
+# DRC: DRC process completed in 2 second(s).
 # DRC: The results have been written to the log file. Double click on this line to view the log.
 # Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\memory_access.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde ...
 # Generation successful
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/memory_access.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde'.
-# DRC: Warning: memory_access.bde - 0 error(s), 14 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\memory_access.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'memory_access' from library 'MIPS_processador' (U1)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'memory_access' from library 'MIPS_processador' (U1)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'execution' from library 'MIPS_processador' (execution_01)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'memory_access' from library 'MIPS_processador' (U1)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'memory_access' from library 'MIPS_processador' (memory_access_01)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'write_back' from library 'MIPS_processador' (write_back_01)
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde'.
-# DRC: Warning: write_back.bde - 0 error(s), 10 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\write_back.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/write_back.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde'.
-# DRC: Warning: write_back.bde - 0 error(s), 10 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\write_back.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'write_back' from library 'MIPS_processador' (write_back_01)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'write_back' from library 'MIPS_processador' (write_back_01)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'memory_access' from library 'MIPS_processador' (memory_access_01)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'write_back' from library 'MIPS_processador' (write_back_01)
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 5 warning(s)
-# DRC: DRC process completed in 4 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
-# Generation successful
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde'.
-# DRC: Warning: memory_access.bde - 0 error(s), 25 warning(s)
-# DRC: DRC process completed in 1 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\memory_access.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde ...
-# Generation successful
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde'.
-# DRC: Warning: write_back.bde - 0 error(s), 8 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\write_back.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
-# Compile Entity "testbench_mips"
-# Compile Architecture "testbench_mips" of Entity "testbench_mips"
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (196, 0): There is no default binding for component "instruction_decode". (Port "BUS2335" is not on the entity).
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (218, 0): There is no default binding for component "instruction_fetch". (Port "NET138" is not on the entity).
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (228, 0): There is no default binding for component "memory_access". (Port "EX_branch_address" is not on the entity).
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (245, 0): There is no default binding for component "write_back". (Port "write_register" is not on the entity).
-# File: .\..\compile\instruction_fetch.vhd
-# Compile Entity "instruction_fetch"
-# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
-# Compile Entity "IF_ID_REG"
-# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
-# File: .\..\compile\instruction_decode.vhd
-# Compile Entity "instruction_decode"
-# Compile Architecture "instruction_decode" of Entity "instruction_decode"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\control_unit.vhd
-# Compile Entity "control_unit"
-# Compile Architecture "control_unit" of Entity "control_unit"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
-# Compile Entity "ID_EX_REG"
-# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
-# File: .\..\compile\execution.vhd
-# Compile Entity "execution"
-# Compile Architecture "execution" of Entity "execution"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ALU_Control.vhd
-# Compile Entity "ALU_Control"
-# Compile Architecture "ALU_Control" of Entity "ALU_Control"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
-# Compile Entity "EX_MEM_REG"
-# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd
-# Compile Entity "instruction_memory"
-# Compile Architecture "instruction_memory" of Entity "instruction_memory"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "register_file" of Entity "register_file"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\signal_extend.vhd
-# Compile Entity "signal_extend"
-# Compile Architecture "signal_extend" of Entity "signal_extend"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# File: .\..\compile\adder.vhd
-# Compile Entity "adder"
-# Compile Architecture "adder" of Entity "adder"
-# File: .\..\compile\multiplexador.vhd
-# Compile Entity "multiplexador"
-# Compile Architecture "multiplexador" of Entity "multiplexador"
-# File: .\..\compile\ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU" of Entity "ALU"
-# File: .\..\compile\shiftLeft2.vhd
-# Compile Entity "shiftLeft2"
-# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
-# Compile success 0 Errors 4 Warnings  Analysis time :  0.7 [s]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/compile/MIPS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (196, 0): There is no default binding for component "instruction_decode". (Port "BUS2335" is not on the entity).
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (218, 0): There is no default binding for component "instruction_fetch". (Port "NET138" is not on the entity).
-# Compile success 0 Errors 2 Warnings  Analysis time :  47.0 [ms]
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'instruction_decode' from library 'MIPS_processador' (instruction_decode_01)
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 3 warning(s)
-# DRC: DRC process completed in 4 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
-# Compile Entity "testbench_mips"
-# Compile Architecture "testbench_mips" of Entity "testbench_mips"
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (87, 0): There is no default binding for component "mips". (Port "RegWrite" is not on the entity).
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (218, 0): There is no default binding for component "instruction_fetch". (Port "NET138" is not on the entity).
-# File: .\..\compile\instruction_fetch.vhd
-# Compile Entity "instruction_fetch"
-# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
-# Compile Entity "IF_ID_REG"
-# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
-# File: .\..\compile\instruction_decode.vhd
-# Compile Entity "instruction_decode"
-# Compile Architecture "instruction_decode" of Entity "instruction_decode"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\control_unit.vhd
-# Compile Entity "control_unit"
-# Compile Architecture "control_unit" of Entity "control_unit"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
-# Compile Entity "ID_EX_REG"
-# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
-# File: .\..\compile\execution.vhd
-# Compile Entity "execution"
-# Compile Architecture "execution" of Entity "execution"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ALU_Control.vhd
-# Compile Entity "ALU_Control"
-# Compile Architecture "ALU_Control" of Entity "ALU_Control"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
-# Compile Entity "EX_MEM_REG"
-# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd
-# Compile Entity "instruction_memory"
-# Compile Architecture "instruction_memory" of Entity "instruction_memory"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "register_file" of Entity "register_file"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\signal_extend.vhd
-# Compile Entity "signal_extend"
-# Compile Architecture "signal_extend" of Entity "signal_extend"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# File: .\..\compile\adder.vhd
-# Compile Entity "adder"
-# Compile Architecture "adder" of Entity "adder"
-# File: .\..\compile\multiplexador.vhd
-# Compile Entity "multiplexador"
-# Compile Architecture "multiplexador" of Entity "multiplexador"
-# File: .\..\compile\ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU" of Entity "ALU"
-# File: .\..\compile\shiftLeft2.vhd
-# Compile Entity "shiftLeft2"
-# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
-# Compile success 0 Errors 2 Warnings  Analysis time :  0.6 [s]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/compile/MIPS.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# Warning: ELAB1_0026: MIPS.bde(MIPS.vhd) : (218, 0): There is no default binding for component "instruction_fetch". (Port "NET138" is not on the entity).
-# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'instruction_fetch' from library 'MIPS_processador' (instruction_fetch_01)
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 2 warning(s)
-# DRC: DRC process completed in 4 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
-# Compile Entity "testbench_mips"
-# Compile Architecture "testbench_mips" of Entity "testbench_mips"
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (87, 0): There is no default binding for component "mips". (Port "RegWrite" is not on the entity).
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# File: .\..\compile\instruction_fetch.vhd
-# Compile Entity "instruction_fetch"
-# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
-# Compile Entity "IF_ID_REG"
-# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
-# File: .\..\compile\instruction_decode.vhd
-# Compile Entity "instruction_decode"
-# Compile Architecture "instruction_decode" of Entity "instruction_decode"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\control_unit.vhd
-# Compile Entity "control_unit"
-# Compile Architecture "control_unit" of Entity "control_unit"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
-# Compile Entity "ID_EX_REG"
-# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
-# File: .\..\compile\execution.vhd
-# Compile Entity "execution"
-# Compile Architecture "execution" of Entity "execution"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ALU_Control.vhd
-# Compile Entity "ALU_Control"
-# Compile Architecture "ALU_Control" of Entity "ALU_Control"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
-# Compile Entity "EX_MEM_REG"
-# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd
-# Compile Entity "instruction_memory"
-# Compile Architecture "instruction_memory" of Entity "instruction_memory"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "register_file" of Entity "register_file"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\signal_extend.vhd
-# Compile Entity "signal_extend"
-# Compile Architecture "signal_extend" of Entity "signal_extend"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# File: .\..\compile\adder.vhd
-# Compile Entity "adder"
-# Compile Architecture "adder" of Entity "adder"
-# File: .\..\compile\multiplexador.vhd
-# Compile Entity "multiplexador"
-# Compile Architecture "multiplexador" of Entity "multiplexador"
-# File: .\..\compile\ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU" of Entity "ALU"
-# File: .\..\compile\shiftLeft2.vhd
-# Compile Entity "shiftLeft2"
-# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.6 [s]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 2 warning(s)
-# DRC: DRC process completed in 4 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
-# Compile Entity "testbench_mips"
-# Compile Architecture "testbench_mips" of Entity "testbench_mips"
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (87, 0): There is no default binding for component "mips". (Port "RegWrite" is not on the entity).
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# File: .\..\compile\instruction_fetch.vhd
-# Compile Entity "instruction_fetch"
-# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
-# Compile Entity "IF_ID_REG"
-# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
-# File: .\..\compile\instruction_decode.vhd
-# Compile Entity "instruction_decode"
-# Compile Architecture "instruction_decode" of Entity "instruction_decode"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\control_unit.vhd
-# Compile Entity "control_unit"
-# Compile Architecture "control_unit" of Entity "control_unit"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
-# Compile Entity "ID_EX_REG"
-# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
-# File: .\..\compile\execution.vhd
-# Compile Entity "execution"
-# Compile Architecture "execution" of Entity "execution"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ALU_Control.vhd
-# Compile Entity "ALU_Control"
-# Compile Architecture "ALU_Control" of Entity "ALU_Control"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
-# Compile Entity "EX_MEM_REG"
-# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd
-# Compile Entity "instruction_memory"
-# Compile Architecture "instruction_memory" of Entity "instruction_memory"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "register_file" of Entity "register_file"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\signal_extend.vhd
-# Compile Entity "signal_extend"
-# Compile Architecture "signal_extend" of Entity "signal_extend"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# File: .\..\compile\adder.vhd
-# Compile Entity "adder"
-# Compile Architecture "adder" of Entity "adder"
-# File: .\..\compile\multiplexador.vhd
-# Compile Entity "multiplexador"
-# Compile Architecture "multiplexador" of Entity "multiplexador"
-# File: .\..\compile\ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU" of Entity "ALU"
-# File: .\..\compile\shiftLeft2.vhd
-# Compile Entity "shiftLeft2"
-# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.5 [s]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/sistema_mips.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (87, 0): There is no default binding for component "mips". (Port "RegWrite" is not on the entity).
-# Compile success 0 Errors 1 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\sistema_mips.bde'.
-# DRC: Warning: sistema_mips.bde - 0 error(s), 1 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\sistema_mips.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\sistema_mips.bde ...
-# Generation successful
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 8 warning(s)
-# DRC: DRC process completed in 4 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
-# Compile Entity "testbench_mips"
-# Compile Architecture "testbench_mips" of Entity "testbench_mips"
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (87, 0): There is no default binding for component "mips". (Port "RegWrite" is not on the entity).
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# File: .\..\compile\instruction_fetch.vhd
-# Compile Entity "instruction_fetch"
-# Compile Architecture "instruction_fetch" of Entity "instruction_fetch"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd
-# Compile Entity "IF_ID_REG"
-# Compile Architecture "IF_ID_REG" of Entity "IF_ID_REG"
-# File: .\..\compile\instruction_decode.vhd
-# Compile Entity "instruction_decode"
-# Compile Architecture "instruction_decode" of Entity "instruction_decode"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\control_unit.vhd
-# Compile Entity "control_unit"
-# Compile Architecture "control_unit" of Entity "control_unit"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd
-# Compile Entity "ID_EX_REG"
-# Compile Architecture "ID_EX_REG" of Entity "ID_EX_REG"
-# File: .\..\compile\execution.vhd
-# Compile Entity "execution"
-# Compile Architecture "execution" of Entity "execution"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ALU_Control.vhd
-# Compile Entity "ALU_Control"
-# Compile Architecture "ALU_Control" of Entity "ALU_Control"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
-# Compile Entity "EX_MEM_REG"
-# Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd
-# Compile Entity "instruction_memory"
-# Compile Architecture "instruction_memory" of Entity "instruction_memory"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\register_file.vhd
-# Compile Entity "register_file"
-# Compile Architecture "register_file" of Entity "register_file"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\signal_extend.vhd
-# Compile Entity "signal_extend"
-# Compile Architecture "signal_extend" of Entity "signal_extend"
-# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\PC.vhd
-# Compile Entity "PC"
-# Compile Architecture "PC" of Entity "PC"
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# File: .\..\compile\adder.vhd
-# Compile Entity "adder"
-# Compile Architecture "adder" of Entity "adder"
-# File: .\..\compile\multiplexador.vhd
-# Compile Entity "multiplexador"
-# Compile Architecture "multiplexador" of Entity "multiplexador"
-# File: .\..\compile\ALU.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ALU" of Entity "ALU"
-# File: .\..\compile\shiftLeft2.vhd
-# Compile Entity "shiftLeft2"
-# Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
-# Compile success 0 Errors 1 Warnings  Analysis time :  0.6 [s]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/MIPS.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/sistema_mips.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# Warning: ELAB1_0026: sistema_mips.bde(sistema_mips.vhd) : (87, 0): There is no default binding for component "mips". (Port "EX_MEM_CONTROL" is not on the entity).
-# Compile success 0 Errors 1 Warnings  Analysis time :  15.0 [ms]
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# sistema_mips.bde: Updating instances of symbol 'mips' from library 'MIPS_processador' (mips_01)
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/sistema_mips.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\sistema_mips.bde'.
-# DRC: sistema_mips.bde - 0 error(s), 0 warning(s)
-# DRC: DRC process completed in 2 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\sistema_mips.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\sistema_mips.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\sistema_mips.vhd
-# Compile Entity "sistema_mips"
-# Compile Architecture "sistema_mips" of Entity "sistema_mips"
-# Compile success 0 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
 # Compile Entity "testbench_mips"
 # Compile Architecture "testbench_mips" of Entity "testbench_mips"
@@ -553,6 +58,15 @@ acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/s
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
 # Compile Entity "EX_MEM_REG"
 # Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# File: .\..\compile\write_back.vhd
+# Compile Entity "write_back"
+# Compile Architecture "write_back" of Entity "write_back"
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd
 # Compile Entity "instruction_memory"
 # Compile Architecture "instruction_memory" of Entity "instruction_memory"
@@ -565,12 +79,6 @@ acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/s
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\PC.vhd
 # Compile Entity "PC"
 # Compile Architecture "PC" of Entity "PC"
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
 # File: .\..\compile\adder.vhd
 # Compile Entity "adder"
 # Compile Architecture "adder" of Entity "adder"
@@ -595,8 +103,8 @@ asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
 # KERNEL: Time resolution set to 1ps.
 # ELAB2: Elaboration final pass...
 # ELAB2: Create instances ...
-# ELAB2: Fatal Error: ELAB2_0007 write_back.vhd (62): Length of actual parameter (8) does not match the length of formal parameter "output" (32) (from component).
-# ELAB2: Last instance before error: /sistema_mips/mips_01/write_back_01/U1
+# ELAB2: Fatal Error: ELAB2_0007 memory_access.vhd (95): Length of actual parameter (8) does not match the length of formal parameter "output" (32) (from component).
+# ELAB2: Last instance before error: /sistema_mips/mips_01/memory_access_01/U11
 # KERNEL: Error: E8005 : Kernel process initialization failed.
 # VSIM: Error: Simulation initialization failed.
 asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
@@ -610,27 +118,11 @@ asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
 # KERNEL: Time resolution set to 1ps.
 # ELAB2: Elaboration final pass...
 # ELAB2: Create instances ...
-# ELAB2: Fatal Error: ELAB2_0007 write_back.vhd (62): Length of actual parameter (8) does not match the length of formal parameter "output" (32) (from component).
-# ELAB2: Last instance before error: /sistema_mips/mips_01/write_back_01/U1
+# ELAB2: Fatal Error: ELAB2_0007 memory_access.vhd (95): Length of actual parameter (8) does not match the length of formal parameter "output" (32) (from component).
+# ELAB2: Last instance before error: /sistema_mips/mips_01/memory_access_01/U11
 # KERNEL: Error: E8005 : Kernel process initialization failed.
 # VSIM: Error: Simulation initialization failed.
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'instruction_fetch' from library 'MIPS_processador' (instruction_fetch_01)
-# Warning: Block Diagram Editor may recreate some deleted ports, if they have connected nets.
-# MIPS.bde: Updating instances of symbol 'instruction_decode' from library 'MIPS_processador' (instruction_decode_01)
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/MIPS.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 9 warning(s)
-# DRC: DRC process completed in 5 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\MIPS.vhd
-# Compile Entity "mips"
-# Compile Architecture "mips" of Entity "mips"
-# Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/memory_access.bde $dsn/src/MEM_WB_REG.vhd $dsn/src/write_back.bde $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
 # Compile Entity "testbench_mips"
@@ -665,6 +157,15 @@ acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/s
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd
 # Compile Entity "EX_MEM_REG"
 # Compile Architecture "EX_MEM_REG" of Entity "EX_MEM_REG"
+# File: .\..\compile\memory_access.vhd
+# Compile Entity "memory_access"
+# Compile Architecture "memory_access" of Entity "memory_access"
+# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
+# File: .\..\compile\write_back.vhd
+# Compile Entity "write_back"
+# Compile Architecture "write_back" of Entity "write_back"
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\instruction_memory.vhd
 # Compile Entity "instruction_memory"
 # Compile Architecture "instruction_memory" of Entity "instruction_memory"
@@ -677,12 +178,6 @@ acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/s
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\PC.vhd
 # Compile Entity "PC"
 # Compile Architecture "PC" of Entity "PC"
-# File: .\..\compile\memory_access.vhd
-# Compile Entity "memory_access"
-# Compile Architecture "memory_access" of Entity "memory_access"
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
 # File: .\..\compile\adder.vhd
 # Compile Entity "adder"
 # Compile Architecture "adder" of Entity "adder"
@@ -695,55 +190,13 @@ acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/s
 # File: .\..\compile\shiftLeft2.vhd
 # Compile Entity "shiftLeft2"
 # Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
-asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Fatal Error: ELAB2_0007 write_back.vhd (62): Length of actual parameter (8) does not match the length of formal parameter "output" (32) (from component).
-# ELAB2: Last instance before error: /sistema_mips/mips_01/write_back_01/U1
-# KERNEL: Error: E8005 : Kernel process initialization failed.
-# VSIM: Error: Simulation initialization failed.
-asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Fatal Error: ELAB2_0007 write_back.vhd (62): Length of actual parameter (8) does not match the length of formal parameter "output" (32) (from component).
-# ELAB2: Last instance before error: /sistema_mips/mips_01/write_back_01/U1
-# KERNEL: Error: E8005 : Kernel process initialization failed.
-# VSIM: Error: Simulation initialization failed.
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/write_back.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde'.
-# DRC: Warning: write_back.bde - 0 error(s), 7 warning(s)
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
+acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/memory_access.bde $dsn/src/MEM_WB_REG.vhd $dsn/src/write_back.bde $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
+# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde'.
+# DRC: Warning: memory_access.bde - 0 error(s), 9 warning(s)
 # DRC: DRC process completed in 2 second(s).
 # DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\write_back.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde ...
-# Generation successful
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: .\..\compile\write_back.vhd
-# Compile Entity "write_back"
-# Compile Architecture "write_back" of Entity "write_back"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/src/sistema_mips.bde $dsn/src/MIPS.bde $dsn/src/instruction_fetch.bde $dsn/src/IF_ID_REG.vhd $dsn/src/instruction_decode.bde $dsn/src/control_unit.vhd $dsn/src/ID_EX_REG.vhd $dsn/src/execution.bde $dsn/src/ALU_Control.vhd $dsn/src/EX_MEM_REG.vhd $dsn/src/memory_access.bde $dsn/src/write_back.bde $dsn/src/instruction_memory.vhd $dsn/src/register_file.vhd $dsn/src/signal_extend.vhd $dsn/src/PC.vhd $dsn/src/Componentes/adder.bde $dsn/src/Componentes/multiplexador.bde $dsn/src/Componentes/ALU.bde $dsn/src/Componentes/shiftLeft2.bde
-# DRC: Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde'.
-# DRC: Warning: MIPS.bde - 0 error(s), 9 warning(s)
-# DRC: DRC process completed in 4 second(s).
-# DRC: The results have been written to the log file. Double click on this line to view the log.
-# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\MIPS.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MIPS.bde ...
+# Generating D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\memory_access.vhd from D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\memory_access.bde ...
 # Generation successful
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\testbench_mips.vhd
@@ -773,12 +226,6 @@ acom -O3 -e 100 -work MIPS_processador -2002  $dsn/src/testbench_mips.vhd $dsn/s
 # File: .\..\compile\execution.vhd
 # Compile Entity "execution"
 # Compile Architecture "execution" of Entity "execution"
-asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Architecture 'sistema_mips' of entity 'sistema_mips' not found in library 'mips_processador'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# Error: VSIM: cannot select specified top-level
 # File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\ALU_Control.vhd
 # Compile Entity "ALU_Control"
 # Compile Architecture "ALU_Control" of Entity "ALU_Control"
@@ -788,6 +235,9 @@ asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
 # File: .\..\compile\memory_access.vhd
 # Compile Entity "memory_access"
 # Compile Architecture "memory_access" of Entity "memory_access"
+# File: D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd
+# Compile Entity "MEM_WB_REG"
+# Compile Architecture "MEM_WB_REG" of Entity "MEM_WB_REG"
 # File: .\..\compile\write_back.vhd
 # Compile Entity "write_back"
 # Compile Architecture "write_back" of Entity "write_back"
@@ -816,14 +266,6 @@ asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
 # Compile Entity "shiftLeft2"
 # Compile Architecture "shiftLeft2" of Entity "shiftLeft2"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
@@ -844,9 +286,9 @@ asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
 # KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 7262 kB (elbread=1280 elab2=5842 kernel=139 sdf=0)
+# Allocation: Simulator allocated 7263 kB (elbread=1280 elab2=5843 kernel=139 sdf=0)
 # KERNEL: ASDB file was created in location D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\wave.asdb
-#  01:58, segunda-feira, 1 de julho de 2019
+#  04:57, segunda-feira, 1 de julho de 2019
 #  Simulation has been initialized
 run 100 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -892,15 +334,11 @@ run 100 ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 40 ns,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
+# KERNEL: Time: 0 ps,  Iteration: 3,  Instance: /sistema_mips/mips_01/execution_01/U4,  Process: line__39.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 40 ns,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: Time: 0 ps,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 40 ns,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 40500 ps,  Iteration: 0,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 60 ns,  Iteration: 4,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__49.
+# KERNEL: Time: 0 ps,  Iteration: 5,  Instance: /sistema_mips/mips_01/execution_01/U9,  Process: line__71.
 # KERNEL: stopped at time: 100 ns
 endsim
 # VSIM: Simulation has finished.

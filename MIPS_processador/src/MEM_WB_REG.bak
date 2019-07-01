@@ -1,0 +1,205 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 16
+ VARIABLES
+ {
+  #ARCHITECTURE="MEM_WB_REG"
+  #BLOCKTABLE_INCLUDED="0"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"m_data\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"m_ula_res\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"ula_res\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"val\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"write_register\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="MEM_WB_REG"
+  #LANGUAGE="VHDL"
+  CREATIONDATE="01/07/2019"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+  VARIABLES
+  {
+   #LANGUAGE="VHDL"
+  }
+ }
+ 
+ BODY
+ {
+  INSTANCE  1, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="val(4:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (440,460)
+  }
+  TEXT  2, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (208,460,385,460)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 1
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="ULA_RES(31:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (440,520)
+  }
+  TEXT  4, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (208,520,385,520)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 3
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="reset"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (440,580)
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (208,580,385,580)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 5
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="clk"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (440,640)
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (208,640,385,640)
+   ALIGN 6
+   MARGINS (1,1)
+   PARENT 7
+  }
+  INSTANCE  9, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="write_register(4:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1780,460)
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1836,460,2013,460)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 9
+  }
+  INSTANCE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="M_ULA_RES(31:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1780,520)
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1836,520,2013,520)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 11
+  }
+  INSTANCE  13, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="M_DATA(31:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1780,580)
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1836,580,2013,580)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 13
+  }
+  VHDLDESIGNUNITHDR  15, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+   RECT (200,200,600,400)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+  }
+ }
+ 
+}
+
