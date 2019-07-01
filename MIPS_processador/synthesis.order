@@ -19,3 +19,5 @@ i<>.\src\Componentes\ALU.bde
 i<>.\src\Componentes\shiftLeft2.bde
 i<>.\src\EX_MEM_REG.vhd
 i<>.\src\ALU_Control.vhd
+i<>.\src\memory_access.bde
+i<>.\src\write_back.bde

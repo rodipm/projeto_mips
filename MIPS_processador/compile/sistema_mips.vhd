@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : d:\Code\OrgArq\MIPS\MIPS_processador\compile\sistema_mips.vhd
--- Generated   : Sun Jun 30 19:17:44 2019
--- From        : d:\Code\OrgArq\MIPS\MIPS_processador\src\sistema_mips.bde
+-- File        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\sistema_mips.vhd
+-- Generated   : Mon Jul  1 01:53:02 2019
+-- From        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\sistema_mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -24,16 +24,7 @@ use IEEE.std_logic_arith.all;
 use IEEE.std_logic_signed.all;
 use IEEE.std_logic_unsigned.all;
 
-entity sistema_mips is
-  port(
-       Zero : out STD_LOGIC;
-       EX_MEM_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-       EX_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-       EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
-       EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
-       ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
-       val : out STD_LOGIC_VECTOR(4 downto 0)
-  );
+entity sistema_mips is 
 end sistema_mips;
 
 architecture sistema_mips of sistema_mips is
@@ -48,14 +39,7 @@ component mips
        Reset : in STD_LOGIC;
        branch_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
-       write_register : in STD_LOGIC_VECTOR(4 downto 0);
-       EX_MEM_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-       EX_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
-       EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
-       EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
-       ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
-       Zero : out STD_LOGIC;
-       val : out STD_LOGIC_VECTOR(4 downto 0)
+       write_register : in STD_LOGIC_VECTOR(4 downto 0)
   );
 end component;
 component testbench_mips
@@ -87,17 +71,10 @@ begin
 mips_01 : mips
   port map(
        Clk => Clk,
-       EX_MEM_CONTROL => EX_MEM_CONTROL,
-       EX_WB_CONTROL => EX_WB_CONTROL,
-       EX_jump_address => EX_jump_address,
-       EX_rs => EX_rs,
        PCSrc => PCSrc,
        RegWrite => RegWrite,
        Reset => Reset,
-       ULA_RES => ULA_RES,
-       Zero => Zero,
        branch_instruction_address => branch_instruction_address,
-       val => val,
        write_data => write_data,
        write_register => write_register
   );

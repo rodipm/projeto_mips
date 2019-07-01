@@ -6,7 +6,7 @@
 <!--                                                                         -->
 
 <HEAD>
-<TITLE>DRC Report File - sistema_mips.bde</TITLE>
+<TITLE>DRC Report File - write_back.bde</TITLE>
 <STYLE>
 .Err	{color:#FF0000;cursor:hand;text-decoration:underline;}
 .Warn	{color:#0000FF;cursor:hand;text-decoration:underline;}
@@ -90,16 +90,31 @@ End Sub
 <!--                             END VBSCRIPT                                -->
 <!----------------------------------------------------------------------------->
 
-<H2>DRC Report File - sistema_mips.bde</H2>
+<H2>DRC Report File - write_back.bde</H2>
 
-Created on Mon 2019-07-01 at 01:53:01
+Created on Mon 2019-07-01 at 01:57:44
 <HR NOSHADE COLOR="#008080">
-<SPAN class=Info1>Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\sistema_mips.bde'.</SPAN><BR>
-<SPAN class=Info1>sistema_mips.bde - 0 error(s), 0 warning(s)</SPAN><BR>
+<SPAN class=Info1>Checking file 'D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\write_back.bde'.</SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Ambiguous range in net mapping
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','D:\\Code\\OrgArq\\github_mips\\projeto_mips\\MIPS_processador\\src\\write_back.bde','','-errorid=92,97');>	'U1' instance: 'input0(NumeroBits - 1:0)' input bus pin and 'M_DATA(31:0)' input bus terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','D:\\Code\\OrgArq\\github_mips\\projeto_mips\\MIPS_processador\\src\\write_back.bde','','-errorid=92,101');>	'U1' instance: 'input1(NumeroBits - 1:0)' input bus pin and 'M_ULA_RES(31:0)' input bus terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','D:\\Code\\OrgArq\\github_mips\\projeto_mips\\MIPS_processador\\src\\write_back.bde','','-errorid=92,289');>	'U1' instance: 'output(NumeroBits - 1:0)' output bus pin and 'WB_DATA(31:0)' output bus terminal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Nets without load
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','D:\\Code\\OrgArq\\github_mips\\projeto_mips\\MIPS_processador\\src\\write_back.bde','','-errorid=15');>	'clk' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','D:\\Code\\OrgArq\\github_mips\\projeto_mips\\MIPS_processador\\src\\write_back.bde','','-errorid=17');>	'reset' input wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Info1>
+	<p class = Warn1 style=font-weight:bold;margin-top:0px;margin-bottom:0px>Unconnected terminals
+	</p><ul style=margin-left:30px;margin-top:0px;margin-bottom:0px>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','D:\\Code\\OrgArq\\github_mips\\projeto_mips\\MIPS_processador\\src\\write_back.bde','','-errorid=15');>	'clk' input wire terminal</a></li>
+	<li ;text-align:left><a class = Warn onclick=OpenPlugin('Aldec.BDE.7','0','D:\\Code\\OrgArq\\github_mips\\projeto_mips\\MIPS_processador\\src\\write_back.bde','','-errorid=17');>	'reset' input wire terminal</a></li></ul></SPAN><BR>
+<SPAN class=Warn1>write_back.bde - 0 error(s), 7 warning(s)</SPAN><BR>
 <SPAN class=Info1>DRC process completed in 2 second(s).</SPAN><BR>
 </tt>
 </FONT>
        
-        >
-</BODY>
+        </BODY>
 </HTML>

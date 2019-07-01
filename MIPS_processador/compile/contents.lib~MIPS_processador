@@ -1,4 +1,4 @@
-1801
+2288
 ~E 1 "./../compile/adder.vhd" 26 adder
 ~A 1 "./../compile/adder.vhd" 34 adder
 ~E 1 "./../compile/ALU.vhd" 26 ALU
@@ -21,8 +21,10 @@
 ~A 1 "./../compile/instruction_fetch.vhd" 38 instruction_fetch
 ~E 1 "./../src/instruction_memory.vhd" 28 instruction_memory
 ~A 1 "./../src/instruction_memory.vhd" 35 instruction_memory
+~E 1 "./../compile/memory_access.vhd" 24 memory_access
+~A 1 "./../compile/memory_access.vhd" 43 memory_access
 ~E 1 "./../compile/MIPS.vhd" 27 mips
-~A 1 "./../compile/MIPS.vhd" 46 mips
+~A 1 "./../compile/MIPS.vhd" 39 mips
 ~E 1 "./../compile/multiplexador.vhd" 24 multiplexador
 ~A 1 "./../compile/multiplexador.vhd" 36 multiplexador
 ~E 1 "./../src/PC.vhd" 28 PC
@@ -34,6 +36,8 @@
 ~E 1 "./../src/signal_extend.vhd" 28 signal_extend
 ~A 1 "./../src/signal_extend.vhd" 11 signal_extend
 ~E 1 "./../compile/sistema_mips.vhd" 27 sistema_mips
-~A 1 "./../compile/sistema_mips.vhd" 39 sistema_mips
+~A 1 "./../compile/sistema_mips.vhd" 30 sistema_mips
 ~E 1 "./../src/testbench_mips.vhd" 28 testbench_mips
 ~A 1 "./../src/testbench_mips.vhd" 16 testbench_mips
+~E 1 "./../compile/write_back.vhd" 24 write_back
+~A 1 "./../compile/write_back.vhd" 38 write_back
