@@ -39,26 +39,26 @@ Active_lib=
 
 [Folders]
 Name3=Makefiles
-Directory3=D:\Code\OrgArq\MIPS\MIPS_processador\
+Directory3=D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\
 Extension3=mak
 Name4=Memory
-Directory4=D:\Code\OrgArq\MIPS\MIPS_processador\
+Directory4=D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\
 Extension4=mem;mif;hex
 Name5=Dll Libraries
-Directory5=D:\Code\OrgArq\MIPS\MIPS_processador\
+Directory5=D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\
 Extension5=dll
 Name6=PDF
-Directory6=D:\Code\OrgArq\MIPS\MIPS_processador\
+Directory6=D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\
 Extension6=pdf
 Name7=HTML
-Directory7=D:\Code\OrgArq\MIPS\MIPS_processador\
+Directory7=D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\
 Extension7=htm;html
 
 [SpecTracer]
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=sistema_mips|sistema_mips|0
+HierarchyInformation=sistema_mips|sistema_mips|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -84,6 +84,7 @@ Componentes=1
 /instruction_memory.vhd=-1
 /PC.vhd=-1
 /sim_IF.awc=-1
+/ALU_Control.vhd=-1
 Componentes/adder.bde=-1
 Componentes/multiplexador.bde=-1
 Componentes/ALU.bde=-1
@@ -105,6 +106,7 @@ Componentes/shiftLeft2.bde=-1
 .\src\instruction_memory.vhd=VHDL Source Code
 .\src\PC.vhd=VHDL Source Code
 .\src\sim_IF.awc=Accelerated Waveform Configuration
+.\src\ALU_Control.vhd=VHDL Source Code
 .\src\Componentes\adder.bde=Block Diagram
 .\src\Componentes\multiplexador.bde=Block Diagram
 .\src\Componentes\ALU.bde=Block Diagram

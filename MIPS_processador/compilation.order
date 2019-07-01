@@ -12,6 +12,7 @@
 .\src\signal_extend.vhd
 .\src\instruction_memory.vhd
 .\src\PC.vhd
+.\src\ALU_Control.vhd
 .\src\Componentes\adder.bde
 .\src\Componentes\multiplexador.bde
 .\src\Componentes\ALU.bde

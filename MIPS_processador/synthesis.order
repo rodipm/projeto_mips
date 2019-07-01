@@ -18,3 +18,4 @@ i<>.\src\execution.bde
 i<>.\src\Componentes\ALU.bde
 i<>.\src\Componentes\shiftLeft2.bde
 i<>.\src\EX_MEM_REG.vhd
+i<>.\src\ALU_Control.vhd

@@ -2,7 +2,7 @@ SCHM0106
 
 HEADER
 {
- FREEID 771
+ FREEID 953
  VARIABLES
  {
   #ARCHITECTURE="ALU"
@@ -38,10 +38,12 @@ PAGE ""
    VARIABLES
    {
     #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
     #DOWNTO="1"
     #LIBRARY="#terminals"
     #REFERENCE="A(NumeroBits - 1:0)"
     #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
    COORD (240,340)
    VERTEXES ( (2,593) )
@@ -91,7 +93,7 @@ PAGE ""
     #VHDL_TYPE="std_logic"
    }
    COORD (1980,500)
-   VERTEXES ( (2,701) )
+   VERTEXES ( (2,932) )
   }
   TEXT  85, 0, 0
   {
@@ -107,7 +109,7 @@ PAGE ""
   {
    LABEL "Generic_1"
    TEXT "NumeroBits : integer := 32;"
-   RECT (1580,220,1980,300)
+   RECT (920,100,1320,180)
    OUTLINE 5,1, (0,0,0)
    FILL (0,(255,219,179),0)
    MARGINS (20,20)
@@ -131,7 +133,7 @@ PAGE ""
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
    }
    COORD (1980,340)
-   VERTEXES ( (2,703) )
+   VERTEXES ( (2,930) )
   }
   TEXT  239, 0, 0
   {
@@ -148,18 +150,18 @@ PAGE ""
 "With selection select\n"+
 "\t\tS_NB <=\t(('0' &  A))\t\t\twhen \"000\",\n"+
 "\t\t\t\t\t\t\t\t(('0' &  A) + B)\t\t\twhen \"001\",\n"+
-"\t\t\t\t\t\t\t\t(('0' &  B))\t\t\t\t\twhen \"010\",\n"+
+"\t\t\t\t\t\t\t\t(('0' &  A) - B)\t\t\twhen \"010\",\n"+
 "\t\t\t\t\t\t\t\t(('0' &  A) - B)\t\t\twhen \"011\",\n"+
-"\t\t\t\t\t\t\t\t('0' &  (A and B))\t when \"100\",\n"+
-"\t\t\t\t\t\t\t\t('0' &  (A or B))\t\t\twhen \"101\",\n"+
+"\t\t\t\t\t\t\t\t('0' &  (not A))\t when \"100\",\n"+
+"\t\t\t\t\t\t\t\t('0' &  (A and B))\t\t\twhen \"101\",\n"+
 "\t\t\t\t\t\t\t\t('0' &  (A xor B))\t\twhen \"110\",\n"+
-"\t\t\t\t\t\t\t\t('0' & (not A))\t\t\t\twhen \"111\",\n"+
+"\t\t\t\t\t\t\t\t('0' & (A or B))\t\t\t\twhen \"111\",\n"+
 "\t\t\t\t\t\t\t\t(others => '0')\t\t\twhen others;\n"+
 "\n"+
 "-- Resultado da Operação\n"+
 "output <= S_NB(NumeroBits - 1 downto 0) after 0.00 ns when selection = \"000\" else\n"+
 "\t\t\t\t\t S_NB(NumeroBits - 1 downto 0) after 1.00 ns when selection = \"001\" else\n"+
-"\t\t\t\t\t S_NB(NumeroBits - 1 downto 0) after 0.00 ns when selection = \"010\" else\n"+
+"\t\t\t\t\t \"0000000000000000000000000000000\" & S_NB(NumeroBits) after 0.00 ns when selection = \"010\" else\n"+
 "\t\t\t\t\t S_NB(NumeroBits - 1 downto 0) after 1.25 ns when selection = \"011\" else\n"+
 "\t\t\t\t\t S_NB(NumeroBits - 1 downto 0) after 0.25 ns when selection = \"100\"  else\n"+
 "\t\t\t\t\t S_NB(NumeroBits - 1 downto 0) after 0.25 ns when selection =  \"101\" else\n"+
@@ -170,7 +172,7 @@ PAGE ""
 "Zero <= '1' after 1.00 ns when S_NB(NumeroBits - 1 downto 0) = sigZero else\n"+
 "\t\t\t\t  '0' after 1.00 ns;\n"+
 ""
-   RECT (400,280,1560,1120)
+   RECT (400,280,1760,1120)
    OUTLINE 5,1, (0,0,0)
    FILL (0,(255,255,156),0)
    MARGINS (20,20)
@@ -180,7 +182,7 @@ PAGE ""
    SHOWLABEL
    SHOWTEXT
    CORNER 10
-   VTX (  594, 592, 704, 702, 732 )
+   VTX (  592, 594, 732, 931, 933 )
   }
   NET BUS  366, 0, 0
   {
@@ -240,7 +242,7 @@ PAGE ""
 "library IEEE;\n"+
 "use IEEE.std_logic_1164.all;\n"+
 "use IEEE.std_logic_arith.all;\n"+
-"use IEEE.std_logic_unsigned.all;"
+"use IEEE.std_logic_signed.all;"
    RECT (80,20,880,200)
    OUTLINE 5,1, (0,0,0)
    FILL (0,(239,235,255),0)
@@ -251,32 +253,6 @@ PAGE ""
    SHOWLABEL
    SHOWTEXT
    CORNER 10
-  }
-  VTX  701, 0, 0
-  {
-   COORD (1980,500)
-  }
-  VTX  702, 0, 0
-  {
-   COORD (1560,500)
-  }
-  VTX  703, 0, 0
-  {
-   COORD (1980,340)
-  }
-  VTX  704, 0, 0
-  {
-   COORD (1560,340)
-  }
-  WIRE  705, 0, 0
-  {
-   NET 202
-   VTX 701, 702
-  }
-  BUS  706, 0, 0
-  {
-   NET 178
-   VTX 703, 704
   }
   INSTANCE  724, 0, 0
   {
@@ -329,6 +305,32 @@ PAGE ""
    NET 733
    VTX 734, 732
   }
+  VTX  930, 0, 0
+  {
+   COORD (1980,340)
+  }
+  VTX  931, 0, 0
+  {
+   COORD (1760,340)
+  }
+  VTX  932, 0, 0
+  {
+   COORD (1980,500)
+  }
+  VTX  933, 0, 0
+  {
+   COORD (1760,500)
+  }
+  BUS  934, 0, 0
+  {
+   NET 178
+   VTX 930, 931
+  }
+  WIRE  935, 0, 0
+  {
+   NET 202
+   VTX 932, 933
+  }
  }
  
 }
@@ -357,7 +359,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  754, 0, 0
+  TEXT  936, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -368,7 +370,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  755, 0, 0
+  TEXT  937, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -379,7 +381,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  756, 0, 0
+  TEXT  938, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -389,7 +391,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  757, 0, 0
+  TEXT  939, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -401,7 +403,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  758, 0, 0
+  TEXT  940, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -414,7 +416,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  759, 0, 0
+  TEXT  941, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -424,7 +426,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  760, 0, 0
+  TEXT  942, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -436,7 +438,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  761, 0, 0
+  TEXT  943, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -446,7 +448,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  762, 0, 0
+  TEXT  944, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -457,7 +459,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  763, 0, 0
+  GROUP  945, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1120,2001,1501)
@@ -469,7 +471,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  764, 0, 0
+  GROUP  946, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1320,2001,1321)
@@ -481,7 +483,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  765, 0, 0
+  GROUP  947, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1260,2001,1261)
@@ -493,7 +495,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  766, 0, 0
+  GROUP  948, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1380,2001,1381)
@@ -505,7 +507,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  767, 0, 0
+  GROUP  949, 0, 0
   {
    PAGEALIGN 10
    RECT (1120,1440,2001,1441)
@@ -517,7 +519,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  768, 0, 0
+  GROUP  950, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1120,1301,1261)
@@ -528,7 +530,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  769, 0, 0
+  GROUP  951, 0, 0
   {
    PAGEALIGN 10
    RECT (1300,1260,1301,1501)
@@ -539,7 +541,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  770, 0, 0
+  BMPPICT  952, 0, 0
   {
    PAGEALIGN 10
    RECT (1140,1180,1279,1225)

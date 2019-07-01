@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : d:\Code\OrgArq\MIPS\MIPS_processador\compile\execution.vhd
--- Generated   : Sun Jun 30 20:13:53 2019
--- From        : d:\Code\OrgArq\MIPS\MIPS_processador\src\execution.bde
+-- File        : d:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\execution.vhd
+-- Generated   : Mon Jul  1 00:51:33 2019
+-- From        : d:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\execution.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -72,6 +72,14 @@ component ALU
        output : out STD_LOGIC_VECTOR(NumeroBits - 1 downto 0)
   );
 end component;
+component ALU_Control
+  port (
+       ULAop1 : in STD_LOGIC;
+       ULAop2 : in STD_LOGIC;
+       instruction : in STD_LOGIC_VECTOR(5 downto 0);
+       ulaSelection : out STD_LOGIC_VECTOR(2 downto 0)
+  );
+end component;
 component EX_MEM_REG
   port (
        MEM_CONTROL : in STD_LOGIC_VECTOR(5 downto 0);
@@ -112,20 +120,15 @@ component shiftLeft2
   );
 end component;
 
-----     Constants     -----
-constant DANGLING_INPUT_CONSTANT : STD_LOGIC := 'Z';
-
 ---- Signal declarations used on the diagram ----
 
 signal NET1834 : std_logic;
 signal BUS1767 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS2593 : STD_LOGIC_VECTOR(31 downto 0);
-signal BUS3030 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS3590 : std_logic_vector(31 downto 0);
+signal BUS3665 : STD_LOGIC_VECTOR(2 downto 0);
+signal BUS4096 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS544 : std_logic_vector(31 downto 0);
-
----- Declaration for Dangling input ----
-signal Dangling_Input_Signal : STD_LOGIC;
 
 ---- Declarations for Dangling outputs ----
 signal DANGLING_U1_EX_MEM_CONTROL_3 : STD_LOGIC;
@@ -150,7 +153,7 @@ U1 : EX_MEM_REG
        EX_jump_address => EX_jump_address,
        EX_rs => EX_rs,
        MEM_CONTROL => MEM_CONTROL,
-       RS_in => signal_extended,
+       RS_in => rs,
        ULA_RES => ULA_RES,
        ULA_in => BUS2593,
        WB_CONTROL => WB_CONTROL,
@@ -162,6 +165,19 @@ U1 : EX_MEM_REG
        val_res => BUS1767,
        zero => Zero,
        zero_in => NET1834
+  );
+
+U2 : ALU_Control
+  port map(
+       instruction(0) => signal_extended(26),
+       instruction(1) => signal_extended(27),
+       instruction(2) => signal_extended(28),
+       instruction(3) => signal_extended(29),
+       instruction(4) => signal_extended(30),
+       instruction(5) => signal_extended(31),
+       ULAop1 => EX_CONTROL(1),
+       ULAop2 => EX_CONTROL(2),
+       ulaSelection => BUS3665
   );
 
 U4 : adder
@@ -178,10 +194,13 @@ U5 : shiftLeft2
   );
 
 U7 : multiplexador
+  generic map(
+       NumeroBits => 32
+  )
   port map(
        input0 => rs(31 downto 0),
        input1 => signal_extended(31 downto 0),
-       output => BUS3030(31 downto 0),
+       output => BUS4096(31 downto 0),
        selection => EX_CONTROL(3)
   );
 
@@ -199,17 +218,11 @@ U8 : multiplexador
 U9 : ALU
   port map(
        A => rt(31 downto 0),
-       B => BUS3030(31 downto 0),
-       selection(0) => Dangling_Input_Signal,
-       selection(1) => Dangling_Input_Signal,
-       selection(2) => Dangling_Input_Signal,
+       B => BUS4096(31 downto 0),
        Zero => NET1834,
-       output => BUS2593(31 downto 0)
+       output => BUS2593(31 downto 0),
+       selection => BUS3665
   );
 
-
----- Dangling input signal assignment ----
-
-Dangling_Input_Signal <= DANGLING_INPUT_CONSTANT;
 
 end execution;

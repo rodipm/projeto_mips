@@ -43,6 +43,7 @@ begin
 			ULA_RES <= "00000000000000000000000000000000";
 			EX_rs <= "00000000000000000000000000000000";
 			val <= "00000";
+			zero <= '0';
 			
 		elsif rising_edge(Clk) then
 			EX_WB_CONTROL <= WB_CONTROL;
@@ -53,6 +54,7 @@ begin
 			ULA_RES <= ULA_in;
 			EX_rs <= RS_in;
 			val <= val_res;
+			zero <= zero_in;
 		end if;
 	end process;
 end EX_MEM_REG;

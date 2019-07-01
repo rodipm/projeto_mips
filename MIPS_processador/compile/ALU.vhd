@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : d:\Code\OrgArq\MIPS\MIPS_processador\compile\ALU.vhd
--- Generated   : Sun Jun 30 19:08:17 2019
--- From        : d:\Code\OrgArq\MIPS\MIPS_processador\src\Componentes\ALU.bde
+-- File        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\compile\ALU.vhd
+-- Generated   : Mon Jul  1 00:46:58 2019
+-- From        : D:\Code\OrgArq\github_mips\projeto_mips\MIPS_processador\src\Componentes\ALU.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -21,7 +21,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
-use IEEE.std_logic_unsigned.all;
+use IEEE.std_logic_signed.all;
 
 entity ALU is
   generic(
@@ -49,18 +49,18 @@ begin
 With selection select
 		S_NB <=	(('0' &  A))			when "000",
 								(('0' &  A) + B)			when "001",
-								(('0' &  B))					when "010",
+								(('0' &  A) - B)			when "010",
 								(('0' &  A) - B)			when "011",
-								('0' &  (A and B))	 when "100",
-								('0' &  (A or B))			when "101",
+								('0' &  (not A))	 when "100",
+								('0' &  (A and B))			when "101",
 								('0' &  (A xor B))		when "110",
-								('0' & (not A))				when "111",
+								('0' & (A or B))				when "111",
 								(others => '0')			when others;
 
 -- Resultado da Operação
 output <= S_NB(NumeroBits - 1 downto 0) after 0.00 ns when selection = "000" else
 					 S_NB(NumeroBits - 1 downto 0) after 1.00 ns when selection = "001" else
-					 S_NB(NumeroBits - 1 downto 0) after 0.00 ns when selection = "010" else
+					 "0000000000000000000000000000000" & S_NB(NumeroBits) after 0.00 ns when selection = "010" else
 					 S_NB(NumeroBits - 1 downto 0) after 1.25 ns when selection = "011" else
 					 S_NB(NumeroBits - 1 downto 0) after 0.25 ns when selection = "100"  else
 					 S_NB(NumeroBits - 1 downto 0) after 0.25 ns when selection =  "101" else
