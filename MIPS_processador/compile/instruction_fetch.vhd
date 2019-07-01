@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\instruction_fetch.vhd
--- Generated   : Mon Jul  1 12:38:02 2019
+-- Generated   : Mon Jul  1 15:53:20 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_fetch.bde
 -- By          : Bde2Vhdl ver. 2.6
 --

@@ -1,4 +1,4 @@
-2751
+3145
 ~E 1 "./../compile/adder.vhd" 26 adder
 ~A 1 "./../compile/adder.vhd" 34 adder
 ~E 1 "./../compile/ALU.vhd" 26 ALU
@@ -8,7 +8,7 @@
 ~E 1 "./../src/control_unit.vhd" 5 control_unit
 ~A 1 "./../src/control_unit.vhd" 14 control_unit
 ~E 1 "./../src/data_memory.vhd" 4 data_memory
-~A 1 "./../src/data_memory.vhd" 15 data_memory
+~A 1 "./../src/data_memory.vhd" 16 data_memory
 ~E 1 "./../src/EX_MEM_REG.vhd" 4 EX_MEM_REG
 ~A 1 "./../src/EX_MEM_REG.vhd" 33 EX_MEM_REG
 ~E 1 "./../compile/execution.vhd" 26 execution

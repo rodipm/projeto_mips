@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\sistema_mips.vhd
--- Generated   : Mon Jul  1 12:38:10 2019
+-- Generated   : Mon Jul  1 15:53:25 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\sistema_mips.bde
 -- By          : Bde2Vhdl ver. 2.6
 --

@@ -10,10 +10,10 @@
 .\src\ID_EX_REG.vhd
 .\src\data_memory.vhd
 .\src\ALU_Control.vhd
-.\src\instruction_decode.bde
 .\src\execution.bde
-.\src\memory_access.bde
 .\src\instruction_fetch.bde
+.\src\instruction_decode.bde
+.\src\memory_access.bde
 .\src\write_back.bde
 .\src\MIPS.bde
 .\src\sistema_mips.bde

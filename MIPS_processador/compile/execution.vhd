@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\execution.vhd
--- Generated   : Mon Jul  1 12:38:01 2019
+-- Generated   : Mon Jul  1 16:36:14 2019
 -- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -142,7 +142,7 @@ U1 : EX_MEM_REG
        EX_jump_address => EX_jump_address,
        EX_rs => EX_rs,
        MEM_CONTROL => MEM_CONTROL,
-       RS_in => rs,
+       RS_in => rt,
        ULA_RES => ULA_RES,
        ULA_in => next_instruction_address_IF2593,
        WB_CONTROL => WB_CONTROL,
@@ -187,7 +187,7 @@ U7 : multiplexador
        NumeroBits => 32
   )
   port map(
-       input0 => rs(31 downto 0),
+       input0 => rt(31 downto 0),
        input1 => signal_extended(31 downto 0),
        output => BUS4096(31 downto 0),
        selection => EX_CONTROL(3)
@@ -206,7 +206,7 @@ U8 : multiplexador
 
 U9 : ALU
   port map(
-       A => rt(31 downto 0),
+       A => rs(31 downto 0),
        B => BUS4096(31 downto 0),
        Zero => NET1834,
        output => next_instruction_address_IF2593(31 downto 0),

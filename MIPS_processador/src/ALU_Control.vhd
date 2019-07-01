@@ -17,8 +17,8 @@ architecture ALU_Control of ALU_Control is
 
 begin
 
-	ulaSelection <= (ULAop1 and instruction(3))
-				  & (ULAop2 or (ULAop1 and (instruction(4) or instruction(5))))
-				  & ((not ULAop1) or (not instruction(2)));
+	ulaSelection <= (ULAop2 and instruction(3))
+				  & (ULAop1 or (ULAop2 and (instruction(4) or instruction(5))))
+				  & ((not ULAop2) or (not instruction(2)));
 	
 end ALU_Control;

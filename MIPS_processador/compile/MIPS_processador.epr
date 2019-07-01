@@ -10,10 +10,10 @@
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd" VHDL mips_processador 1 0 0 -02
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd" VHDL mips_processador 1 0 0 -02
 "E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ALU_Control.vhd" VHDL mips_processador 1 0 0 -02
-".\..\compile\execution.vhd" VHDL mips_processador 1 0 0 -02
-".\..\compile\instruction_fetch.vhd" VHDL mips_processador 1 0 0 -02
 ".\..\compile\instruction_decode.vhd" VHDL mips_processador 1 0 0 -02
+".\..\compile\execution.vhd" VHDL mips_processador 1 0 0 -02
 ".\..\compile\memory_access.vhd" VHDL mips_processador 1 0 0 -02
+".\..\compile\instruction_fetch.vhd" VHDL mips_processador 1 0 0 -02
 ".\..\compile\write_back.vhd" VHDL mips_processador 1 0 0 -02
 ".\..\compile\MIPS.vhd" VHDL mips_processador 1 0 0 -02
 ".\..\compile\sistema_mips.vhd" VHDL mips_processador 1 0 0 -02
