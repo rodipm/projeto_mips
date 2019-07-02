@@ -1,8 +1,8 @@
-timestamp=1562034223443
+timestamp=1562036735172
 
 [~A]
 Comment=
-ModifyID=1399
+ModifyID=1426
 Version=74
 
 [adder]
@@ -18,16 +18,16 @@ Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa2639a8a5a70ec66
 Version/adder=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa2639a8a5a70ec6691b492f142f0ca2c2565cf04d6239f5e6c282ec1231e11a
 
 [alu]
-A/alu=A/ALU 24|.\..\src\Componentes\ALU.bde|10000|1*371060
-BinI32/alu=3*57373
+A/alu=A/ALU 24|.\..\src\Componentes\ALU.bde|10000|1*398235
+BinI32/alu=3*60910
 I=0*85123
-I/alu=I/ALU 0*210803
+I/alu=I/ALU 0*228146
 M=11|0|vde|1562032153636|./../compile/ALU.vhd|0*84557*0xa021fcd87423e15753290a89fd4b6a4c78c2d47c|0*85046*0x23b75c12e3e89f2ef000564498faa8c2
-M/alu=M/ALU 21|0|vde|1562033749713|./../compile/ALU.vhd|0*209565*0x4a07043d8c423ac4fca0a222fc10356a889e0d70|0*210719*0x20116f55b147878295aeff36dce7fc50
+M/alu=M/ALU 21|0|vde|1562035455709|./../compile/ALU.vhd|0*226905*0x4978499f35deed4d52fbf4eeca4b89375b7e42b5|0*228062*0x20116f55b147878295aeff36dce7fc50
 NSymbols/alu=NSymbols/ALU 40|0|2*119425
 R=./../compile/ALU.vhd|26
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|fdc9c85601beb4171a6a25c637e2168ed44841555b5f3d496c792c1035c0b95c
-Version/alu=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|fdc9c85601beb4171a6a25c637e2168e09d5fe9cbc6066261de70021782bfd32
+Version/alu=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|fdc9c85601beb4171a6a25c637e2168e7053fe1a44b2166696b36eccc97c53ca
 
 [alu_control]
 A/alu_control=A/ALU_Control 21|./../src/ALU_Control.vhd|16|1*354542
@@ -82,6 +82,7 @@ I=0*137704
 I/execution=0*198622
 M=11|0|vde|1562033396075|./../compile/execution.vhd|0*136486*0xbb56f428a17b3870c2e3118e86d51ffa24d776a9|0*137615*0x23b75c12e3e89f2ef000564498faa8c2
 M/execution=21|0|vde|1562033749213|./../compile/execution.vhd|0*194943*0xab0db54148067517f3c148cb0b5967ab0f0e4e5a|0*198520*0x20116f55b147878295aeff36dce7fc50
+NSymbols/execution=40|0|2*132721
 R=./../compile/execution.vhd|30
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|5dfac14860047927f7e5b9183b40cd6527bf69321d2779b4a1ff26783d686bd6de0c5cea4bc65f7aef3965a85084d374
 Version/execution=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|5dfac14860047927f7e5b9183b40cd6527bf69321d2779b4a1ff26783d686bd6a3aee3cd0f1610d47fe07e2adf11a098
@@ -150,6 +151,7 @@ I=0*62216
 I/instruction_decode=0*194569
 M=11|0|vde|1561910390277|./../compile/instruction_decode.vhd|0*4661*0x4cab3a0e9d22775fee01c336a09bfd9ce52ddcf9|0*5598*0x23b75c12e3e89f2ef000564498faa8c2
 M/instruction_decode=21|0|vde|1562033749192|./../compile/instruction_decode.vhd|0*188374*0x7a3459ce47fc569f68de8bb68f9bd96ec309a14a|0*194440*0x20116f55b147878295aeff36dce7fc50
+NSymbols/instruction_decode=40|0|2*142060
 R=./../compile/instruction_decode.vhd|24
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c8a8e377838a45aa06ede84cd4f1f5458ab42df1c8a2bced606cb81e03c093adc9
 Version/instruction_decode=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c8a8e377838a45aa06ede84cd4f1f5458a041c4236d8eb9fc3f761c1dfff88a109
@@ -161,21 +163,22 @@ I=0*63057
 I/instruction_fetch=0*187856
 M=11|0|vde|1561881938991|./../compile/instruction_fetch.vhd|0*4033*0x6b70c748f39756c66ddd0c85ac2561e386f931dc|0*4556*0x23b75c12e3e89f2ef000564498faa8c2
 M/instruction_fetch=21|0|vde|1562033749166|./../compile/instruction_fetch.vhd|0*185620*0x1c857933a8018351326a0af55c770763cbfd2de4|0*187730*0x20116f55b147878295aeff36dce7fc50
+NSymbols/instruction_fetch=40|0|2*150165
 R=./../compile/instruction_fetch.vhd|27
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c867b915ec5b86511adfa499b11961792ff76efd62b58532fa566394ea9da49620
 Version/instruction_fetch=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c867b915ec5b86511adfa499b11961792f4948bbf203cea3a753e747f05bd547bf
 
 [instruction_memory]
-A/instruction_memory=21|./../src/instruction_memory.vhd|11|1*383246
-BinI32/instruction_memory=3*60080
+A/instruction_memory=21|./../src/instruction_memory.vhd|11|1*408916
+BinI32/instruction_memory=3*63211
 I=0*64123
-I/instruction_memory=0*219129
+I/instruction_memory=0*235409
 M=11|0|vde|1561866551800|./../src/instruction_memory.vhd|0*1299*0x59e6dddcda40d9fb7c2022103313a081cd2cfdd1|0*1599*0x23b75c12e3e89f2ef000564498faa8c2
-M/instruction_memory=21|0|vde|1562034223416|./../src/instruction_memory.vhd|0*218562*0x9a13ce62b9b83c8b8fbc4941394f4b51ff08f62a|0*219004*0x20116f55b147878295aeff36dce7fc50
+M/instruction_memory=21|0|vde|1562036735153|./../src/instruction_memory.vhd|0*234842*0xe3bc48dae1eaef69850f5700ee0b1c68b9d1aec0|0*235284*0x20116f55b147878295aeff36dce7fc50
 NSymbols/instruction_memory=40|0|2*43820
 R=./../src/instruction_memory.vhd|28
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa5cdeefbdd8ec0382d54b92f1958785a79624349d5b8f82688a21519974b3e647926a7ec9f9ceec273ea0eea5dd5d8d
-Version/instruction_memory=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa5cdeefbdd8ec0382d54b92f1958785a79624349d5b8f82688a21519974b3e63981e9d6ccdc6148402162cb9a4d47ec
+Version/instruction_memory=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa5cdeefbdd8ec0382d54b92f1958785a79624349d5b8f82688a21519974b3e60551b9eebf051f4e969b67ef25e464a8
 
 [mem_wb_reg]
 A/mem_wb_reg=A/MEM_WB_REG 21|./../src/MEM_WB_REG.vhd|20|1*359307
@@ -195,22 +198,22 @@ I=0*65601
 I/memory_access=0*206075
 M=11|0|vde|1562030903370|./../compile/memory_access.vhd|0*35306*0x9d0dbc105af423f52c95e70915d36547e531ea44|0*36114*0x23b75c12e3e89f2ef000564498faa8c2
 M/memory_access=21|0|vde|1562033749605|./../compile/memory_access.vhd|0*203664*0x1839c568d51e41a102c3fa7875781a2957b05c27|0*205961*0x20116f55b147878295aeff36dce7fc50
-NSymbols/memory_access=40|0|2*44991
+NSymbols/memory_access=40|0|2*153219
 R=./../compile/memory_access.vhd|24
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ba94cdc6de10a0f10c5281829195cb6f9abf94d7c0f61e2d051e129b9f8148a1a7b8f4dd8460facf38dd5980b8621f07
 Version/memory_access=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ba94cdc6de10a0f10c5281829195cb6f9abf94d7c0f61e2d051e129b9f8148a16f26d59ed08e2788ff95c6ae71a70e97
 
 [mips]
-A/mips=24|.\..\src\MIPS.bde|10000|1*298008
-BinI32/mips=3*46398
+A/mips=24|.\..\src\MIPS.bde|10000|1*384235
+BinI32/mips=3*60390
 I=0*66390
-I/mips=0*185137
+I/mips=0*225624
 M=11|0|vde|1562030902696|./../compile/MIPS.vhd|0*14870*0xa8cc0520634da5ae5c0fdf3acde8939fd8d0f2b1|0*15361*0x23b75c12e3e89f2ef000564498faa8c2
-M/mips=21|0|vde|1562033749139|./../compile/MIPS.vhd|0*178873*0xfd0b3b38ed3e74138b549dbfadaff290f5e32466|0*185050*0x20116f55b147878295aeff36dce7fc50
+M/mips=21|0|vde|1562034889913|./../compile/MIPS.vhd|0*219360*0xfd0b3b38ed3e74138b549dbfadaff290f5e32466|0*225537*0x20116f55b147878295aeff36dce7fc50
 NSymbols/mips=40|0|2*52152
 R=./../compile/MIPS.vhd|27
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|d2b5e956447702fcca773e851619b9b9c54dba08704e2a4335cd8955ad475960
-Version/mips=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|d2b5e956447702fcca773e851619b9b9ee03122e11014280374bc484d7fb611f
+Version/mips=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|d2b5e956447702fcca773e851619b9b98e7af9d95dac0812d5c5bea84868a315
 
 [multiplexador]
 A/multiplexador=24|.\..\src\Componentes\multiplexador.bde|10000|1*369923
@@ -299,16 +302,16 @@ I=0*72329
 I/write_back=0*207167
 M=11|0|vde|1562030903405|./../compile/write_back.vhd|0*38622*0xbe6c14d9bda037204b47fdbc9778a0708e02d562|0*39130*0x23b75c12e3e89f2ef000564498faa8c2
 M/write_back=21|0|vde|1562033749628|./../compile/write_back.vhd|0*206408*0x76a8518977a81d7d86217e013e306428b24bad35|0*207062*0x20116f55b147878295aeff36dce7fc50
-NSymbols/write_back=40|0|2*64273
+NSymbols/write_back=40|0|2*160380
 R=./../compile/write_back.vhd|24
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|0afa266ec313ae12f55e2e4b5ccf9dc36e5c097a9f12960a1e48c41f4ed65d88e557fa90aedc7fdfcafc822a17b9c27d
 Version/write_back=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|0afa266ec313ae12f55e2e4b5ccf9dc36e5c097a9f12960a1e48c41f4ed65d880b39d4d970bab28fc8225d8b8847b5d5
 
 [~MFT]
-0=8|0MIPS_processador.mgf|219129|146080
-1=2|1MIPS_processador.mgf|383246|277619
-2=0|2MIPS_processador.mgf|124911|54139
-3=2|3MIPS_processador.mgf|60080|46495
+0=8|0MIPS_processador.mgf|235409|162357
+1=2|1MIPS_processador.mgf|408916|300868
+2=0|2MIPS_processador.mgf|160380|65530
+3=2|3MIPS_processador.mgf|63211|49582
 
 [~U]
 adder=11|0*207422||0x3
@@ -317,7 +320,7 @@ alu_control=ALU_Control 11|0*54594||0x7
 control_unit=11|0*55408|
 data_memory=11|0*56149|
 ex_mem_reg=EX_MEM_REG 11|0*56901||0x7
-execution=11|0*136133|
+execution=11|0*136133||0x7
 fub1=Fub1 11|0*58772||0x7
 fub2=Fub2 11|||0x7
 fub3=Fub3 11|||0x7
@@ -327,8 +330,8 @@ fub6=Fub6 11|||0x7
 fub7=Fub7 11|||0x7
 id_ex_reg=ID_EX_REG 11|0*60204|
 if_id_reg=IF_ID_REG 11|0*60986||0x7
-instruction_decode=11|0*61871|
-instruction_fetch=11|0*62802|
+instruction_decode=11|0*61871||0x7
+instruction_fetch=11|0*62802||0x7
 instruction_memory=11|0*63898||0x7
 mem_wb_reg=MEM_WB_REG 11|0*64566|
 memory_access=11|0*65263||0x7

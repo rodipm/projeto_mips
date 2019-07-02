@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-07-01 23:31:27
+Active-HDL 10.5.217.6767 2019-07-02 00:08:07
 
 Elaboration top modules:
 Architecture                  sistema_mips(sistema_mips)
@@ -51,3 +51,9 @@ ieee                                    | Standard IEEE packages library
 mips_processador                        | None
 std                                     | Standard VHDL library
 ------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+sistema_mips sistema_mips sistema_mips
+
+
+The performance of simulation is reduced. Version Student Edition

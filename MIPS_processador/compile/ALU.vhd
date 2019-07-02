@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\compile\ALU.vhd
--- Generated   : Mon Jul  1 23:08:52 2019
--- From        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\src\Componentes\ALU.bde
+-- File        : D:\Code\OrgArq\projeto_mips\MIPS_processador\compile\ALU.vhd
+-- Generated   : Mon Jul  1 23:44:15 2019
+-- From        : D:\Code\OrgArq\projeto_mips\MIPS_processador\src\Componentes\ALU.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ With selection select
 		S_NB <=	(('0' &  A) + B)			when "000",
 								(('0' &  A) + B)			when "001",
 								(('0' &  A) - B)			when "010",
-								std_logic_vector(shift_left(unsigned(A), to_integer(unsigned(shamt)))) when "011",
+								std_logic_vector(shift_left(unsigned('0'&A), to_integer(unsigned(shamt)))) when "011",
 								('0' &  (A and B))	 when "100",
 								('0' &  (A or B))			when "101",
 								(('0' &  A) - B)		when "110",
