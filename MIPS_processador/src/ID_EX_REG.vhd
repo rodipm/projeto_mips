@@ -14,9 +14,11 @@ entity ID_EX_REG is
 		 Clk : in STD_LOGIC;
 		 Reset : in STD_LOGIC;
 		 Instruction : in STD_LOGIC_VECTOR(20 downto 16);
+		 Instruction_1 : in STD_LOGIC_VECTOR(25 downto 21);
 		 Instruction_3 : in STD_LOGIC_VECTOR(15 downto 11);
 		 Instruction_4 : in STD_LOGIC_VECTOR(10 downto 06);
 		 Instruction_2 : in STD_LOGIC_VECTOR(25 downto 0);
+		 
 		 signal_extended : out STD_LOGIC_VECTOR(31 downto 0);
 		 rs : out STD_LOGIC_VECTOR(31 downto 0);
 		 rt : out STD_LOGIC_VECTOR(31 downto 0);
@@ -27,7 +29,8 @@ entity ID_EX_REG is
 		 rt_address : out STD_LOGIC_VECTOR(4 downto 0);
 		 rd_address : out STD_LOGIC_VECTOR(4 downto 0);
 		 shamt : out STD_LOGIC_VECTOR(4 downto 0);
-		 jump_address : out STD_LOGIC_VECTOR(31 downto 0)
+		 jump_address : out STD_LOGIC_VECTOR(31 downto 0); 
+		 rs_address : out STD_LOGIC_VECTOR(4 downto 0)
 	     );
 end ID_EX_REG;
 
@@ -47,6 +50,7 @@ begin
 			rt <= "00000000000000000000000000000000";	
 			shamt <= "00000";
 			jump_address <= "00000000000000000000000000000000";
+			rs_address <= "00000";
 		elsif rising_edge(Clk) and stall='0' then
 			WB_CONTROL <= WB_CONTROL_BUS;
 			MEM_CONTROL <= MEM_CONTROL_BUS;
@@ -58,7 +62,8 @@ begin
 			rs <= rs_bus;
 			rt <= rt_bus;
 			shamt <= Instruction_4(10 downto 06);
-			jump_address <= next_instruction_address_bus(31 downto 28) & Instruction_2(25 downto 0) & "00";
+			jump_address <= next_instruction_address_bus(31 downto 28) & Instruction_2(25 downto 0) & "00";	 
+			rs_address <= Instruction_1(25 downto 21);
 		end if;
 	end process;
 end ID_EX_REG;

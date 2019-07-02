@@ -1,4 +1,4 @@
-1956
+2025
 ~E 1 "./../compile/adder.vhd" 26 adder
 ~A 1 "./../compile/adder.vhd" 34 adder
 ~E 1 "./../compile/ALU.vhd" 26 ALU
@@ -16,6 +16,8 @@
 ~A 1 "./../src/EX_MEM_REG.vhd" 35 EX_MEM_REG
 ~E 1 "./../compile/execution.vhd" 30 execution
 ~A 1 "./../compile/execution.vhd" 58 execution
+~E 1 "./../src/forwarding_control.vhd" 4 forwarding_control
+~A 1 "./../src/forwarding_control.vhd" 18 forwarding_control
 ~E 0 "" 0 Fub2
 ~E 0 "" 0 Fub3
 ~E 1 "./../compile/shiftLeft2.vhd" 27 Fub4
@@ -26,11 +28,11 @@
 ~A 0 "" 0 IC_CONTROL
 ~A 1 "./../src/IC_CONTROL.vhd" 14 IC_CONTROL_ARCH
 ~E 1 "./../src/ID_EX_REG.vhd" 4 ID_EX_REG
-~A 1 "./../src/ID_EX_REG.vhd" 34 ID_EX_REG
+~A 1 "./../src/ID_EX_REG.vhd" 37 ID_EX_REG
 ~E 1 "./../src/IF_ID_REG.vhd" 31 IF_ID_REG
 ~A 1 "./../src/IF_ID_REG.vhd" 45 IF_ID_REG
 ~E 1 "./../compile/instruction_decode.vhd" 24 instruction_decode
-~A 1 "./../compile/instruction_decode.vhd" 48 instruction_decode
+~A 1 "./../compile/instruction_decode.vhd" 49 instruction_decode
 ~E 1 "./../compile/instruction_fetch.vhd" 27 instruction_fetch
 ~A 1 "./../compile/instruction_fetch.vhd" 40 instruction_fetch
 ~E 1 "./../src/instruction_memory.vhd" 4 instruction_memory

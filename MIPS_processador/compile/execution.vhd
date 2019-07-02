@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\compile\execution.vhd
--- Generated   : Tue Jul  2 08:53:29 2019
+-- Generated   : Tue Jul  2 10:44:43 2019
 -- From        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\src\execution.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -30,15 +30,18 @@ use IEEE.numeric_std.all;
 entity execution is
   port(
        clk : in STD_LOGIC;
+       next_instruction_address_IF5800 : in STD_LOGIC;
        reset : in STD_LOGIC;
        stall : in STD_LOGIC;
        EX_CONTROL : in STD_LOGIC_VECTOR(3 downto 0);
        MEM_CONTROL : in STD_LOGIC_VECTOR(5 downto 0);
+       MEM_WB_RegisterRD : in STD_LOGIC_VECTOR(4 downto 0);
        WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
        jump_address : in STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address_ID : in std_logic_vector(31 downto 0);
        rd_address : in STD_LOGIC_VECTOR(4 downto 0);
        rs : in STD_LOGIC_VECTOR(31 downto 0);
+       rs_address : in STD_LOGIC_VECTOR(4 downto 0);
        rt : in STD_LOGIC_VECTOR(31 downto 0);
        rt_address : in STD_LOGIC_VECTOR(4 downto 0);
        shamt : in STD_LOGIC_VECTOR(4 downto 0);
@@ -50,6 +53,8 @@ entity execution is
        EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
        EX_rt : out STD_LOGIC_VECTOR(31 downto 0);
+       ForwardA : out STD_LOGIC_VECTOR(1 downto 0);
+       ForwardB : out STD_LOGIC_VECTOR(1 downto 0);
        ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
        val : out STD_LOGIC_VECTOR(4 downto 0)
   );
@@ -102,14 +107,26 @@ component EX_MEM_REG
        val_res : in STD_LOGIC_VECTOR(4 downto 0);
        zero_in : in STD_LOGIC;
        EX_MEM_CONTROL : out STD_LOGIC_VECTOR(5 downto 0);
+       EX_MEM_REGISTER_RD : out STD_LOGIC_VECTOR(4 downto 0);
        EX_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
        EX_branch_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
        EX_rt : out STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
-       val : out STD_LOGIC_VECTOR(4 downto 0);
        zero : out STD_LOGIC
+  );
+end component;
+component forwarding_control
+  port (
+       EX_MEM_RegWrite : in STD_LOGIC;
+       EX_MEM_RegisterRD : in STD_LOGIC;
+       MEM_WB_RegWrite : in STD_LOGIC;
+       MEM_WB_RegisterRD : in STD_LOGIC_VECTOR(4 downto 0);
+       forwarding_rs_address : in STD_LOGIC_VECTOR(4 downto 0);
+       forwarding_rt_address : in STD_LOGIC_VECTOR(4 downto 0);
+       ForwardA : out STD_LOGIC_VECTOR(1 downto 0);
+       ForwardB : out STD_LOGIC_VECTOR(1 downto 0)
   );
 end component;
 component multiplexador
@@ -134,6 +151,9 @@ end component;
 
 signal NET1834 : std_logic;
 signal BUS4096 : STD_LOGIC_VECTOR(31 downto 0);
+signal EX_MEM_REGISTER_RD : STD_LOGIC_VECTOR(4 downto 0);
+signal forwarding_rs_address : STD_LOGIC_VECTOR(4 downto 0);
+signal forwarding_rt_address : STD_LOGIC_VECTOR(4 downto 0);
 signal next_instruction_address_IF1767 : STD_LOGIC_VECTOR(4 downto 0);
 signal next_instruction_address_IF2593 : STD_LOGIC_VECTOR(31 downto 0);
 signal next_instruction_address_IF3590 : STD_LOGIC_VECTOR(31 downto 0);
@@ -147,6 +167,7 @@ begin
 U1 : EX_MEM_REG
   port map(
        EX_MEM_CONTROL => EX_MEM_CONTROL,
+       EX_MEM_REGISTER_RD => EX_MEM_REGISTER_RD,
        EX_WB_CONTROL => EX_WB_CONTROL,
        EX_branch_address => EX_branch_address,
        EX_jump_address => EX_jump_address,
@@ -163,7 +184,6 @@ U1 : EX_MEM_REG
        jump_address_in => jump_address,
        reset => reset,
        stall => stall,
-       val => val,
        val_res => next_instruction_address_IF1767,
        zero => Zero,
        zero_in => NET1834
@@ -226,6 +246,27 @@ U9 : ALU
        selection => next_instruction_address_IF3665,
        shamt => shamt
   );
+
+forwarding_control_01 : forwarding_control
+  port map(
+       EX_MEM_RegWrite => EX_WB_CONTROL(0),
+       EX_MEM_RegisterRD => EX_MEM_REGISTER_RD(4),
+       ForwardA => ForwardA,
+       ForwardB => ForwardB,
+       MEM_WB_RegWrite => next_instruction_address_IF5800,
+       MEM_WB_RegisterRD => MEM_WB_RegisterRD,
+       forwarding_rs_address => forwarding_rs_address,
+       forwarding_rt_address => forwarding_rt_address
+  );
+
+
+---- Terminal assignment ----
+
+    -- Inputs terminals
+	forwarding_rs_address <= rs_address;
+
+    -- Output\buffer terminals
+	val <= EX_MEM_REGISTER_RD;
 
 
 end execution;

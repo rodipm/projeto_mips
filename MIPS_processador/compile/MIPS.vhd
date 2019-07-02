@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\compile\MIPS.vhd
--- Generated   : Tue Jul  2 09:32:43 2019
+-- Generated   : Tue Jul  2 10:44:46 2019
 -- From        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\src\MIPS.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -44,13 +44,16 @@ component execution
   port (
        EX_CONTROL : in STD_LOGIC_VECTOR(3 downto 0);
        MEM_CONTROL : in STD_LOGIC_VECTOR(5 downto 0);
+       MEM_WB_RegisterRD : in STD_LOGIC_VECTOR(31 downto 0);
        WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
        clk : in STD_LOGIC;
        jump_address : in STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address_ID : in STD_LOGIC_VECTOR(31 downto 0);
+       next_instruction_address_IF5800(0) : in STD_LOGIC;
        rd_address : in STD_LOGIC_VECTOR(4 downto 0);
        reset : in STD_LOGIC;
        rs : in STD_LOGIC_VECTOR(31 downto 0);
+       rs_address : in STD_LOGIC_VECTOR(31 downto 0);
        rt : in STD_LOGIC_VECTOR(31 downto 0);
        rt_address : in STD_LOGIC_VECTOR(4 downto 0);
        shamt : in STD_LOGIC_VECTOR(4 downto 0);
@@ -84,6 +87,7 @@ component instruction_decode
        next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
+       rs_address : out STD_LOGIC_VECTOR(31 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
        shamt : out STD_LOGIC_VECTOR(4 downto 0);
@@ -149,6 +153,7 @@ signal NET5251 : STD_LOGIC;
 signal NET6046 : STD_LOGIC;
 signal NET6613 : STD_LOGIC;
 signal stall : STD_LOGIC;
+signal MEM_WB_RegisterRD : STD_LOGIC_VECTOR(31 downto 0);
 signal next_instruction_address_IF2335 : STD_LOGIC_VECTOR(31 downto 0);
 signal next_instruction_address_IF3223 : STD_LOGIC_VECTOR(1 downto 0);
 signal next_instruction_address_IF3234 : STD_LOGIC_VECTOR(5 downto 0);
@@ -174,9 +179,9 @@ signal next_instruction_address_IF5800 : STD_LOGIC_VECTOR(1 downto 0);
 signal next_instruction_address_IF6149 : STD_LOGIC_VECTOR(4 downto 0);
 signal next_instruction_address_IF6588 : STD_LOGIC_VECTOR(31 downto 0);
 signal next_instruction_address_IF6592 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF6691 : STD_LOGIC_VECTOR(4 downto 0);
 signal next_instruction_address_IF6738 : STD_LOGIC_VECTOR(31 downto 0);
 signal next_instruction_address_IF6920 : STD_LOGIC_VECTOR(31 downto 0);
+signal rs_address : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -194,6 +199,8 @@ execution_01 : execution
        EX_rs => next_instruction_address_IF5243,
        EX_rt => next_instruction_address_IF6920,
        MEM_CONTROL => next_instruction_address_IF3234,
+       MEM_WB_RegisterRD => MEM_WB_RegisterRD,
+       next_instruction_address_IF5800(0) => next_instruction_address_IF5800(0),
        ULA_RES => next_instruction_address_IF5247,
        WB_CONTROL => next_instruction_address_IF3223,
        Zero => NET5251,
@@ -203,6 +210,7 @@ execution_01 : execution
        rd_address => next_instruction_address_IF3355,
        reset => NET410,
        rs => next_instruction_address_IF3389,
+       rs_address => rs_address,
        rt => next_instruction_address_IF3517,
        rt_address => next_instruction_address_IF3340,
        shamt => next_instruction_address_IF3532,
@@ -225,6 +233,7 @@ instruction_decode_01 : instruction_decode
        next_instruction_address_ID => next_instruction_address_IF3297,
        rd_address => next_instruction_address_IF3355,
        rs => next_instruction_address_IF3389,
+       rs_address => rs_address,
        rt => next_instruction_address_IF3517,
        rt_address => next_instruction_address_IF3340,
        shamt => next_instruction_address_IF3532,
@@ -259,14 +268,18 @@ memory_access_01 : memory_access
        M_WB_CONTROL => next_instruction_address_IF5800,
        PCSrc => NET6613,
        ULA_RES => next_instruction_address_IF5247,
+       write_register(0) => MEM_WB_RegisterRD(27),
+       write_register(1) => MEM_WB_RegisterRD(28),
+       write_register(2) => MEM_WB_RegisterRD(29),
+       write_register(3) => MEM_WB_RegisterRD(30),
+       write_register(4) => MEM_WB_RegisterRD(31),
        Zero => NET5251,
        branch_instruction_address => next_instruction_address_IF6738,
        clk => NET138,
        dc_stall => dc_stall,
        reset => reset,
        stall => stall,
-       val => next_instruction_address_IF5239,
-       write_register => next_instruction_address_IF6691
+       val => next_instruction_address_IF5239
   );
 
 write_back_01 : write_back
@@ -277,9 +290,13 @@ write_back_01 : write_back
        M_write_register => next_instruction_address_IF6149,
        RegWrite => NET6046,
        WB_DATA => next_instruction_address_IF2335,
+       write_register(0) => MEM_WB_RegisterRD(27),
+       write_register(1) => MEM_WB_RegisterRD(28),
+       write_register(2) => MEM_WB_RegisterRD(29),
+       write_register(3) => MEM_WB_RegisterRD(30),
+       write_register(4) => MEM_WB_RegisterRD(31),
        clk => NET138,
-       reset => reset,
-       write_register => next_instruction_address_IF6691
+       reset => reset
   );
 
 

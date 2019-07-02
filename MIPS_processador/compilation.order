@@ -20,6 +20,7 @@
 .\src\write_back.bde
 .\src\MIPS.bde
 .\src\sistema_mips.bde
+.\src\forwarding_control.vhd
 .\src\Componentes\shiftLeft2.bde
 .\src\Componentes\multiplexador.bde
 .\src\Componentes\ALU.bde

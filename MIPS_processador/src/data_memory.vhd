@@ -46,27 +46,27 @@ begin
 		
 	process 
 	begin  
-		wait for 30 ns;	
+		--wait for 30 ns;	
+		
+		--dc_pronto_out <= '0';
+		--wait for 2 ns;
+		--dc_pronto_out <= '1';
+		--wait for 8 ns; 
+		
+		--dc_pronto_out <= '0';
+		--wait for 2 ns;
+		--dc_pronto_out <= '1';
+		--wait for 8 ns; 
 		
 		dc_pronto_out <= '0';
 		wait for 2 ns;
 		dc_pronto_out <= '1';
 		wait for 8 ns; 
 		
-		dc_pronto_out <= '0';
-		wait for 2 ns;
-		dc_pronto_out <= '1';
-		wait for 8 ns; 
-		
-		dc_pronto_out <= '0';
-		wait for 2 ns;
-		dc_pronto_out <= '1';
-		wait for 8 ns; 
-		
-		dc_pronto_out <= '0';
-		wait for 15 ns;
-		dc_pronto_out <= '1'; 
-		wait for 5 ns;
+		--dc_pronto_out <= '0';
+		--wait for 15 ns;
+		--dc_pronto_out <= '1'; 
+		--wait for 5 ns;
 	end process;
 end data_memory;	 
 

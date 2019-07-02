@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\compile\instruction_decode.vhd
--- Generated   : Tue Jul  2 08:53:32 2019
+-- Generated   : Tue Jul  2 10:42:03 2019
 -- From        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\src\instruction_decode.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -38,6 +38,7 @@ entity instruction_decode is
        next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
+       rs_address : out STD_LOGIC_VECTOR(4 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
        shamt : out STD_LOGIC_VECTOR(4 downto 0);
@@ -62,6 +63,7 @@ component ID_EX_REG
        Clk : in STD_LOGIC;
        EX_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
        Instruction : in STD_LOGIC_VECTOR(20 downto 16);
+       Instruction_1 : in STD_LOGIC_VECTOR(25 downto 21);
        Instruction_2 : in STD_LOGIC_VECTOR(25 downto 0);
        Instruction_3 : in STD_LOGIC_VECTOR(15 downto 11);
        Instruction_4 : in STD_LOGIC_VECTOR(10 downto 06);
@@ -80,6 +82,7 @@ component ID_EX_REG
        next_instruction_address_ID : out STD_LOGIC_VECTOR(31 downto 0);
        rd_address : out STD_LOGIC_VECTOR(4 downto 0);
        rs : out STD_LOGIC_VECTOR(31 downto 0);
+       rs_address : out STD_LOGIC_VECTOR(4 downto 0);
        rt : out STD_LOGIC_VECTOR(31 downto 0);
        rt_address : out STD_LOGIC_VECTOR(4 downto 0);
        shamt : out STD_LOGIC_VECTOR(4 downto 0);
@@ -130,6 +133,11 @@ U4 : ID_EX_REG
        Instruction(18) => Instruction(18),
        Instruction(19) => Instruction(19),
        Instruction(20) => Instruction(20),
+       Instruction_1(21) => Instruction(21),
+       Instruction_1(22) => Instruction(22),
+       Instruction_1(23) => Instruction(23),
+       Instruction_1(24) => Instruction(24),
+       Instruction_1(25) => Instruction(25),
        Instruction_2(0) => Instruction(0),
        Instruction_2(1) => Instruction(1),
        Instruction_2(2) => Instruction(2),
@@ -176,6 +184,7 @@ U4 : ID_EX_REG
        next_instruction_address_bus => next_instruction_address_bus,
        rd_address => rd_address,
        rs => rs,
+       rs_address => rs_address,
        rs_bus => rs_bus,
        rt => rt,
        rt_address => rt_address,

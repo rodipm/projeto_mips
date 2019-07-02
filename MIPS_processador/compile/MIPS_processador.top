@@ -1,1 +1,6 @@
+memory_access ENTITY
+write_back ENTITY
 sistema_mips ENTITY
+instruction_decode ENTITY
+instruction_fetch ENTITY
+execution ENTITY
