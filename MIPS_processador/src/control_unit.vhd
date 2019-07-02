@@ -80,8 +80,8 @@ begin
 	MemWrite	<= SW;
 	RegDst		<= R_TYPE;
 	ULAsrc		<= LW or SW or ADDI or SLTI;
-	ULAOp1		<= BEQ or BNE;	
-	ULAOp2		<= R_TYPE;
+	ULAOp1		<= BEQ or BNE or SLTI;	
+	ULAOp2		<= R_TYPE or SLTI;
 	
 	WB_CONTROL_BUS <= (0 => RegWrite,
 					  1 => MemtoReg);
