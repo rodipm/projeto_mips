@@ -24,3 +24,5 @@ i<>.\src\EX_MEM_REG.vhd
 i<>.\src\MEM_WB_REG.vhd
 i<>.\src\memory_access.bde
 i<>.\src\write_back.bde
+i<>.\src\IC_CONTROL.vhd
+i<>.\src\DC_CONTROL.vhd

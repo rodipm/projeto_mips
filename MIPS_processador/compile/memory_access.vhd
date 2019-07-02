@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : D:\Code\OrgArq\projeto_mips\MIPS_processador\compile\memory_access.vhd
--- Generated   : Tue Jul  2 01:13:40 2019
--- From        : D:\Code\OrgArq\projeto_mips\MIPS_processador\src\memory_access.bde
+-- File        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\compile\memory_access.vhd
+-- Generated   : Tue Jul  2 08:53:34 2019
+-- From        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\src\memory_access.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -26,6 +26,7 @@ entity memory_access is
        Zero : in STD_LOGIC;
        clk : in STD_LOGIC;
        reset : in STD_LOGIC;
+       stall : in STD_LOGIC;
        EX_MEM_CONTROL : in STD_LOGIC_VECTOR(5 downto 0);
        EX_WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
        EX_branch_address : in STD_LOGIC_VECTOR(31 downto 0);
@@ -35,6 +36,7 @@ entity memory_access is
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        val : in STD_LOGIC_VECTOR(4 downto 0);
        PCSrc : out STD_LOGIC;
+       dc_stall : out STD_LOGIC;
        M_DATA : out STD_LOGIC_VECTOR(31 downto 0);
        M_ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
        M_WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
@@ -53,8 +55,18 @@ component data_memory
        EX_rt : in STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        clk : in STD_LOGIC;
+       dc_enable : in STD_LOGIC;
        reset : in STD_LOGIC;
-       DATA_BUS : out STD_LOGIC_VECTOR(31 downto 0)
+       DATA_BUS : out STD_LOGIC_VECTOR(31 downto 0);
+       dc_pronto_out : out STD_LOGIC
+  );
+end component;
+component DC_CONTROL
+  port (
+       ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
+       dc_pronto_out : in STD_LOGIC;
+       dc_enable : out STD_LOGIC;
+       dc_stall : out STD_LOGIC
   );
 end component;
 component MEM_WB_REG
@@ -64,6 +76,7 @@ component MEM_WB_REG
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        clk : in STD_LOGIC;
        reset : in STD_LOGIC;
+       stall : in STD_LOGIC;
        val : in STD_LOGIC_VECTOR(4 downto 0);
        M_DATA : out STD_LOGIC_VECTOR(31 downto 0);
        M_ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
@@ -85,6 +98,8 @@ end component;
 
 ---- Signal declarations used on the diagram ----
 
+signal dc_enable : STD_LOGIC;
+signal dc_pronto_out : STD_LOGIC;
 signal NET356 : STD_LOGIC;
 signal NET405 : STD_LOGIC;
 signal NET536 : STD_LOGIC;
@@ -96,6 +111,14 @@ signal DATA_BUS : STD_LOGIC_VECTOR(31 downto 0);
 begin
 
 ----  Component instantiations  ----
+
+DC_CONTROL_01 : DC_CONTROL
+  port map(
+       ULA_RES => ULA_RES,
+       dc_enable => dc_enable,
+       dc_pronto_out => dc_pronto_out,
+       dc_stall => dc_stall
+  );
 
 NET911 <= EX_MEM_CONTROL(1) or EX_MEM_CONTROL(0);
 
@@ -120,6 +143,7 @@ U12 : MEM_WB_REG
        ULA_RES => ULA_RES,
        clk => clk,
        reset => reset,
+       stall => stall,
        val => val,
        write_register => write_register
   );
@@ -149,6 +173,8 @@ data_memory_01 : data_memory
        EX_rt => EX_rt,
        ULA_RES => ULA_RES,
        clk => clk,
+       dc_enable => dc_enable,
+       dc_pronto_out => dc_pronto_out,
        reset => reset
   );
 

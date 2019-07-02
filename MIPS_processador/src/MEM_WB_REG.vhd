@@ -9,7 +9,7 @@ entity MEM_WB_REG is
 		 EX_WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
 		 reset : in STD_LOGIC;
 		 clk : in STD_LOGIC;
-		 
+		 stall : in STD_LOGIC;
 		 write_register : out STD_LOGIC_VECTOR(4 downto 0);
 		 M_ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
 		 M_DATA : out STD_LOGIC_VECTOR(31 downto 0);
@@ -26,7 +26,7 @@ begin
 			M_ULA_RES <= "00000000000000000000000000000000";
 			write_register <= "00000";
 			M_WB_CONTROL <= "00";
-		elsif rising_edge(clk) then
+		elsif rising_edge(clk) and stall='0' then
 			M_DATA <= DATA_BUS;
 			M_ULA_RES <= ULA_RES;
 			write_register <= val;

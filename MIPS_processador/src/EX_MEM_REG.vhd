@@ -5,7 +5,7 @@ entity EX_MEM_REG is
 	port(	   
 		 clk : in STD_LOGIC;
 		 reset : in STD_LOGIC;
-		 
+		 stall : in STD_LOGIC;
 		 WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
 		 MEM_CONTROL : in STD_LOGIC_VECTOR(5 downto 0);
 		 
@@ -48,7 +48,7 @@ begin
 			val <= "00000";
 			zero <= '0';
 			
-		elsif rising_edge(Clk) then
+		elsif rising_edge(Clk) and stall='0' then
 			EX_WB_CONTROL <= WB_CONTROL;
 			EX_MEM_CONTROL <= MEM_CONTROL;
 			

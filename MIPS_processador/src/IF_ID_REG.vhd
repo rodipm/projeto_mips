@@ -33,7 +33,8 @@ entity IF_ID_REG is
 		 next_instruction_address_bus : in STD_LOGIC_VECTOR(31 downto 0);
 		 instruction_bus : in STD_LOGIC_VECTOR(31 downto 0);
 		 Clk : in STD_LOGIC;
-		 Reset : in STD_LOGIC;
+		 Reset : in STD_LOGIC;	
+		 stall : in STD_LOGIC;
 		 next_instruction_address : out STD_LOGIC_VECTOR(31 downto 0);
 		 Instruction : out STD_LOGIC_VECTOR(31 downto 0)
 	     );
@@ -45,12 +46,12 @@ architecture IF_ID_REG of IF_ID_REG is
 begin
 
 	-- enter your statements here -- 
-	process(Clk,Reset, next_instruction_address_bus, instruction_bus)
+	process(Clk,Reset, next_instruction_address_bus, instruction_bus, stall)
 		begin
 			if Reset = '1' then
 				next_instruction_address <= "00000000000000000000000000000000";
 				Instruction	<= "11111100000000000000000000111111";
-			elsif rising_edge(CLK) then
+			elsif rising_edge(CLK) and stall='0' then
 				next_instruction_address <= next_instruction_address_bus;
 				Instruction <= instruction_bus;
 			end if;

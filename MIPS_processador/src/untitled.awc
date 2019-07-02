@@ -6,44 +6,67 @@
     </comment>
     <databases>
         <database id="">*virtual*</database>
-        <database id="5404a61d0fc500ca1a5de29285001300">untitled.asdb</database>
+        <database id="02004c4f4f500e491b5d92f8951c1200">wave.asdb</database>
     </databases>
     <signallists>
         <signallist id="0">
-        <signal>/sistema_mips/Clk</signal>
-        <signal>/sistema_mips/mips_01/execution_01/reset</signal>
-        <signal>/sistema_mips/mips_01/instruction_decode_01/next_instruction_address</signal>
-        <signal>/sistema_mips/mips_01/instruction_decode_01/Instruction</signal>
-        <signal>/sistema_mips/mips_01/instruction_decode_01/register_file_01/REGISTRADORES</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U2/ULAop1</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U2/ULAop2</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U2/instruction</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U2/ulaSelection</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/S_NB</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/sigZero</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/A</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/B</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/selection</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/shamt</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/Zero</signal>
-        <signal>/sistema_mips/mips_01/execution_01/U9/output</signal>
-        <signal>/sistema_mips/mips_01/instruction_decode_01/control_unit_01/RegWrite</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/Clk</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/PCSrc</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/Reset</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/branch_instruction_address</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/ic_stall_IF</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/Instruction</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/enable</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/ic_pronto_out</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/A</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/address_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/instruction_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/mux_pc_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/next_instruction_address_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/EX_CONTROL</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/MEM_CONTROL</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/WB_CONTROL</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/jump_address</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/next_instruction_address_ID</signal>
         <signal>/sistema_mips/mips_01/instruction_decode_01/rd_address</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/rs</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/rt</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/rt_address</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/shamt</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/signal_extended</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/EX_CONTROL_BUS</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/MEM_CONTROL_BUS</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/next_instruction_address_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/rs_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/rt_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/signal_extended_bus</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/WB_CONTROL_BUS</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/IC_CONTROL_01/address</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/IC_CONTROL_01/ic_pronto</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/IC_CONTROL_01/ic_enable</signal>
+        <signal>/sistema_mips/mips_01/instruction_fetch_01/IC_CONTROL_01/ic_stall</signal>
+        <signal>/sistema_mips/mips_01/instruction_decode_01/register_file_01/REGISTRADORES</signal>
+        <signal>/sistema_mips/mips_01/memory_access_01/DC_CONTROL_01/ULA_RES</signal>
+        <signal>/sistema_mips/mips_01/memory_access_01/DC_CONTROL_01/dc_pronto_out</signal>
+        <signal>/sistema_mips/mips_01/memory_access_01/DC_CONTROL_01/dc_enable</signal>
+        <signal>/sistema_mips/mips_01/memory_access_01/DC_CONTROL_01/dc_stall</signal>
         </signallist>
     </signallists>
     <prefbases>
         <prefbase id="0" >
-            <pref name="End Time" value="101868" />
+            <pref name="End Time" value="102021" />
             <pref name="Start Time" value="0" />
         </prefbase>
     </prefbases>
     <bookmarkbases>
         <bookmarks id="0">
+            <bookmark value="25048"/>
         </bookmarks>
     </bookmarkbases>
     <cursorbases>
         <cursors id="0">
-            <cursor value="100000" label="Cursor 1" locked="0" />
+            <cursor value="95000" label="Cursor 1" locked="0" />
         </cursors>
     </cursorbases>
     <measurementbases>

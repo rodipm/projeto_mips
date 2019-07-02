@@ -2,7 +2,7 @@ SCHM0106
 
 HEADER
 {
- FREEID 1873
+ FREEID 1912
  VARIABLES
  {
   #ARCHITECTURE="instruction_decode"
@@ -11,24 +11,25 @@ HEADER
   #DEFAULT_RANGE0="<range<index=\"0\"><name=\"ex_control\"><left=\"3\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #DEFAULT_RANGE1="<range<index=\"0\"><name=\"ex_control_bus\"><left=\"3\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #DEFAULT_RANGE2="<range<index=\"0\"><name=\"instruction\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"mem_control\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"mem_control_bus\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE5="<range<index=\"0\"><name=\"next_instruction_address\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE6="<range<index=\"0\"><name=\"next_instruction_address_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE7="<range<index=\"0\"><name=\"next_instruction_address_id\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE8="<range<index=\"0\"><name=\"rd_address\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE9="<range<index=\"0\"><name=\"rs\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE10="<range<index=\"0\"><name=\"rs_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE11="<range<index=\"0\"><name=\"rt\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE12="<range<index=\"0\"><name=\"rt_address\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE13="<range<index=\"0\"><name=\"rt_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE14="<range<index=\"0\"><name=\"shamt\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE15="<range<index=\"0\"><name=\"signal_extended\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE16="<range<index=\"0\"><name=\"signal_extended_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE17="<range<index=\"0\"><name=\"wb_control\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE18="<range<index=\"0\"><name=\"wb_control_bus\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE19="<range<index=\"0\"><name=\"write_data\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
-  #DEFAULT_RANGE20="<range<index=\"0\"><name=\"write_register\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"jump_address\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"mem_control\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE5="<range<index=\"0\"><name=\"mem_control_bus\"><left=\"5\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE6="<range<index=\"0\"><name=\"next_instruction_address\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE7="<range<index=\"0\"><name=\"next_instruction_address_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE8="<range<index=\"0\"><name=\"next_instruction_address_id\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE9="<range<index=\"0\"><name=\"rd_address\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE10="<range<index=\"0\"><name=\"rs\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE11="<range<index=\"0\"><name=\"rs_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE12="<range<index=\"0\"><name=\"rt\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE13="<range<index=\"0\"><name=\"rt_address\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE14="<range<index=\"0\"><name=\"rt_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE15="<range<index=\"0\"><name=\"shamt\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE16="<range<index=\"0\"><name=\"signal_extended\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE17="<range<index=\"0\"><name=\"signal_extended_bus\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE18="<range<index=\"0\"><name=\"wb_control\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE19="<range<index=\"0\"><name=\"wb_control_bus\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE20="<range<index=\"0\"><name=\"write_data\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE21="<range<index=\"0\"><name=\"write_register\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
   #ENTITY="instruction_decode"
   #LANGUAGE="VHDL"
   CREATIONDATE="24/05/2019"
@@ -709,6 +710,7 @@ HEADER
       #DIRECTION="OUT"
       #FAMILY="Fub"
       #NAME="jump_address(31:0)"
+      #VHDL_TYPE="STD_LOGIC_VECTOR"
      }
      LINE  1, 0, 0
      {
@@ -2748,6 +2750,29 @@ PAGE ""
    SHOWLABEL
    SHOWTEXT
   }
+  INSTANCE  1873, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="jump_address(31:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (4220,2240)
+   VERTEXES ( (2,1663) )
+  }
+  TEXT  1874, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (4272,2223,4534,2258)
+   ALIGN 4
+   MARGINS (1,1)
+   PARENT 1873
+  }
  }
  
 }
@@ -2776,7 +2801,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  1855, 0, 0
+  TEXT  1895, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2787,7 +2812,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1856, 0, 0
+  TEXT  1896, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -2798,7 +2823,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1857, 0, 0
+  TEXT  1897, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -2808,7 +2833,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1858, 0, 0
+  TEXT  1898, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2820,7 +2845,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1859, 0, 0
+  TEXT  1899, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -2833,7 +2858,7 @@ PAGE ""
    FONT (12,0,0,700,0,0,0,"Arial")
    MULTILINE
   }
-  TEXT  1860, 0, 0
+  TEXT  1900, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -2843,7 +2868,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1861, 0, 0
+  TEXT  1901, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -2855,7 +2880,7 @@ PAGE ""
    FONT (12,0,0,700,0,128,0,"Arial")
    UPDATE 0
   }
-  TEXT  1862, 0, 0
+  TEXT  1902, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -2865,7 +2890,7 @@ PAGE ""
    COLOR (0,0,0)
    FONT (12,0,0,700,0,0,0,"Arial")
   }
-  TEXT  1863, 0, 0
+  TEXT  1903, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -2876,7 +2901,7 @@ PAGE ""
    FONT (12,0,0,700,0,204,0,"Arial")
    UPDATE 0
   }
-  GROUP  1864, 0, 0
+  GROUP  1904, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6034,9153,6415)
@@ -2888,7 +2913,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1865, 0, 0
+  GROUP  1905, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6234,9153,6235)
@@ -2900,7 +2925,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1866, 0, 0
+  GROUP  1906, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6174,9153,6175)
@@ -2912,7 +2937,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1867, 0, 0
+  GROUP  1907, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6294,9153,6295)
@@ -2924,7 +2949,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1868, 0, 0
+  GROUP  1908, 0, 0
   {
    PAGEALIGN 10
    RECT (8272,6354,9153,6355)
@@ -2936,7 +2961,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1869, 0, 0
+  GROUP  1909, 0, 0
   {
    PAGEALIGN 10
    RECT (8452,6034,8453,6175)
@@ -2947,7 +2972,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  1870, 0, 0
+  GROUP  1910, 0, 0
   {
    PAGEALIGN 10
    RECT (8452,6174,8453,6415)
@@ -2958,7 +2983,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  1871, 0, 0
+  BMPPICT  1911, 0, 0
   {
    PAGEALIGN 10
    RECT (8292,6094,8431,6139)

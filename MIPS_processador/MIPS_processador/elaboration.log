@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-07-02 01:29:08
+Active-HDL 10.5.217.6767 2019-07-02 09:07:41
 
 Elaboration top modules:
 Architecture                  sistema_mips(sistema_mips)
@@ -25,9 +25,11 @@ ID_EX_REG          | ID_EX_REG          | mips_processador |      | 10.5.217.676
 control_unit       | control_unit       | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 register_file      | register_file      | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 signal_extend      | signal_extend      | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+IC_CONTROL         | IC_CONTROL_ARCH    | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 IF_ID_REG          | IF_ID_REG          | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 instruction_memory | instruction_memory | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 PC                 | PC                 | mips_processador |      | 10.5.217.6767 (Windows) | -O3
+DC_CONTROL         | DC_CONTROL_ARCH    | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 MEM_WB_REG         | MEM_WB_REG         | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 data_memory        | data_memory        | mips_processador |      | 10.5.217.6767 (Windows) | -O3
 ------------------------------------------------------------------------------------------------------------------

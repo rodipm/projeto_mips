@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\compile\instruction_decode.vhd
--- Generated   : Mon Jul  1 22:28:14 2019
--- From        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\src\instruction_decode.bde
+-- File        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\compile\instruction_decode.vhd
+-- Generated   : Tue Jul  2 08:53:32 2019
+-- From        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\src\instruction_decode.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -26,6 +26,7 @@ entity instruction_decode is
        Clk : in STD_LOGIC;
        RegWrite : in STD_LOGIC;
        Reset : in STD_LOGIC;
+       stall : in STD_LOGIC;
        Instruction : in STD_LOGIC_VECTOR(31 downto 0);
        next_instruction_address : in STD_LOGIC_VECTOR(31 downto 0);
        write_data : in STD_LOGIC_VECTOR(31 downto 0);
@@ -71,6 +72,7 @@ component ID_EX_REG
        rs_bus : in STD_LOGIC_VECTOR(31 downto 0);
        rt_bus : in STD_LOGIC_VECTOR(31 downto 0);
        signal_extended_bus : in STD_LOGIC_VECTOR(31 downto 0);
+       stall : in STD_LOGIC;
        EX_CONTROL : out STD_LOGIC_VECTOR(3 downto 0);
        MEM_CONTROL : out STD_LOGIC_VECTOR(5 downto 0);
        WB_CONTROL : out STD_LOGIC_VECTOR(1 downto 0);
@@ -180,7 +182,8 @@ U4 : ID_EX_REG
        rt_bus => rt_bus,
        shamt => shamt,
        signal_extended => signal_extended,
-       signal_extended_bus => signal_extended_bus
+       signal_extended_bus => signal_extended_bus,
+       stall => stall
   );
 
 control_unit_01 : control_unit

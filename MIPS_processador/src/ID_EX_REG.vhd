@@ -2,7 +2,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 		 
 entity ID_EX_REG is
-	 port(
+	port(		
+		 stall : in STD_LOGIC;
 		 WB_CONTROL_BUS : in STD_LOGIC_VECTOR(1 downto 0);
 		 MEM_CONTROL_BUS : in STD_LOGIC_VECTOR(5 downto 0);
 		 EX_CONTROL_BUS : in STD_LOGIC_VECTOR(3 downto 0);
@@ -46,7 +47,7 @@ begin
 			rt <= "00000000000000000000000000000000";	
 			shamt <= "00000";
 			jump_address <= "00000000000000000000000000000000";
-		elsif rising_edge(Clk) then
+		elsif rising_edge(Clk) and stall='0' then
 			WB_CONTROL <= WB_CONTROL_BUS;
 			MEM_CONTROL <= MEM_CONTROL_BUS;
 			EX_CONTROL <= EX_CONTROL_BUS;
