@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\execution.vhd
--- Generated   : Mon Jul  1 19:24:58 2019
--- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\execution.bde
+-- File        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\compile\execution.vhd
+-- Generated   : Mon Jul  1 23:09:55 2019
+-- From        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\src\execution.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -22,6 +22,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_arith.all;
 use IEEE.std_logic_unsigned.all;
+
+-- Included from components --
+use IEEE.std_logic_signed.all;
+use IEEE.numeric_std.all;
 
 entity execution is
   port(
@@ -68,6 +72,7 @@ component ALU
        A : in STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
        B : in STD_LOGIC_VECTOR(NumeroBits - 1 downto 0);
        selection : in STD_LOGIC_VECTOR(2 downto 0);
+       shamt : in STD_LOGIC_VECTOR(4 downto 0);
        Zero : out std_logic;
        output : out STD_LOGIC_VECTOR(NumeroBits - 1 downto 0)
   );
@@ -123,12 +128,12 @@ end component;
 ---- Signal declarations used on the diagram ----
 
 signal NET1834 : std_logic;
+signal BUS1767 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS2593 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS3590 : std_logic_vector(31 downto 0);
+signal BUS3665 : STD_LOGIC_VECTOR(2 downto 0);
 signal BUS4096 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF1767 : STD_LOGIC_VECTOR(4 downto 0);
-signal next_instruction_address_IF2593 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF3590 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF3665 : STD_LOGIC_VECTOR(2 downto 0);
-signal next_instruction_address_IF544 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS544 : std_logic_vector(31 downto 0);
 
 begin
 
@@ -144,14 +149,14 @@ U1 : EX_MEM_REG
        MEM_CONTROL => MEM_CONTROL,
        RS_in => rs,
        ULA_RES => ULA_RES,
-       ULA_in => next_instruction_address_IF2593,
+       ULA_in => BUS2593,
        WB_CONTROL => WB_CONTROL,
-       branch_address_in => next_instruction_address_IF3590,
+       branch_address_in => BUS3590,
        clk => clk,
        jump_address_in => jump_address,
        reset => reset,
        val => val,
-       val_res => next_instruction_address_IF1767,
+       val_res => BUS1767,
        zero => Zero,
        zero_in => NET1834
   );
@@ -166,20 +171,20 @@ U2 : ALU_Control
        instruction(5) => signal_extended(5),
        ULAop1 => EX_CONTROL(1),
        ULAop2 => EX_CONTROL(2),
-       ulaSelection => next_instruction_address_IF3665
+       ulaSelection => BUS3665
   );
 
 U4 : adder
   port map(
        A => next_instruction_address_ID,
-       B => next_instruction_address_IF544,
-       resultado => next_instruction_address_IF3590
+       B => BUS544,
+       resultado => BUS3590
   );
 
 U5 : shiftLeft2
   port map(
        In1 => signal_extended,
-       Out1 => next_instruction_address_IF544
+       Out1 => BUS544
   );
 
 U7 : multiplexador
@@ -200,7 +205,7 @@ U8 : multiplexador
   port map(
        input0 => rt_address(4 downto 0),
        input1 => rd_address(4 downto 0),
-       output => next_instruction_address_IF1767(4 downto 0),
+       output => BUS1767(4 downto 0),
        selection => EX_CONTROL(0)
   );
 
@@ -209,8 +214,9 @@ U9 : ALU
        A => rs(31 downto 0),
        B => BUS4096(31 downto 0),
        Zero => NET1834,
-       output => next_instruction_address_IF2593(31 downto 0),
-       selection => next_instruction_address_IF3665
+       output => BUS2593(31 downto 0),
+       selection => BUS3665,
+       shamt => shamt
   );
 
 

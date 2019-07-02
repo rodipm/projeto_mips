@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\compile\MIPS.vhd
--- Generated   : Mon Jul  1 15:53:24 2019
--- From        : E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MIPS.bde
+-- File        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\compile\MIPS.vhd
+-- Generated   : Mon Jul  1 22:30:45 2019
+-- From        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\src\MIPS.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -138,33 +138,33 @@ signal NET410 : STD_LOGIC;
 signal NET5251 : STD_LOGIC;
 signal NET6046 : STD_LOGIC;
 signal NET6613 : STD_LOGIC;
-signal next_instruction_address_IF2335 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF3223 : STD_LOGIC_VECTOR(1 downto 0);
-signal next_instruction_address_IF3234 : STD_LOGIC_VECTOR(5 downto 0);
-signal next_instruction_address_IF3293 : STD_LOGIC_VECTOR(3 downto 0);
-signal next_instruction_address_IF3297 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF3340 : STD_LOGIC_VECTOR(4 downto 0);
-signal next_instruction_address_IF3355 : STD_LOGIC_VECTOR(4 downto 0);
-signal next_instruction_address_IF3363 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF3389 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF3517 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF3532 : STD_LOGIC_VECTOR(4 downto 0);
-signal next_instruction_address_IF3540 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF5239 : STD_LOGIC_VECTOR(4 downto 0);
-signal next_instruction_address_IF5243 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF5247 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF5255 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF5259 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF5263 : STD_LOGIC_VECTOR(5 downto 0);
-signal next_instruction_address_IF5267 : STD_LOGIC_VECTOR(1 downto 0);
-signal next_instruction_address_IF5717 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF5721 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF5800 : STD_LOGIC_VECTOR(1 downto 0);
-signal next_instruction_address_IF6149 : STD_LOGIC_VECTOR(4 downto 0);
-signal next_instruction_address_IF6588 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF6592 : STD_LOGIC_VECTOR(31 downto 0);
-signal next_instruction_address_IF6691 : STD_LOGIC_VECTOR(4 downto 0);
-signal next_instruction_address_IF6738 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS2335 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS3223 : STD_LOGIC_VECTOR(1 downto 0);
+signal BUS3234 : STD_LOGIC_VECTOR(5 downto 0);
+signal BUS3293 : STD_LOGIC_VECTOR(3 downto 0);
+signal BUS3297 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS3340 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS3355 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS3363 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS3389 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS3517 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS3532 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS3540 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS5239 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS5243 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS5247 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS5255 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS5259 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS5263 : STD_LOGIC_VECTOR(5 downto 0);
+signal BUS5267 : STD_LOGIC_VECTOR(1 downto 0);
+signal BUS5717 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS5721 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS5800 : STD_LOGIC_VECTOR(1 downto 0);
+signal BUS6149 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS6588 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS6592 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS6691 : STD_LOGIC_VECTOR(4 downto 0);
+signal BUS6738 : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -172,92 +172,92 @@ begin
 
 execution_01 : execution
   port map(
-       EX_CONTROL => next_instruction_address_IF3293,
-       EX_MEM_CONTROL => next_instruction_address_IF5263,
-       EX_WB_CONTROL => next_instruction_address_IF5267,
-       EX_branch_address => next_instruction_address_IF5255,
-       EX_jump_address => next_instruction_address_IF5259,
-       EX_rs => next_instruction_address_IF5243,
-       MEM_CONTROL => next_instruction_address_IF3234,
-       ULA_RES => next_instruction_address_IF5247,
-       WB_CONTROL => next_instruction_address_IF3223,
+       EX_CONTROL => BUS3293,
+       EX_MEM_CONTROL => BUS5263,
+       EX_WB_CONTROL => BUS5267,
+       EX_branch_address => BUS5255,
+       EX_jump_address => BUS5259,
+       EX_rs => BUS5243,
+       MEM_CONTROL => BUS3234,
+       ULA_RES => BUS5247,
+       WB_CONTROL => BUS3223,
        Zero => NET5251,
        clk => NET138,
-       jump_address => next_instruction_address_IF3540,
-       next_instruction_address_ID => next_instruction_address_IF3297,
-       rd_address => next_instruction_address_IF3355,
+       jump_address => BUS3540,
+       next_instruction_address_ID => BUS3297,
+       rd_address => BUS3355,
        reset => NET410,
-       rs => next_instruction_address_IF3389,
-       rt => next_instruction_address_IF3517,
-       rt_address => next_instruction_address_IF3340,
-       shamt => next_instruction_address_IF3532,
-       signal_extended => next_instruction_address_IF3363,
-       val => next_instruction_address_IF5239
+       rs => BUS3389,
+       rt => BUS3517,
+       rt_address => BUS3340,
+       shamt => BUS3532,
+       signal_extended => BUS3363,
+       val => BUS5239
   );
 
 instruction_decode_01 : instruction_decode
   port map(
        Clk => NET138,
-       EX_CONTROL => next_instruction_address_IF3293,
-       Instruction => next_instruction_address_IF6588,
-       MEM_CONTROL => next_instruction_address_IF3234,
+       EX_CONTROL => BUS3293,
+       Instruction => BUS6588,
+       MEM_CONTROL => BUS3234,
        RegWrite => NET6046,
        Reset => NET410,
-       WB_CONTROL => next_instruction_address_IF3223,
-       jump_address => next_instruction_address_IF3540,
-       next_instruction_address => next_instruction_address_IF6592,
-       next_instruction_address_ID => next_instruction_address_IF3297,
-       rd_address => next_instruction_address_IF3355,
-       rs => next_instruction_address_IF3389,
-       rt => next_instruction_address_IF3517,
-       rt_address => next_instruction_address_IF3340,
-       shamt => next_instruction_address_IF3532,
-       signal_extended => next_instruction_address_IF3363,
-       write_data => next_instruction_address_IF2335,
-       write_register => next_instruction_address_IF6149
+       WB_CONTROL => BUS3223,
+       jump_address => BUS3540,
+       next_instruction_address => BUS6592,
+       next_instruction_address_ID => BUS3297,
+       rd_address => BUS3355,
+       rs => BUS3389,
+       rt => BUS3517,
+       rt_address => BUS3340,
+       shamt => BUS3532,
+       signal_extended => BUS3363,
+       write_data => BUS2335,
+       write_register => BUS6149
   );
 
 instruction_fetch_01 : instruction_fetch
   port map(
        Clk => NET138,
-       Instruction => next_instruction_address_IF6588,
+       Instruction => BUS6588,
        PCSrc => NET6613,
        Reset => NET410,
-       branch_instruction_address => next_instruction_address_IF6738,
-       next_instruction_address => next_instruction_address_IF6592
+       branch_instruction_address => BUS6738,
+       next_instruction_address => BUS6592
   );
 
 memory_access_01 : memory_access
   port map(
-       EX_MEM_CONTROL => next_instruction_address_IF5263,
-       EX_WB_CONTROL => next_instruction_address_IF5267,
-       EX_branch_address => next_instruction_address_IF5255,
-       EX_jump_address => next_instruction_address_IF5259,
-       EX_rs => next_instruction_address_IF5243,
-       M_DATA => next_instruction_address_IF5721,
-       M_ULA_RES => next_instruction_address_IF5717,
-       M_WB_CONTROL => next_instruction_address_IF5800,
+       EX_MEM_CONTROL => BUS5263,
+       EX_WB_CONTROL => BUS5267,
+       EX_branch_address => BUS5255,
+       EX_jump_address => BUS5259,
+       EX_rs => BUS5243,
+       M_DATA => BUS5721,
+       M_ULA_RES => BUS5717,
+       M_WB_CONTROL => BUS5800,
        PCSrc => NET6613,
-       ULA_RES => next_instruction_address_IF5247,
+       ULA_RES => BUS5247,
        Zero => NET5251,
-       branch_instruction_address => next_instruction_address_IF6738,
+       branch_instruction_address => BUS6738,
        clk => NET138,
        reset => reset,
-       val => next_instruction_address_IF5239,
-       write_register => next_instruction_address_IF6691
+       val => BUS5239,
+       write_register => BUS6691
   );
 
 write_back_01 : write_back
   port map(
-       M_DATA => next_instruction_address_IF5721,
-       M_ULA_RES => next_instruction_address_IF5717,
-       M_WB_CONTROL => next_instruction_address_IF5800,
-       M_write_register => next_instruction_address_IF6149,
+       M_DATA => BUS5721,
+       M_ULA_RES => BUS5717,
+       M_WB_CONTROL => BUS5800,
+       M_write_register => BUS6149,
        RegWrite => NET6046,
-       WB_DATA => next_instruction_address_IF2335,
+       WB_DATA => BUS2335,
        clk => NET138,
        reset => reset,
-       write_register => next_instruction_address_IF6691
+       write_register => BUS6691
   );
 
 
