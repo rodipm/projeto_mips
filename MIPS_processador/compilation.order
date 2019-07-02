@@ -13,11 +13,11 @@
 .\src\DC_CONTROL.vhd
 .\src\control_unit.vhd
 .\src\Adder.vhd
-.\src\execution.bde
-.\src\instruction_fetch.bde
 .\src\instruction_decode.bde
-.\src\write_back.bde
 .\src\memory_access.bde
+.\src\instruction_fetch.bde
+.\src\execution.bde
+.\src\write_back.bde
 .\src\MIPS.bde
 .\src\sistema_mips.bde
 .\src\Componentes\shiftLeft2.bde

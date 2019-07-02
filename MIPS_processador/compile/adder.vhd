@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\compile\adder.vhd
--- Generated   : Tue Jul  2 08:53:40 2019
+-- Generated   : Tue Jul  2 09:32:44 2019
 -- From        : E:\rpm-dev\tmp_orgArq\projeto_mips\MIPS_processador\src\Componentes\adder.bde
 -- By          : Bde2Vhdl ver. 2.6
 --

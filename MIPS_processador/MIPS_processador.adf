@@ -84,11 +84,11 @@ Componentes=1
 /DC_CONTROL.vhd=-1
 /control_unit.vhd=-1
 /Adder.vhd=-1
-/execution.bde=-1
-/instruction_fetch.bde=-1
 /instruction_decode.bde=-1
-/write_back.bde=-1
 /memory_access.bde=-1
+/instruction_fetch.bde=-1
+/execution.bde=-1
+/write_back.bde=-1
 /MIPS.bde=-1
 /sistema_mips.bde=-1
 /untitled.asdb=-1
@@ -114,11 +114,11 @@ Componentes/adder.bde=-1
 .\src\DC_CONTROL.vhd=VHDL Source Code
 .\src\control_unit.vhd=VHDL Source Code
 .\src\Adder.vhd=VHDL Source Code
-.\src\execution.bde=Block Diagram
-.\src\instruction_fetch.bde=Block Diagram
 .\src\instruction_decode.bde=Block Diagram
-.\src\write_back.bde=Block Diagram
 .\src\memory_access.bde=Block Diagram
+.\src\instruction_fetch.bde=Block Diagram
+.\src\execution.bde=Block Diagram
+.\src\write_back.bde=Block Diagram
 .\src\MIPS.bde=Block Diagram
 .\src\sistema_mips.bde=Block Diagram
 .\src\untitled.asdb=Accelerated Waveform File
@@ -128,17 +128,23 @@ Componentes/adder.bde=-1
 .\src\Componentes\ALU.bde=Block Diagram
 .\src\Componentes\adder.bde=Block Diagram
 
-[file_out:/execution.bde]
-/..\compile\execution.vhd=-1
-
-
 [file_out:/instruction_decode.bde]
 /..\compile\instruction_decode.vhd=-1
+
+[file_out:/memory_access.bde]
+/..\compile\memory_access.vhd=-1
+
+[file_out:/instruction_fetch.bde]
+/..\compile\instruction_fetch.vhd=-1
+
+[file_out:/execution.bde]
+/..\compile\execution.vhd=-1
 
 [file_out:/write_back.bde]
 /..\compile\write_back.vhd=-1
 
-
+[file_out:/MIPS.bde]
+/..\compile\MIPS.vhd=-1
 
 [file_out:/sistema_mips.bde]
 /..\compile\sistema_mips.vhd=-1
@@ -152,12 +158,6 @@ Componentes/..\..\compile\multiplexador.vhd=-1
 [file_out:Componentes/ALU.bde]
 Componentes/..\..\compile\ALU.vhd=-1
 
-
-[file_out:/MIPS.bde]
-/..\compile\MIPS.vhd=-1
-[file_out:/memory_access.bde]
-/..\compile\memory_access.vhd=-1
 [file_out:Componentes/adder.bde]
 Componentes/..\..\compile\adder.vhd=-1
-[file_out:/instruction_fetch.bde]
-/..\compile\instruction_fetch.vhd=-1
+
