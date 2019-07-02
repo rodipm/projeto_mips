@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\compile\execution.vhd
--- Generated   : Mon Jul  1 23:09:55 2019
--- From        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\src\execution.bde
+-- File        : D:\Code\OrgArq\projeto_mips\MIPS_processador\compile\execution.vhd
+-- Generated   : Tue Jul  2 01:10:41 2019
+-- From        : D:\Code\OrgArq\projeto_mips\MIPS_processador\src\execution.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -48,6 +48,7 @@ entity execution is
        EX_branch_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
+       EX_rt : out STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
        val : out STD_LOGIC_VECTOR(4 downto 0)
   );
@@ -89,6 +90,7 @@ component EX_MEM_REG
   port (
        MEM_CONTROL : in STD_LOGIC_VECTOR(5 downto 0);
        RS_in : in STD_LOGIC_VECTOR(31 downto 0);
+       RT_in : in STD_LOGIC_VECTOR(31 downto 0);
        ULA_in : in STD_LOGIC_VECTOR(31 downto 0);
        WB_CONTROL : in STD_LOGIC_VECTOR(1 downto 0);
        branch_address_in : in STD_LOGIC_VECTOR(31 downto 0);
@@ -102,6 +104,7 @@ component EX_MEM_REG
        EX_branch_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
+       EX_rt : out STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
        val : out STD_LOGIC_VECTOR(4 downto 0);
        zero : out STD_LOGIC
@@ -146,8 +149,10 @@ U1 : EX_MEM_REG
        EX_branch_address => EX_branch_address,
        EX_jump_address => EX_jump_address,
        EX_rs => EX_rs,
+       EX_rt => EX_rt,
        MEM_CONTROL => MEM_CONTROL,
        RS_in => rs,
+       RT_in => rt,
        ULA_RES => ULA_RES,
        ULA_in => BUS2593,
        WB_CONTROL => WB_CONTROL,

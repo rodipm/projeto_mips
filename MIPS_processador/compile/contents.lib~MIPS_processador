@@ -1,4 +1,4 @@
-1427
+1549
 ~E 1 "./../compile/adder.vhd" 26 adder
 ~A 1 "./../compile/adder.vhd" 34 adder
 ~E 1 "./../compile/ALU.vhd" 26 ALU
@@ -10,9 +10,9 @@
 ~E 1 "./../src/data_memory.vhd" 4 data_memory
 ~A 1 "./../src/data_memory.vhd" 16 data_memory
 ~E 1 "./../src/EX_MEM_REG.vhd" 4 EX_MEM_REG
-~A 1 "./../src/EX_MEM_REG.vhd" 33 EX_MEM_REG
+~A 1 "./../src/EX_MEM_REG.vhd" 35 EX_MEM_REG
 ~E 1 "./../compile/execution.vhd" 30 execution
-~A 1 "./../compile/execution.vhd" 56 execution
+~A 1 "./../compile/execution.vhd" 57 execution
 ~E 1 "./../compile/execution2.vhd" 29 Fub1
 ~E 0 "" 0 Fub2
 ~E 0 "" 0 Fub3
@@ -33,7 +33,7 @@
 ~E 1 "./../src/MEM_WB_REG.vhd" 4 MEM_WB_REG
 ~A 1 "./../src/MEM_WB_REG.vhd" 20 MEM_WB_REG
 ~E 1 "./../compile/memory_access.vhd" 24 memory_access
-~A 1 "./../compile/memory_access.vhd" 45 memory_access
+~A 1 "./../compile/memory_access.vhd" 46 memory_access
 ~E 1 "./../compile/MIPS.vhd" 27 mips
 ~A 1 "./../compile/MIPS.vhd" 39 mips
 ~E 1 "./../compile/multiplexador.vhd" 24 multiplexador

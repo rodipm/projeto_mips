@@ -2,4 +2,4 @@ WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line break
 MESSAGE "File: D:\Code\OrgArq\projeto_mips\MIPS_processador\src\instruction_memory.vhd" 
 MESSAGE "Compile Entity "instruction_memory"" 
 MESSAGE "Compile Architecture "instruction_memory" of Entity "instruction_memory"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  31.0 [ms]" 

@@ -8,7 +8,7 @@
 -------------------------------------------------------------------------------
 --
 -- File        : D:\Code\OrgArq\projeto_mips\MIPS_processador\compile\MIPS.vhd
--- Generated   : Mon Jul  1 23:34:49 2019
+-- Generated   : Tue Jul  2 01:14:03 2019
 -- From        : D:\Code\OrgArq\projeto_mips\MIPS_processador\src\MIPS.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
@@ -60,6 +60,7 @@ component execution
        EX_branch_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : out STD_LOGIC_VECTOR(31 downto 0);
        EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
+       EX_rt : out STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
        Zero : out STD_LOGIC;
        val : out STD_LOGIC_VECTOR(4 downto 0)
@@ -104,6 +105,7 @@ component memory_access
        EX_branch_address : in STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : in STD_LOGIC_VECTOR(31 downto 0);
        EX_rs : in STD_LOGIC_VECTOR(31 downto 0);
+       EX_rt : in STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        Zero : in STD_LOGIC;
        clk : in STD_LOGIC;
@@ -165,6 +167,7 @@ signal BUS6588 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS6592 : STD_LOGIC_VECTOR(31 downto 0);
 signal BUS6691 : STD_LOGIC_VECTOR(4 downto 0);
 signal BUS6738 : STD_LOGIC_VECTOR(31 downto 0);
+signal BUS6920 : STD_LOGIC_VECTOR(31 downto 0);
 
 begin
 
@@ -178,6 +181,7 @@ execution_01 : execution
        EX_branch_address => BUS5255,
        EX_jump_address => BUS5259,
        EX_rs => BUS5243,
+       EX_rt => BUS6920,
        MEM_CONTROL => BUS3234,
        ULA_RES => BUS5247,
        WB_CONTROL => BUS3223,
@@ -234,6 +238,7 @@ memory_access_01 : memory_access
        EX_branch_address => BUS5255,
        EX_jump_address => BUS5259,
        EX_rs => BUS5243,
+       EX_rt => BUS6920,
        M_DATA => BUS5721,
        M_ULA_RES => BUS5717,
        M_WB_CONTROL => BUS5800,

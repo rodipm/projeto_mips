@@ -7,9 +7,9 @@
 --
 -------------------------------------------------------------------------------
 --
--- File        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\compile\memory_access.vhd
--- Generated   : Mon Jul  1 22:28:19 2019
--- From        : D:\Code\OrgArq\MIPS - Copia (2) - Copia\MIPS_processador\src\memory_access.bde
+-- File        : D:\Code\OrgArq\projeto_mips\MIPS_processador\compile\memory_access.vhd
+-- Generated   : Tue Jul  2 01:13:40 2019
+-- From        : D:\Code\OrgArq\projeto_mips\MIPS_processador\src\memory_access.bde
 -- By          : Bde2Vhdl ver. 2.6
 --
 -------------------------------------------------------------------------------
@@ -31,6 +31,7 @@ entity memory_access is
        EX_branch_address : in STD_LOGIC_VECTOR(31 downto 0);
        EX_jump_address : in STD_LOGIC_VECTOR(31 downto 0);
        EX_rs : in STD_LOGIC_VECTOR(31 downto 0);
+       EX_rt : in STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        val : in STD_LOGIC_VECTOR(4 downto 0);
        PCSrc : out STD_LOGIC;
@@ -49,7 +50,7 @@ architecture memory_access of memory_access is
 component data_memory
   port (
        EX_MEM_CONTROL_1 : in STD_LOGIC_VECTOR(5 downto 0);
-       EX_rs : in STD_LOGIC_VECTOR(31 downto 0);
+       EX_rt : in STD_LOGIC_VECTOR(31 downto 0);
        ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
        clk : in STD_LOGIC;
        reset : in STD_LOGIC;
@@ -145,7 +146,7 @@ data_memory_01 : data_memory
   port map(
        DATA_BUS => DATA_BUS,
        EX_MEM_CONTROL_1 => EX_MEM_CONTROL,
-       EX_rs => EX_rs,
+       EX_rt => EX_rt,
        ULA_RES => ULA_RES,
        clk => clk,
        reset => reset

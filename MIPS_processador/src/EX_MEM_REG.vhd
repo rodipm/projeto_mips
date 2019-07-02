@@ -14,6 +14,7 @@ entity EX_MEM_REG is
 		 
 		 ULA_in : in STD_LOGIC_VECTOR(31 downto 0);
 		 RS_in : in STD_LOGIC_VECTOR(31 downto 0);
+		 RT_in : in STD_LOGIC_VECTOR(31 downto 0);
 		 zero_in: in STD_LOGIC;
 		 val_res : in STD_LOGIC_VECTOR(4 downto 0);		 
 		 
@@ -25,7 +26,8 @@ entity EX_MEM_REG is
 		 ULA_RES : out STD_LOGIC_VECTOR(31 downto 0);
 		 zero : out STD_LOGIC;
 		 
-		 EX_rs : out STD_LOGIC_VECTOR(31 downto 0);		 
+		 EX_rs : out STD_LOGIC_VECTOR(31 downto 0);
+		 EX_rt : out STD_LOGIC_VECTOR(31 downto 0);
 		 val : out STD_LOGIC_VECTOR(4 downto 0)
 	     );
 end EX_MEM_REG;
@@ -42,6 +44,7 @@ begin
 			EX_branch_address <= "00000000000000000000000000000000";
 			ULA_RES <= "00000000000000000000000000000000";
 			EX_rs <= "00000000000000000000000000000000";
+			EX_rt <= "00000000000000000000000000000000";
 			val <= "00000";
 			zero <= '0';
 			
@@ -53,6 +56,7 @@ begin
 			EX_jump_address <= jump_address_in;
 			ULA_RES <= ULA_in;
 			EX_rs <= RS_in;
+			EX_rt <= RT_in;
 			val <= val_res;
 			zero <= zero_in;
 		end if;

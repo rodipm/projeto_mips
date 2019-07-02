@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 entity data_memory is
 	 port(
 		 reset : in STD_LOGIC;
-		 EX_rs : in STD_LOGIC_VECTOR(31 downto 0);
+		 EX_rt : in STD_LOGIC_VECTOR(31 downto 0);
 		 ULA_RES : in STD_LOGIC_VECTOR(31 downto 0);
 		 EX_MEM_CONTROL_1 : in STD_LOGIC_VECTOR(5 downto 0);
 		 DATA_BUS : out STD_LOGIC_VECTOR(31 downto 0);
@@ -22,7 +22,7 @@ signal DEBUG : STD_LOGIC_VECTOR (9 downto 0);
 begin
 
 	MEM_PROC:
-		process(clk, reset,EX_MEM_CONTROL_1(3),EX_MEM_CONTROL_1(2),EX_rs,MEM,ULA_RES)
+		process(clk, reset,EX_MEM_CONTROL_1(3),EX_MEM_CONTROL_1(2),EX_rt,MEM,ULA_RES)
 		begin		
 			DEBUG <= ULA_RES(9 downto 0) after 0.5 ns;
 			MemRead <= 	EX_MEM_CONTROL_1(2);
@@ -36,7 +36,7 @@ begin
 				end loop;
 				DATA_BUS <= MEM(0);
 			elsif EX_MEM_CONTROL_1(3)='1' then --Write
-				MEM(to_integer(unsigned( ULA_RES(9 downto 0) ))) <= EX_rs;
+				MEM(to_integer(unsigned( ULA_RES(9 downto 0) ))) <= EX_rt;
 			elsif MemRead='1' then	 --Read
 			    	DATA_BUS <= MEM(to_integer(unsigned( ULA_RES(9 downto 0) )));
 			end if;
