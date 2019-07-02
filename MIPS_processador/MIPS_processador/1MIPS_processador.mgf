@@ -10755,7 +10755,7 @@ I 000059 55 960           1562036454650 instruction_memory
 	)
 	(_model . instruction_memory 1 -1)
 )
-V 000059 55 960           1562036735154 instruction_memory
+I 000059 55 960           1562036735154 instruction_memory
 (_unit VHDL(instruction_memory 0 28(instruction_memory 0 11))
 	(_version vde)
 	(_time 1562036735155 2019.07.02 00:05:35)
@@ -10782,6 +10782,36 @@ V 000059 55 960           1562036735154 instruction_memory
 		(33686018 3)
 		(33686018 2)
 		(50463234 2)
+		(50529027 33686275 33686018 33686018 33686018 33686018 50528770 50529027)
+	)
+	(_model . instruction_memory 1 -1)
+)
+V 000059 55 969           1562037981055 instruction_memory
+(_unit VHDL(instruction_memory 0 28(instruction_memory 0 11))
+	(_version vde)
+	(_time 1562037981056 2019.07.02 00:26:21)
+	(_source(\./../src/instruction_memory.vhd\))
+	(_parameters tan)
+	(_code 9e9196919ec8c989999a8cc5ca989d999a989798c8)
+	(_ent
+		(_time 1561866551800)
+	)
+	(_object
+		(_type(_int ~STD_LOGIC_VECTOR{31~downto~0}~12 0 30(_array -1((_dto i 31 i 0)))))
+		(_port(_int address_bus 0 0 30(_ent(_in))))
+		(_port(_int instruction_bus 0 0 31(_ent(_out))))
+		(_prcs
+			(line__13(_arch 0 0 13(_prcs(_simple)(_trgt(1))(_sens(0)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_static
+		(33686018 33686018 33686018 33686018 33686018 33686018 33686018 33686018)
+		(33686018 33686018 33686018 33686018)
+		(33686018 3)
+		(50463234 2)
+		(33686019 771)
 		(50529027 33686275 33686018 33686018 33686018 33686018 50528770 50529027)
 	)
 	(_model . instruction_memory 1 -1)

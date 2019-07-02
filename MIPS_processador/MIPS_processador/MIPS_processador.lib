@@ -1,8 +1,8 @@
-timestamp=1562036735172
+timestamp=1562037981084
 
 [~A]
 Comment=
-ModifyID=1426
+ModifyID=1427
 Version=74
 
 [adder]
@@ -169,16 +169,16 @@ Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce8
 Version/instruction_fetch=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|ca35fc9534a8cfce866c0066a9a678c867b915ec5b86511adfa499b11961792f4948bbf203cea3a753e747f05bd547bf
 
 [instruction_memory]
-A/instruction_memory=21|./../src/instruction_memory.vhd|11|1*408916
+A/instruction_memory=21|./../src/instruction_memory.vhd|11|1*409935
 BinI32/instruction_memory=3*63211
 I=0*64123
-I/instruction_memory=0*235409
+I/instruction_memory=0*236197
 M=11|0|vde|1561866551800|./../src/instruction_memory.vhd|0*1299*0x59e6dddcda40d9fb7c2022103313a081cd2cfdd1|0*1599*0x23b75c12e3e89f2ef000564498faa8c2
-M/instruction_memory=21|0|vde|1562036735153|./../src/instruction_memory.vhd|0*234842*0xe3bc48dae1eaef69850f5700ee0b1c68b9d1aec0|0*235284*0x20116f55b147878295aeff36dce7fc50
+M/instruction_memory=21|0|vde|1562037981054|./../src/instruction_memory.vhd|0*235640*0x96eec0728ee53978671a04991b14dbe1c44526d8|0*236072*0x20116f55b147878295aeff36dce7fc50
 NSymbols/instruction_memory=40|0|2*43820
 R=./../src/instruction_memory.vhd|28
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa5cdeefbdd8ec0382d54b92f1958785a79624349d5b8f82688a21519974b3e647926a7ec9f9ceec273ea0eea5dd5d8d
-Version/instruction_memory=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa5cdeefbdd8ec0382d54b92f1958785a79624349d5b8f82688a21519974b3e60551b9eebf051f4e969b67ef25e464a8
+Version/instruction_memory=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|aa5cdeefbdd8ec0382d54b92f1958785a79624349d5b8f82688a21519974b3e6410d5833aa44c9461a0991989e16276c
 
 [mem_wb_reg]
 A/mem_wb_reg=A/MEM_WB_REG 21|./../src/MEM_WB_REG.vhd|20|1*359307
@@ -308,8 +308,8 @@ Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|0afa266ec313ae12f
 Version/write_back=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|0afa266ec313ae12f55e2e4b5ccf9dc36e5c097a9f12960a1e48c41f4ed65d880b39d4d970bab28fc8225d8b8847b5d5
 
 [~MFT]
-0=8|0MIPS_processador.mgf|235409|162357
-1=2|1MIPS_processador.mgf|408916|300868
+0=8|0MIPS_processador.mgf|236197|163155
+1=2|1MIPS_processador.mgf|409935|301887
 2=0|2MIPS_processador.mgf|160380|65530
 3=2|3MIPS_processador.mgf|63211|49582
 
