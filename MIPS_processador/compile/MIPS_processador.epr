@@ -1,2 +1,25 @@
-"D:\Code\OrgArq\projeto_mips\MIPS_processador\src\instruction_memory.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\sistema_mips.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\MIPS.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\instruction_fetch.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\instruction_decode.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\execution.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\control_unit.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\IF_ID_REG.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\register_file.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\testbench_mips.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\signal_extend.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\PC.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\instruction_memory.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ID_EX_REG.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\Adder.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\ALU_Control.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\data_memory.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\EX_MEM_REG.vhd" VHDL MIPS_processador 1 0 0 -02
+"E:\rpm-dev\Poli\OrgArq\Projetos\projeto_mips\MIPS_processador\src\MEM_WB_REG.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\memory_access.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\write_back.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\adder.vhd" VHDL MIPS_processador 2 0 0 -02
+".\..\compile\multiplexador.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\ALU.vhd" VHDL MIPS_processador 1 0 0 -02
+".\..\compile\shiftLeft2.vhd" VHDL MIPS_processador 1 0 0 -02
 . . 0 0 0

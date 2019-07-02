@@ -5,7 +5,7 @@ version=4
 Current Config=compile
 
 [Configurations]
-compile=MIPS_processador
+compile=mips_processador
 
 [Library]
 MIPS_processador=.\MIPS_processador\MIPS_processador.lib
@@ -69,72 +69,60 @@ Selected=
 Componentes=1
 
 [Files]
-/sistema_mips.bde=-1
-/MIPS.bde=-1
-/instruction_fetch.bde=-1
-/instruction_decode.bde=-1
-/execution.bde=-1
 /control_unit.vhd=-1
-/IF_ID_REG.vhd=-1
+/instruction_memory.vhd=-1
 /register_file.vhd=-1
 /testbench_mips.vhd=-1
 /signal_extend.vhd=-1
 /PC.vhd=-1
-/instruction_memory.vhd=-1
+/MEM_WB_REG.vhd=-1
 /ID_EX_REG.vhd=-1
-/Adder.vhd=-1
-/ALU_Control.vhd=-1
+/IF_ID_REG.vhd=-1
 /data_memory.vhd=-1
 /EX_MEM_REG.vhd=-1
-/MEM_WB_REG.vhd=-1
+/Adder.vhd=-1
+/ALU_Control.vhd=-1
+/execution.bde=-1
 /memory_access.bde=-1
+/instruction_fetch.bde=-1
+/instruction_decode.bde=-1
 /write_back.bde=-1
+/MIPS.bde=-1
+/sistema_mips.bde=-1
 /untitled.asdb=-1
 /untitled.awc=-1
-Componentes/adder.bde=-1
 Componentes/multiplexador.bde=-1
-Componentes/ALU.bde=-1
 Componentes/shiftLeft2.bde=-1
+Componentes/ALU.bde=-1
+Componentes/adder.bde=-1
 
 [Files.Data]
-.\src\sistema_mips.bde=Block Diagram
-.\src\MIPS.bde=Block Diagram
-.\src\instruction_fetch.bde=Block Diagram
-.\src\instruction_decode.bde=Block Diagram
-.\src\execution.bde=Block Diagram
 .\src\control_unit.vhd=VHDL Source Code
-.\src\IF_ID_REG.vhd=VHDL Source Code
+.\src\instruction_memory.vhd=VHDL Source Code
 .\src\register_file.vhd=VHDL Source Code
 .\src\testbench_mips.vhd=VHDL Source Code
 .\src\signal_extend.vhd=VHDL Source Code
 .\src\PC.vhd=VHDL Source Code
-.\src\instruction_memory.vhd=VHDL Source Code
+.\src\MEM_WB_REG.vhd=VHDL Source Code
 .\src\ID_EX_REG.vhd=VHDL Source Code
-.\src\Adder.vhd=VHDL Source Code
-.\src\ALU_Control.vhd=VHDL Source Code
+.\src\IF_ID_REG.vhd=VHDL Source Code
 .\src\data_memory.vhd=VHDL Source Code
 .\src\EX_MEM_REG.vhd=VHDL Source Code
-.\src\MEM_WB_REG.vhd=VHDL Source Code
+.\src\Adder.vhd=VHDL Source Code
+.\src\ALU_Control.vhd=VHDL Source Code
+.\src\execution.bde=Block Diagram
 .\src\memory_access.bde=Block Diagram
+.\src\instruction_fetch.bde=Block Diagram
+.\src\instruction_decode.bde=Block Diagram
 .\src\write_back.bde=Block Diagram
+.\src\MIPS.bde=Block Diagram
+.\src\sistema_mips.bde=Block Diagram
 .\src\untitled.asdb=Accelerated Waveform File
 .\src\untitled.awc=Accelerated Waveform Configuration
-.\src\Componentes\adder.bde=Block Diagram
 .\src\Componentes\multiplexador.bde=Block Diagram
-.\src\Componentes\ALU.bde=Block Diagram
 .\src\Componentes\shiftLeft2.bde=Block Diagram
-
-[file_out:/sistema_mips.bde]
-/..\compile\sistema_mips.vhd=-1
-
-[file_out:/MIPS.bde]
-/..\compile\MIPS.vhd=-1
-
-[file_out:/instruction_fetch.bde]
-/..\compile\instruction_fetch.vhd=-1
-
-[file_out:/instruction_decode.bde]
-/..\compile\instruction_decode.vhd=-1
+.\src\Componentes\ALU.bde=Block Diagram
+.\src\Componentes\adder.bde=Block Diagram
 
 [file_out:/execution.bde]
 /..\compile\execution.vhd=-1
@@ -142,18 +130,30 @@ Componentes/shiftLeft2.bde=-1
 [file_out:/memory_access.bde]
 /..\compile\memory_access.vhd=-1
 
+[file_out:/instruction_fetch.bde]
+/..\compile\instruction_fetch.vhd=-1
+
+[file_out:/instruction_decode.bde]
+/..\compile\instruction_decode.vhd=-1
+
 [file_out:/write_back.bde]
 /..\compile\write_back.vhd=-1
 
-[file_out:Componentes/adder.bde]
-Componentes/..\..\compile\adder.vhd=-1
+[file_out:/MIPS.bde]
+/..\compile\MIPS.vhd=-1
+
+[file_out:/sistema_mips.bde]
+/..\compile\sistema_mips.vhd=-1
 
 [file_out:Componentes/multiplexador.bde]
 Componentes/..\..\compile\multiplexador.vhd=-1
 
+[file_out:Componentes/shiftLeft2.bde]
+Componentes/..\..\compile\shiftLeft2.vhd=-1
+
 [file_out:Componentes/ALU.bde]
 Componentes/..\..\compile\ALU.vhd=-1
 
-[file_out:Componentes/shiftLeft2.bde]
-Componentes/..\..\compile\shiftLeft2.vhd=-1
+[file_out:Componentes/adder.bde]
+Componentes/..\..\compile\adder.vhd=-1
 
